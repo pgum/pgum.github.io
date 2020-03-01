@@ -1,0 +1,14 @@
+---
+layout: base
+---
+
+<div class="intro-header"></div>
+
+<div role="main" class="container">
+  {{ content | replace: '<li>[ ]', 
+        '<li class="box task-list-item">
+        <input type="checkbox" class="task-list-item-checkbox" disabled>' | 
+    replace: '<li>[x]', 
+        '<li class="box_done task-list-item">
+        <input type="checkbox" class="task-list-item-checkbox" value="on" disabled checked>'  }}
+</div>
