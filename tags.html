@@ -2,7 +2,8 @@
 layout: page
 title: 'Tag Index'
 ---
-
+<script src="/js/jquery-1.11.2.min.js"></script>
+<script src="/js/jQWCloudv3.4.1.js"></script>
 {%- capture site_tags -%}
     {%- for tag in site.tags -%}
         {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
@@ -11,8 +12,14 @@ title: 'Tag Index'
 {%- assign tags_list = site_tags | split:',' | sort -%}
 
 {%- for tag in tags_list -%}
-    <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
+    <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;<span class="badge">{{site.tags[tag].size}}</span></a>
 {%- endfor -%}
+<h2>Tag Cloud</h2>
+<style>
+#wordCloud span {cursor: pointer;}
+</style>
+<div id="wordCloud" style="width: 100%; height: 300px; "></div>
+
 
 <div id="full-tags-list">
 {%- for tag in tags_list -%}
@@ -32,3 +39,52 @@ title: 'Tag Index'
     </div>
 {%- endfor -%}
 </div>
+
+<script>
+const myData = [
+{%- for tag in tags_list -%}
+  {word: '{{- tag -}}', weight: {{site.tags[tag].size}}},  
+{%- endfor -%}
+];
+
+jQuery("#wordCloud").jQWCloud({
+  words: myData,
+  // title
+  title: 'Tag cloud',
+
+  // min/max font size
+  minFont: 24,
+  maxFont: 56,
+
+  // font offset
+  fontOffset: 0,
+
+  // shows the algorithm of creating the word cloud
+  showSpaceDIV: false,
+
+  // Enables the vertical alignment of words
+  verticalEnabled: true,
+
+  // color
+  cloud_color: null,
+
+  // font family
+  cloud_font_family: null,
+
+  // color of covering divs
+  spaceDIVColor: 'white',
+
+  // left padding of words
+  padding_left: null,
+
+  // classes with space to be applied on each word
+  word_common_classes: null,
+
+  word_click : function(){location.hash= this.innerHTML; },
+  word_mouseOver : function(){},
+  word_mouseEnter : function(){},
+  word_mouseOut : function(){},
+  beforeCloudRender: function(){},
+  afterCloudRender: function(){}
+});
+</script>
