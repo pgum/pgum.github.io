@@ -6,6 +6,7 @@ category: checklists
 
 ---
 
-[ ] Asdf 1 
-[ ] Asdf 2 
-[ ] Asdf 3 
+* [ ] Fixed
+* [ ] Fixed
+* [ ] Fixed
+* [x] Fixed done
