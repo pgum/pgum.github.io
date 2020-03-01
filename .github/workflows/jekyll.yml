@@ -1,0 +1,27 @@
+name: Build Jekyll and Deploy to gh-pages
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the site in the jekyll/builder container
+      run: |
+        docker run \
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+    - name: GitHub Branch Deploy
+      uses: zekth/gh-deploy-action@1.0.0
+      with:
+      # Directory to deploy
+      #build_dir: # optional
+      # Personnal access token
+        gh_token: ${{ secrets.SLIDES_PUBLISH_TOKEN }}
+      # FQDN to deploy in CNAME file
+      #fqdn: # optional
+      # Branch targeted for the deployment
+      #target_branch: # optional, default is gh-pages
