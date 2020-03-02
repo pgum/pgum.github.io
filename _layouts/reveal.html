@@ -1,13 +1,16 @@
-<!doctype html>
-<html lang="en">
+---
 
+---
+
+<!DOCTYPE html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 
 		{% if site.title %}<title>{{ site.title }}</title>{% endif %}
 
 		{% if site.description %}<meta name="description" content="{{ site.description }}">{% endif %}
-		{% if site.author %}<meta name="author" content="{{ site.author }}">{% endif %}
+		{% if site.author %}<meta name="author" content=" {{ site.author.name }} "> {% endif %}
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
@@ -39,65 +42,32 @@
 		<![endif]-->
 	</head>
 
-	<body>
+  <body>
 
-		<div class="reveal">
-
-			<div class="slides">
-
-				{% for post in site.posts reversed %}
-				<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-notes="^Note:">
-					<script type="text/template">
-{%
-						assign lines = post.content | newline_to_br | strip_newlines | split: "<br />"
-%}{%
-						for line in lines
-%}{% 
-							assign processed_line = line
-								| replace:'<fragment/>','<!-- .element: class="fragment" -->'
-								| replace:'<background>','<!-- .slide: data-background="'
-								| replace:'</background>','" -->'
-								| replace:'<backgroundimage>','<!-- .slide: data-background="'
-								| replace:'</backgroundimage>','" --> '
-								| replace:'<backgroundimageopacity>','<!-- .slide: data-background-opacity="'
-								| replace:'</backgroundimageopacity>','" -->'
-%}{%
-							assign first_char = line | strip
-								| slice: 0,1
-%}{%
-							if first_char == '+'
-%}{%
-								assign processed_line = processed_line
-									| replace_first: '+','+ <!-- .element: class="fragment" -->'
-%}{%
-							endif
-							%}{{ processed_line }}{% comment %}Following line break is important{% endcomment %}
-{%
-						endfor
-%}
-					</script>
-				</section>
-				{% endfor %}
-
-			</div>
-
-		</div>
+<!-- pjg base -->
+<div class="reveal">
+	<div class="slides">
+    <section data-markdown data-separator="^\n<hr />$" data-vertical="^\n--\n$" data-notes="^Note:">
+      <script type="text/template">
+      {{ content }}
+      </script>
+    </section>
+	</div>
+</div>
 
 		<script src="{{ site.reveal_path }}lib/js/head.min.js"></script>
 		<script src="{{ site.reveal_path }}js/reveal.js"></script>
-
 		<script>
-
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				controls: true,
 				progress: true,
 				history: true,
-				center: true,
+				center: false,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: '{{ site.reveal_transition }}', // default/cube/page/concave/zoom/linear/fade/none
+				transition: 'none', // default/cube/page/concave/zoom/linear/fade/none
 
 				{% if site.reveal_options %}
 					{% if site.reveal_options.first.first %}
@@ -131,6 +101,6 @@
 			});
 
 		</script>
-
-	</body>
+<!-- pjg base -->
+  </body>
 </html>

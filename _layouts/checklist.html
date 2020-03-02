@@ -1,0 +1,17 @@
+---
+layout: base
+---
+
+{% include header.html type="post" %}
+
+<div class="container" role="main">
+  <div class="row">
+<!-- pjg czeklist --->
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-md-dupa">
+            {{ content | replace: '<li>[ ]', '<li class="box_done task-list-item"><input type="checkbox">< class="task-list-item-checkbox kutawianek">'
+               | replace: '<li>[x]', '<li class="box_done task-list-item"><input type="checkbox">< class="task-list-item-checkbox kutasik" value="on" checked="checked">' }}
+    
+<!-- pjg --->
+    </div>
+  </div>
+</div>
