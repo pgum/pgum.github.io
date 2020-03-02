@@ -182,7 +182,7 @@ plugins:
 
 #revealjs
 reveal_theme: moon.css
-reveal_theme_path: /reveal.js/css/theme/ 
+reveal_theme_path: /css/theme/ 
 # Additional custom CSS paths
 extra_css: 
 # Custom CSS for highlighting (defaults to reveal.js/lib/css/zenburn.css)
@@ -191,6 +191,5 @@ highlight_style_sheet:
 reveal_notes_server: false
 # Additional reveal.js options
 reveal_options: 
-reveal_dependencies: 
 reveal_path: /reveal.js/
 
