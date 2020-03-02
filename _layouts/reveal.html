@@ -56,7 +56,7 @@
 </div>
 
 		<script src="{{ site.reveal_path }}lib/js/head.min.js"></script>
-		<script src="{{ site.reveal_path }}js/reveal.js"></script>
+		<script src="/js/reveal.js"></script>
 		<script>
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
@@ -85,7 +85,7 @@
 				dependencies: [
 					{ src: '/js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: '/js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: '{{ site.reveal_path }}plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					{ src: '/js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
 
