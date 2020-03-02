@@ -17,31 +17,23 @@
     <div class="collapse navbar-collapse" id="main-navbar">
       <ul class="nav navbar-nav navbar-right">
         <!-- Categories -->
-          {%- for category in site.categories -%}
-          {% capture category_name %}{{ category | first }}{% endcapture %}
-            <li class="navlinks-container">
-              <li class="post-category-{{ category_name }}"><a href="/categories/#{{ category_name }}">{{ category_name }}</a></li>
-              </li>
-          {%- endfor -%}
-        <!-- Tags -->
           <li class="navlinks-container">
-            <a class="navlinks-parent" href="javascript:void(0)">Tags</a>
+            <a class="navlinks-parent" href="javascript:void(0)">Categories</a>
             <div class="navlinks-children">
-{%- capture site_tags -%}
-    {%- for tag in site.tags -%}
-        {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
+            <a href="/categories">Show all</a>
+{%- capture site_categories -%}
+    {%- for category in site.categories -%}
+        {{- category | first -}}{%- unless forloop.last -%},{%- endunless -%}
     {%- endfor -%}
 {%- endcapture -%}
-{%- assign tags_list = site_tags | split:',' | sort -%}
+{%- assign categories_list = site_categories | split:',' | sort -%}
 
-{%- for tag in tags_list -%}
-              <a href="/tags/#{{- tag -}}">{{- tag -}}</a>
+{%- for category in categories_list -%}
+              <a class="post-category-{{ category }}" href="/categories/#{{- category -}}">{{- category -}}</a>
               {%- endfor %}
             </div>
           </li>
-
-
-
+        <!-- Categories End -->
       {%- for link in site.navbar-links -%}
         {%- if link[1].first %}
           <li class="navlinks-container">

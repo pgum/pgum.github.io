@@ -20,6 +20,7 @@ description: My interpretation of reality
 
 # List of links in the navigation bar
 navbar-links:
+  Tags: "tags"
   Resources:
     - Slides: "slides"
   About: 

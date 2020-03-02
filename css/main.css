@@ -787,13 +787,13 @@ pre {
   font-size: 16px;
 }
 /* PJG */
-.post-category-concepts { background-color: rgba(51,152,251,1); }
+.post-category-concepts { background-color: rgba(51,152,251,1) !important;}
 .post-category-concepts-list { background-color: rgba(51,152,251,0.3); }
 
-.post-category-scenarios { background-color: rgba(51,251,125,1); }
+.post-category-scenarios { background-color: rgba(51,251,125,1) !important;}
 .post-category-scenarios-list { background-color: rgba(51,251,125,0.3); }
 
-.post-category-checklists { background-color: rgba(251,125,51,1); }
+.post-category-checklists { background-color: rgba(251,125,51,1) !important;}
 .post-category-checklists-list { background-color: rgba(251,125,51,0.3); }
 
 .box,

@@ -1,8 +1,10 @@
 ---
 layout: page
 permalink: /categories/
-title: Categories Index
+title: Categories
+description: Find resources you need
 ---
+
 {%- capture site_categories -%}
     {%- for cat in site.categories -%}
         {{- cat | first -}}{%- unless forloop.last -%},{%- endunless -%}
@@ -10,14 +12,18 @@ title: Categories Index
 {%- endcapture -%}
 {%- assign tags_list = site_categories | split:',' | sort -%}
 
-<div id="categories-list">
+    <div class="row">
+        <div class="col-lg-3 col-md-3" id="categories-list">
+          <a href="#all" class="btn btn-block btn-primary tag-btn "><i class="fa fa-book" aria-hidden="true"></i>&nbsp;Show all</a>
+          {%- for tag in tags_list -%}
+          <a href="#{{- tag -}}" class="btn-block btn btn-primary tag-btn post-category-{{- tag -}}"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;({{site.categories[tag].size}})</a>
+          {%- endfor -%}
+        </div>
+        <div class="col-lg-9 col-md-9">
+<div id="full-tags-list" style="margin:-15px;">
 {%- for tag in tags_list -%}
-    <a href="#{{- tag -}}" class="btn btn-primary tag-btn post-category-{{- tag -}}"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;({{site.categories[tag].size}})</a>
-{%- endfor -%}
-</div>
-<div id="full-tags-list">
-{%- for tag in tags_list -%}
-    <h2 id="{{- tag -}}" class=" post-category-{{- tag -}}">
+<div id="{{- tag -}}" class="category-list" style="display:none;">
+    <h2 class=" post-category-{{- tag -}}">
     
         <i class="fa fa-book" aria-hidden="true"></i>
         &nbsp;{{- tag -}}&nbsp;({{site.categories[tag].size}})
@@ -32,5 +38,29 @@ title: Categories Index
             </div>
         {%- endfor -%}
     </div>
+</div>
 {%- endfor -%}
 </div>
+        
+        </div>
+    </div>
+
+
+<script>
+function setAllCategoriesDisplay(value){
+  for (let item of document.getElementsByClassName("category-list")) {
+      item.style.display=value;
+  }
+}
+function showSelectedCategory(){
+  let category= location.hash.substring(1);
+  if(document.getElementById(category) != null){
+    setAllCategoriesDisplay("none");
+    document.getElementById(category).style.display="block";
+  }else{
+    setAllCategoriesDisplay("block");
+  }
+}
+window.onhashchange = showSelectedCategory
+showSelectedCategory();
+</script>
