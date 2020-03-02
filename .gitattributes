@@ -19,7 +19,7 @@
 Gemfile text eol=lf
 Gemfile.lock text eol=lf
 
-# Github specific fies
+# Github specific files
 LICENCE text eol=lf
 
 # Docker specific files
