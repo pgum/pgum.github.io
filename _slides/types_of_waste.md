@@ -1,4 +1,8 @@
 ---
+layout: reveal
+tag: slide deck
+---
+---
 style: |
   section {
     background-color: #ccc;
@@ -6,14 +10,14 @@ style: |
   }
   
 ---
-<!-- _class: lead invert -->
-<!-- _paginate: false -->
+<!-- _class: lead invert 
+<!-- _paginate: false 
 ![bg left:33%][waste]
 # Types of waste
 + What is waste
 + How to measure waste
 + Improvement action plan
-<!-- Additional information
+Note:
 Objective:
     * 8 types of waste in IT
     * consequences of unmaintained waste
@@ -23,15 +27,15 @@ Agenda:
     * show vsm, sphagetti, critical route, 
     * if you don't measure it its not important for you
 
--->
+
 
 ---
-<!-- _class: lead -->
+<!-- _class: lead 
 # What is waste for us?
 ---
 
 # Downtime
-<!--![bg contain][8 types of waste]-->
+<!--![bg contain][8 types of waste]
 1. Defects
 2. Overproduction
 3. Waiting
@@ -40,7 +44,7 @@ Agenda:
 6. Inventory
 7. Motion
 8. Extra-processing
-<!-- Additional information
+Note:
 Defects: 
     * wrong priorities
     * customer defects
@@ -77,18 +81,18 @@ Extra-processing:
     * Wrong (irrelevant) KPI
     * Ineffective toolset
 
--->
+
 
 ---
-<!-- _class: lead -->
+<!-- _class: lead 
 # How do we measure waste?
 
-<!-- Additional information
+Note:
 * How do we know what is important?
 * Do we understand reason between KPI we use?
 * Do they measure what is important to us?
 
--->
+
 
 ---
 # How to measure
@@ -98,12 +102,12 @@ Extra-processing:
 - Critical Path
 - Daily stand-up, Retrospection
 - RCA
-<!-- Additional information
+Note:
 * Which of these do we implement?
 * Do any of these have disadventages? What?
 * What else could we use to measure?
 
--->
+
 
 ---
 # Sources & further reading

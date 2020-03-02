@@ -1,12 +1,16 @@
-<!-- _class: lead invert -->
-<!-- _paginate: false -->
+---
+layout: reveal
+tag: slide deck
+---
+<!-- _class: lead invert 
+<!-- _paginate: false 
 # Role of Scrum Master
 + Resolving impediments
 + Change agent
 + Coach
 + Mentor
 ![bg left:33%][horizon]
-<!-- Additional information
+Note:
 Objective:
     * IMHO the most important responsibilities of SM
     * Inspect and adapt applied to all fields
@@ -15,30 +19,30 @@ Agenda:
     * Knowing the answer, knowing right people
     * Guiding the team by asking questions and uncovering with them their strengths and weaknesses 
     * Noticing Watermelons and asking about them
--->
+
 
 ---
 # Resolving impediments
 
-<!-- Additional information -->
+Note:
 
 ---
 # Change agent
 - Improvement backlog loop
 - Information radiator
-<!-- Additional information -->
+Note:
 
 ---
 # Coach
 - Levels
 - Effective questions
-<!-- Additional information -->
+Note:
 
 ---
 # Mentor
 - Let me show you
 - Let's learn together
-<!-- Additional information -->
+Note:
 
 ---
 # Sources & further reading

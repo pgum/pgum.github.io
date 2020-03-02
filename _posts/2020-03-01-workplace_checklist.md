@@ -1,4 +1,5 @@
 ---
+layout: checklist
 title: Workplace checklist
 category: checklists
 ---
@@ -9,4 +10,6 @@ category: checklists
 * [ ] Fixed
 * [ ] Fixed
 * [ ] Fixed
+* [x] Fixed done
+* [x] Fixed done
 * [x] Fixed done

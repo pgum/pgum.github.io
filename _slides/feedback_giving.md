@@ -1,5 +1,9 @@
-<!-- _class: lead invert -->
-<!-- _paginate: false -->
+---
+layout: reveal
+tag: slide deck
+---
+<!-- _class: lead invert 
+<!-- _paginate: false 
 # Feedback giving
 
 * Purpose of feedback
@@ -8,7 +12,7 @@
 * Facts Feelings Consequences Expectations
 ![bg left:33%][horizon]
 
-<!-- Additional information
+Note:
 Objective:
     * Feedback is one of the tools for people to grow
     * When and how to give effective feedback
@@ -17,27 +21,27 @@ Agenda:
     * Ability to openly take feedback shows organizational culture 
     * 
     * 
--->
+
 
 ---
-<!-- _class: lead -->
+<!-- _class: lead 
 # What progress means to us
 
-<!-- Additional information
+Note:
     In what fields do we observe progress we make?
     How do we know we made progress?
- -->
+ 
 
 ---
-<!-- _class: lead -->
+<!-- _class: lead 
 # feed-back
 
-<!-- Additional information 
+Note: 
 Show respect by being engaged
 Taking steps for future actions
 Letting others know of consequences (results) of their actions
 
--->
+
 
 ---
 
@@ -53,10 +57,10 @@ Letting others know of consequences (results) of their actions
 * Emotions
 * Thinking
 
-<!-- Additional information
+Note:
 We can only reason about observable layers.
 How to divide facts from emotions?    
--->
+
 
 ---
 
@@ -67,7 +71,7 @@ You don't **care** about *it* if you don't **notice** *it*
 Let yourself and others grow
 Make positive behaviour more frequent
 Identify negative behaviour and react
-<!-- Additional information -->
+Note:
 
 ---
 
@@ -78,7 +82,7 @@ Identify negative behaviour and react
 **Content**: observed action, impact on us, consequences, ask how to improve  
 **When and how**: As close in time from observed action, face2face
 
-<!-- Additional information -->
+Note:
 
 ---
 
@@ -88,7 +92,7 @@ Identify negative behaviour and react
 * Face to face
 * Questionaire
 * Official HR process
-<!-- Additional information -->
+Note:
 
 ---
 
@@ -102,7 +106,7 @@ Naming vs showing
 Context and outcome
 * Expectations
 What we want to achieve and when - measure, timebox
-<!-- Additional information -->
+Note:
 
 ---
 
@@ -112,7 +116,7 @@ What we want to achieve and when - measure, timebox
 * Focus on behaviour not person
 * Be assertive
 * Use also official reward processes
-<!-- Additional information -->
+Note:
 
 ---
 

@@ -1,5 +1,9 @@
-<!-- _class: lead invert -->
-<!-- _paginate: false -->
+---
+layout: reveal
+tag: slide deck
+---
+<!-- _class: lead invert 
+<!-- _paginate: false 
 
 # Let's begin!
 
@@ -9,7 +13,7 @@
 * List of topics
 
 ![bg left:33%][horizon]
-<!-- Additional information
+Note:
 Objective:
 
 * introduce myself, set the rules
@@ -21,7 +25,7 @@ Agenda:
 * let everyone introduce themself - name, profesional work, fun thing from last weekend
 * common agreements before we start
 
--->
+
 
 ---
 
@@ -36,7 +40,7 @@ Certificates: *CSP SM, CSP PO, CSM, CSPO*
 
 After hours: Go, Music, μC, Travel
 ![bg right:33%][piotr]
-<!-- Additional information
+Note:
 Education:
     + MSc Automation and Robotics, AGH
     + BA Philosophy, UPJP2
@@ -57,7 +61,7 @@ After Hours:
     + μC: raspberry & arduino, nfc+amiibo control, midi controller HW & SW
     + Travel: Japan and Korea, almost 5 months total, would like more :)
     + Other: BIBA webpage build on Wordpress, with two custom-written plugins for school - development, planning, maintenence
--->
+
 
 ---
 
@@ -72,14 +76,14 @@ After Hours:
 * ......
 
 ![bg left:33%][common agreement]
-<!-- Additional information
+Note:
     * What other rules are good to keep in mind during workshop?
     * Is everyone ok with these set of rules?
     * PC & phone ban - need to work then go work, can stay and listen then stay and listen, no 50-50
     * Additional person who can track time and write meeting minutes to stay concentrated
     * Tea break 10 mins after ~1-1,5h 
     * Lunch break 30 mins
--->
+
 
 ---
 
@@ -93,11 +97,11 @@ After Hours:
 * Group reviews and agrees upon agenda
 
 ![bg right:33%][backlog of needs]
-<!-- Additional information
+Note:
     * 
     *
     *
--->
+
 
 ---
 
@@ -107,31 +111,31 @@ After Hours:
     section { font-size: 18pt; }  
 </style>
 
-1. [**Types of waste**](./types_of_waste.html)
-2. [Empirism and experiment](./empirism_and_experiment.html)
-3. [Inspect & Adapt feedback loop](./inspect_and_adapt_feedback_loop.html)
-4. [Effective communication](./effective_communication.html)
-5. [Feedback giving](./feedback_giving.html)
-6. [Team Agreements](./team_agreements.html)
-7. [Synergy between roles](./synergy_between_roles.html)
-8. [Planning and refinement](./planning_and_refinement.html)
-9. [Role of Scrum Master](./role_of_scrum_master.html)
-10. [Effective use of Templates](./effective_use_of_templates.html)
+1. [**Types of waste**](/slides/types_of_waste)
+2. [Empirism and experiment](/slides/empirism_and_experiment)
+3. [Inspect & Adapt feedback loop](/slides/inspect_and_adapt_feedback_loop)
+4. [Effective communication](/slides/effective_communication)
+5. [Feedback giving](s/lides/feedback_giving)
+6. [Team Agreements](/slides/team_agreements)
+7. [Synergy between roles](/slides/synergy_between_roles)
+8. [Planning and refinement](/slides/planning_and_refinement)
+9. [Role of Scrum Master](/slides/role_of_scrum_master)
+10. [Effective use of Templates](/slides/effective_use_of_templates)
 
 ![bg left:33%][topics]
-<!-- Additional information
+Note:
     * During spare time list of topics can be tailored to group needs
     * "Types of waste" is introduction into mindset - mandatory
--->
+
 
 ---
 # References
 
-<!--Images-->
+<!--Images
 [horizon]: ../imgs/dominik-lange-ZUvF7qEIcVI-unsplash.jpg "Photo by Dominik Lange on Unsplash https://unsplash.com/photos/ZUvF7qEIcVI"
 [piotr]: ../imgs/pjg.PNG "Piotr Gumulka"
 [common agreement]: ../imgs/cody-hiscox-Hp5Acad1H0k-unsplash.jpg "Photo by Cody Hiscox on Unsplash https://unsplash.com/photos/Hp5Acad1H0k"
 [backlog of needs]: ../imgs/thomas-kinto-y94LEl6ESWc-unsplash.jpg "Photo by Thomas Kinto on Unsplash https://unsplash.com/photos/y94LEl6ESWc"
 [topics]: ../imgs/inaki-del-olmo-NIJuEQw0RKg-unsplash.jpg "Photo by Iñaki del Olmo on Unsplash https://unsplash.com/photos/NIJuEQw0RKg"
-<!--Sources-->
-<!--Internal links-->
+<!--Sources
+<!--Internal links

@@ -1,5 +1,9 @@
-<!-- _class: lead invert -->
-<!-- _paginate: false -->
+---
+layout: reveal
+tag: slide deck
+---
+<!-- _class: lead invert 
+<!-- _paginate: false 
 
 # Effective use of templates
 
@@ -8,7 +12,7 @@
 * Pitfalls
 
 ![bg left:33%][horizon]
-<!-- Additional information
+Note:
 
 Objective:
 * Templates aren't evil
@@ -18,18 +22,18 @@ Agenda:
 * Inspect and then record your most common cases
 * Adapt tools at your disposal to the situation
 * Establish a template on how to make productive template
--->
+
 
 ---
-<!-- _class: lead -->
+<!-- _class: lead 
 # What is template?
 
-<!-- Additional information 
+Note: 
 
 What do we use them for? Real life examples?
 What is common goal of making a template?
 Does templates hold creativity off?
--->
+
 
 ---
 
@@ -39,7 +43,7 @@ Does templates hold creativity off?
 
 ## Work standards
 
-<!-- Additional information 
+Note: 
 
 We already use templates all the time
 Identifing activities -> checklist
@@ -55,19 +59,19 @@ Examples:
 * CI system
 * EULA
 
--->
+
 
 ---
 
-<!-- _class: lead -->
+<!-- _class: lead 
 # Templates expand creativity
 
-<!-- Additional information 
+Note: 
 Focus on essence first while having prepared enviroment ready to go.
 Common ground to create high standard.
 Time saver.
 
--->
+
 
 ---
 
@@ -86,7 +90,7 @@ Time saver.
 * Be specific
 * Let it live
 
-<!-- Additional information 
+Note: 
 
 * Gathering data as a part of empirical process is a must to be able to reason about the process.
 * Observations should be analized to find common themes from gathered data. Choose those which would benefit the most from having more standarized process.
@@ -100,30 +104,30 @@ Time saver.
   * Adapt in new version in new iteration
   * Record and share template and observations
 
--->
+
 
 ---
-<!-- _class: lead -->
+<!-- _class: lead 
 
 # Template pitfall #1
 
 ## Set in stone
 
-<!-- Additional information 
+Note: 
 Templating is a process not an one-time thing
 Establish feedback loop and decide on evaluation period
 Always remember what you measure and for what ends
 Don't be scared to experiment
--->
+
 
 ---
-<!-- _class: lead -->
+<!-- _class: lead 
 
 # Template pitfall #2
 
 ## "Nah, I don't use it"
 
-<!-- Additional information 
+Note: 
 Encouragement to keep up discipline in applying developed template should come from following sources:
 * agreeing with identified goal (shared goal)
 * understanding the need of template in given field (shared idea)
@@ -133,23 +137,23 @@ Enforcement means external pressure, while encouragement is more like enabling i
 
 What problems do we encunter?
 
--->
+
 
 ---
-<!-- _class: lead -->
+<!-- _class: lead 
 
 # Template pitfall #3
 
 ## It's a bother and not an aid
 
-<!-- Additional information 
+Note: 
 Is it relevant in our current workflow?
 Do all groups of interest agree that template is useful?
 What is valuable, what was the goal of it? What are main bothers?
 How can we keep valuable ideas while optmizing the template?
 
 
--->
+
 
 ---
 

@@ -1,12 +1,16 @@
-<!-- _class: lead invert -->
-<!-- _paginate: false -->
+---
+layout: reveal
+tag: slide deck
+---
+<!-- _class: lead invert 
+<!-- _paginate: false 
 # Planning and refinement
 + Backlog is not WBS 
 + What can we plan
 + Just barely good enough
 + Planning is a process
 ![bg left:33%][horizon]
-<!-- Additional information
+Note:
 Objective:
     * Being agile means we can fiddle with costs, content or deadline when agreed with the client
     * Backlog is fine-grained only on the top to avoid waste of replanning and no-work
@@ -16,19 +20,19 @@ Agenda:
     * Periodic inspect & adapt loop for value we deliver is critical
     * It's always a trade-off
     * Don't put up unnecessary work
--->
+
 
 ---
 # Agenda \#
-<!-- Additional information -->
+Note:
 
 ---
 # Agenda \#
-<!-- Additional information -->
+Note:
 
 ---
 # Agenda \#
-<!-- Additional information -->
+Note:
 
 ---
 # Sources & further reading

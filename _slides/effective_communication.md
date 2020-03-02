@@ -1,3 +1,7 @@
+---
+layout: reveal
+tag: slide deck
+---
 <!-- _class: lead invert -->
 <!-- _paginate: false -->
 # Slide deck title
@@ -5,7 +9,7 @@
 + Agenda #2
 + Agenda #3
 ![bg left:33%][horizon]
-<!-- Additional information
+Note:
 Objective:
     * 
     * 
@@ -13,19 +17,19 @@ Objective:
 Agenda:
     * 
     * 
--->
+
 
 ---
 # Agenda Point 1
-<!-- Additional information -->
+Note:
 
 ---
 # Agenda Point 2
-<!-- Additional information -->
+Note:
 
 ---
 # Agenda Point 3
-<!-- Additional information -->
+Note:
 
 ---
 # Sources & further reading

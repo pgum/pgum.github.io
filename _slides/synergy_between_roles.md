@@ -1,11 +1,15 @@
-<!-- _class: lead invert -->
-<!-- _paginate: false -->
+---
+layout: reveal
+tag: slide deck
+---
+<!-- _class: lead invert 
+<!-- _paginate: false 
 # Synergy between the roles in organization
 + Web of dependencies
 + Different perspectives
 + Methods to minimize and resolve conflicts
 ![bg left:33%][horizon]
-<!-- Additional information
+Note:
 Objective:
     * Learn about connections and dependencies between roles 
     * Be able to identify pain-points, and goals of different PoV
@@ -16,19 +20,19 @@ Agenda:
     * Early discussion between individuals is essential for prosperous cooperation
     * We all play in the same team
     
--->
+
 
 ---
 # Web of dependencies
-<!-- Additional information -->
+Note:
 
 ---
 # Different perspectives
-<!-- Additional information -->
+Note:
 
 ---
 # Methods to minimize and resolve conflicts
-<!-- Additional information -->
+Note:
 
 ---
 # Sources & further reading

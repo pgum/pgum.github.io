@@ -1,5 +1,9 @@
-<!-- _class: lead invert -->
-<!-- _paginate: false -->
+---
+layout: reveal
+tag: slide deck
+---
+<!-- _class: lead invert 
+<!-- _paginate: false 
 # Inspect & Adapt feedback spiral
 
 * Feedback loop and closed circut
@@ -8,7 +12,7 @@
 * Key points
 
 ![bg left:33%][horizon]
-<!-- Additional information
+Note:
 Objective:
 * Inspect & Adapt as part of work ethic
 * How to close the loop
@@ -16,13 +20,13 @@ Objective:
 Agenda:
 * Remember about sponsor and measurable actions 
 * Define Backlog, DoD and timebox
--->
+
 
 ---
 
 # What is feedback loop
 
-<!-- Additional information -->
+Note:
 
 ---
 
@@ -32,13 +36,13 @@ Agenda:
 
 ## Adapt to identified challenges
 
-<!-- Additional information -->
+Note:
 
 ---
 
 # Layers of feedback 
 
-<!-- Additional information -->
+Note:
 
 ---
 
@@ -49,7 +53,7 @@ Agenda:
 ## Hold yourself and other accoutable
 
 ## Change direction
-<!-- Additional information -->
+Note:
 
 ---
 
@@ -65,7 +69,7 @@ Agenda:
 
 ## Results evaluation
 
-<!-- Additional information -->
+Note:
 
 ---
 
@@ -77,7 +81,7 @@ Agenda:
 
 ## Annual Performance Evaluation
 
-<!-- Additional information -->
+Note:
 
 ---
 
@@ -91,7 +95,7 @@ Agenda:
 
 ## Positive F2F feedback about work
 
-<!-- Additional information -->
+Note:
 
 ---
 
@@ -103,7 +107,7 @@ Agenda:
 
 ## All neccessary means to deliver
 
-<!-- Additional information -->
+Note:
 
 ---
 
