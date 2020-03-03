@@ -30,3 +30,11 @@
     <script src="{{ js | relative_url }}"></script>
   {% endfor %}
 {% endif %}
+      <script>
+$('.navbar-collapse a').click(function(){
+if($(this).attr('href') != 'javascript:void(0)'){
+    $(".navbar-collapse").collapse('hide');
+    }
+});
+      </script>
+      
