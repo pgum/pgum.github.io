@@ -3,17 +3,6 @@ layout: reveal
 tags: [Lean,]
 intro_background: /img/waste_intro.png
 ---
----
-style: |
-  section {
-    background-color: #ccc;
-    font-size: 30px;
-  }
-  
----
-<!-- _class: lead invert 
-<!-- _paginate: false 
-![bg left:33%][waste]
 # Types of waste
 + What is waste
 + How to measure waste
@@ -31,12 +20,12 @@ Agenda:
 
 
 ---
-<!-- _class: lead 
+<!-- _class: lead -->
 # What is waste for us?
 ---
 
 # Downtime
-<!--![bg contain][8 types of waste]
+<!--![bg contain][8 types of waste] -->
 1. Defects
 2. Overproduction
 3. Waiting
@@ -85,7 +74,7 @@ Extra-processing:
 
 
 ---
-<!-- _class: lead 
+<!-- _class: lead  -->
 # How do we measure waste?
 
 Note:
