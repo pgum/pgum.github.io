@@ -1,3 +1,13 @@
+# pgum
+
+* favicon 
+https://favicon.io/favicon-generator/
+
+* images
+mostly from:  
+https://www.pxfuel.com/
+
+
 # Beautiful Jekyll
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/daattali/20)
