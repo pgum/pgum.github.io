@@ -1,23 +1,14 @@
 # --- General options --- #
-
-# Name of website
 title: pgum space
-
-# Short description of your site
 description: My interpretation of reality
-
-# --- Local development options ---
-# If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
-# *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
-
-# url is the the website domain URL without a trailing slash
-#url: "https://pgum.github.io"
-
-# baseurl should be an empty string
-#baseurl: "blogtest/"
+# Image to show in the navigation bar - image must be a square (width = height)
+# Remove this parameter if you don't want an image in the navbar
+avatar: "/img/avatar-icon.png"
+# If you want to have an image logo in the top-left corner instead of the title text,
+# then specify the following parameter
+# title-img: /path/to/image
 
 # --- Navigation bar options --- #
-
 # List of links in the navigation bar
 navbar-links:
   Tags: "tags"
@@ -27,13 +18,6 @@ navbar-links:
     - Github: "https://github.com/pgum/pgum.github.io"
     - Feedback: "https://github.com/pgum/pgum.github.io/issues"
       
-# Image to show in the navigation bar - image must be a square (width = height)
-# Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
-
-# If you want to have an image logo in the top-left corner instead of the title text,
-# then specify the following parameter
-# title-img: /path/to/image
 
 # --- Background colour/image options --- #
 
@@ -72,17 +56,6 @@ social-network-links:
   email: "pjgumulka@gmail.com"
   github: pgum
   linkedin: piotr-gumulka
-#  xing: yourname
-#  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  youtube: user/deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
-
 # Select which share links to show in posts
 share-links-active:
   twitter: true
