@@ -4,16 +4,25 @@ title: 'Tag Index'
 ---
 <script src="/js/jquery-1.11.2.min.js"></script>
 <script src="/js/jQWCloudv3.4.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
 {%- capture site_tags -%}
     {%- for tag in site.tags -%}
         {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
     {%- endfor -%}
 {%- endcapture -%}
 {%- assign tags_list = site_tags | split:',' | sort -%}
-
+<div class="tags-list-grid">
 {%- for tag in tags_list -%}
     <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;<span class="badge">{{site.tags[tag].size}}</span></a>
 {%- endfor -%}
+</div>
+<script>
+$('.tags-list-grid').isotope({
+  // options
+  itemSelector: 'a',
+  layoutMode: 'fitRows'
+});
+</script>
 <h2>Tag Cloud</h2>
 <style>
 #wordCloud span {cursor: pointer;}
