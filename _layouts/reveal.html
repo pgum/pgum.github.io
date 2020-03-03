@@ -20,7 +20,9 @@
     <!--pjg-->
 		<link rel="stylesheet" href="{{ site.reveal_theme_path }}{{ site.reveal_theme }}" id="theme">
 
-
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 		<!-- For syntax highlighting -->
 		{% if site.highlight_style_sheet %}
 			{% assign highlight_style_sheet = site.highlight_style_sheet %}
@@ -42,11 +44,25 @@
   <body>
 
 <!-- pjg base -->
+{% if page.intro_background %}
+<style>
+html.intro body {
+	background:url("{{ page.intro_background }}");
+	background-position:center;
+	background-size: 100%;
+}
+</style>
+{% endif %}
 <div class="reveal">
 	<div class="slides">
     <section data-markdown data-separator="^\n<hr />$" data-vertical="^\n--\n$" data-notes="^Note:">
       <script type="text/template">
       {{ content }}
+      </script>
+    </section>
+    <section data-markdown>
+      <script type="text/markdown">
+          # [Go back to Slides]({{ 'slides' | relative_url }})
       </script>
     </section>
 	</div>
