@@ -1,6 +1,6 @@
 ---
 layout: reveal
-tag: slide deck
+tags: [Lean,]
 intro_background: /img/waste_intro.png
 ---
 ---
