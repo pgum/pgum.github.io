@@ -1,4 +1,10 @@
-# Opportunities and challenges
+---
+layout: post
+title: Opportunities and challenges
+image: /img/daoudi-aissa-absT1BNRDAI-unsplash.jpg
+category: scenario
+tags: []
+--- 
 
 ## Goals
 

@@ -1,5 +1,5 @@
 ---
-layout: checklist
+layout: post
 title: Workplace checklist
 category: checklists
 tag: check

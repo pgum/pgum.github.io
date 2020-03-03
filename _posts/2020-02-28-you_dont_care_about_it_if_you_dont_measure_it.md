@@ -1,4 +1,10 @@
-# You don't care about it if you don't *measure* it
+---
+layout: post
+title: You don't care about it if you don't *measure* it
+image: /img/daoudi-aissa-absT1BNRDAI-unsplash.jpg
+category: concepts
+tags: [lean, waste, inspect&adapt]
+---
 ## Description
 Word *measure* can be substituted with: **notice**, **speak about**, **rise up**, *etc*.
 Without benchmarking there is no possible way to make rational decision.
