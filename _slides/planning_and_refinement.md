@@ -1,9 +1,7 @@
 ---
 layout: reveal
-tag: slide deck
+tags: [Defects, Overproduction, Waiting Non-used talent, Motion]
 ---
-<!-- _class: lead invert 
-<!-- _paginate: false 
 # Planning and refinement
 + Backlog is not WBS 
 + What can we plan

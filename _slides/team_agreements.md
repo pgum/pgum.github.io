@@ -1,9 +1,7 @@
 ---
 layout: reveal
-tag: slide deck
+tags: [Defects, Transportation, Waiting, Non-used talent, Motion]
 ---
-<!-- _class: lead invert 
-<!-- _paginate: false 
 # Team agreements
 + Purpose of team agreements
 + Prerequisites
@@ -19,7 +17,6 @@ Agenda:
 
 
 ---
-<!-- _class: lead 
 # What agreements do we have?
 Note: 
 How many can we count that we practice?

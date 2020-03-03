@@ -1,6 +1,6 @@
 ---
 layout: reveal
-tag: slide deck
+tags: [Defects, Extra-processing, Waiting, Non-used talent, Motion, Scrum]
 ---
 <!-- _class: lead invert 
 <!-- _paginate: false 

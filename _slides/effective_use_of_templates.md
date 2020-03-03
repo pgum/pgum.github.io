@@ -1,6 +1,6 @@
 ---
 layout: reveal
-tag: slide deck
+tags: [Extra-processing, Overproduction, Waiting]
 ---
 <!-- _class: lead invert 
 <!-- _paginate: false 

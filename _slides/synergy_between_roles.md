@@ -1,6 +1,6 @@
 ---
 layout: reveal
-tag: slide deck
+tags: [Defects, Extra-processing, Waiting, Non-used talent, Motion]
 ---
 <!-- _class: lead invert 
 <!-- _paginate: false 

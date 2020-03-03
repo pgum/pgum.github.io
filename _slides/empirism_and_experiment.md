@@ -1,6 +1,6 @@
 ---
 layout: reveal
-tag: slide deck
+tags: [Extra-processing, Motion, Non-used talent, Defects, Overproduction]
 ---
 <!-- _class: lead invert 
 <!-- _paginate: false 

@@ -1,6 +1,6 @@
 ---
 layout: reveal
-tag: slide deck
+tags: [feedback loop, Motion, Waiting]
 ---
 <!-- _class: lead invert 
 <!-- _paginate: false 

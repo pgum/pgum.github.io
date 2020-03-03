@@ -2,6 +2,7 @@
 layout: checklist
 title: Workplace checklist
 category: checklists
+tag: check
 ---
 # Workplace checklist
 

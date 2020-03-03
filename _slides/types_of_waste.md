@@ -1,6 +1,7 @@
 ---
 layout: reveal
 tag: slide deck
+intro_background: /img/waste_intro.png
 ---
 ---
 style: |
