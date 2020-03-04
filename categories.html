@@ -13,13 +13,7 @@ description: Find resources you need
 {%- assign tags_list = site_categories | split:',' | sort -%}
 
     <div class="row">
-        <div class="col-lg-3 col-md-3" id="categories-list">
-          <a href="#all" class="btn btn-block btn-primary tag-btn "><i class="fa fa-book" aria-hidden="true"></i>&nbsp;Show all</a>
-          {%- for tag in tags_list -%}
-          <a href="#{{- tag -}}" class="btn-block btn btn-primary tag-btn post-category-{{- tag -}}"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;({{site.categories[tag].size}})</a>
-          {%- endfor -%}
-        </div>
-        <div class="col-lg-9 col-md-9">
+      <div class="col-lg-9 col-md-9">
 <div id="full-tags-list" style="margin:-15px;">
 {%- for tag in tags_list -%}
 <div id="{{- tag -}}" class="category-list" style="display:none;">
