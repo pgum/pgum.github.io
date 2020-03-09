@@ -1,0 +1,10 @@
+---
+title: Slides Index
+---
+<ul>
+  {% for slide in site.slides %}
+    <li>
+          <a href="{{ slide.url | relative_url }}"> {{ slide.title | replace: "_"," " }} </a>
+    </li>
+  {% endfor %}
+</ul>

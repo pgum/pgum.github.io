@@ -1,5 +1,4 @@
 ---
-layout: reveal
 tag: slide deck
 ---
 <!-- _class: lead invert 
