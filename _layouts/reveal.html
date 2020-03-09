@@ -55,16 +55,46 @@ html.intro body {
 {% endif %}
 <div class="reveal">
 	<div class="slides">
-    <section data-markdown data-separator="^\n<hr />$" data-vertical="^\n--\n$" data-notes="^Note:">
-      <script type="text/template">
-      {{ content }}
-      </script>
-    </section>
-    <section data-markdown>
-      <script type="text/markdown">
-          # [Go back to Slides]({{ 'slides' | relative_url }})
-      </script>
-    </section>
+		<section 
+			{% if page.title-image %}
+			class="with-image" 
+			data-background-image="{{ page.title-image }}" data-background-size="30%" data-background-position="left" 
+			{% endif %}
+			data-markdown>
+			<script type="text/markdown">
+				# {{ page.title }}  
+				{% for objective in page.objectives %}
+				* {{ objective }}
+				{% endfor %}
+			</script>
+		</section>
+		<section 
+			{% if page.title-image %}
+			class="with-image" 
+			data-background-image="{{ page.title-image }}" data-background-size="30%" data-background-position="left" 
+			{% endif %}
+			data-markdown>
+			<script type="text/markdown" id="agenda-script">
+				## Agenda
+				{% for agenda_element in page.agenda %}
+				* <a class="agenda-link" href="#">{{ agenda_element }}</a>
+				{% endfor %}
+			</script>
+		</section>
+		<section data-markdown data-separator="^\n<hr />$" data-vertical="^\n--\n$" data-notes="^Note:">
+			  <script type="text/template">
+				{{ content }}
+      		</script>
+    	</section>
+    	<section data-markdown>
+      		<script type="text/markdown">
+				# Read more
+				 {% for more in readmore %}
+				 * [{{ more.title }}]({{ more.href }})
+				{% endfor %}
+
+				## [Go back to Slides]({{ 'slides' | relative_url }})
+      		</script>
 	</div>
 </div>
 
@@ -81,27 +111,39 @@ html.intro body {
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: 'none', // default/cube/page/concave/zoom/linear/fade/none
-
-				{% if site.reveal_options %}
-					{% if site.reveal_options.first.first %}
-						// Reveal options generated from mapping
-						{% for option in site.reveal_options %}
-							{{ option[0] }}: "{{ option[1] }}",
-						{% endfor %}
-					{% else %}
-						// Reveal options generated from a list of strings
-						{{ site.reveal_options | append:',' }}
-					{% endif %}
-				{% endif %}
-
+				slideNumber: 'c/t',
+				menu: {
+					width: 'third',
+					numbers: false,
+					titleSelector: 'h1',
+					hideMissingTitles: true,
+					openSlideNumber: false,	
+					customFields: [{ title: "Go back", href: "{{ 'slides' | relative_url }}" }]
+				},
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
 					{ src: '/js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: '/js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: '/js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					{ src: '/js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: '/js/plugin/menu/menu.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
-
+		</script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				var titles = {}
+				var list_headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+				var list_headers2 = document.querySelectorAll("section");
+				for (let h of list_headers){
+					titles[h.textContent]=h.id;
+				}
+				var list = document.getElementsByClassName("agenda-link");
+				for (let item of list) {
+					console.log(item);
+					item.href='#'+titles[item.text];
+					console.log(item.text, titles[item.text]);
+				}
+			});
 		</script>
 <!-- pjg base -->
   </body>
