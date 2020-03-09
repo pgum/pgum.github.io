@@ -794,6 +794,7 @@ pre {
 .post-category-list .blog-tags { margin-bottom: 5px; }
 .post-category-name { padding: 10px 10px; text-transform:capitalize; }
 /*.post-category-list a { }*/
+/*todo przeniesc jako zmienne do _data; ustandaryzowac ze slajdami*/
 .post-category-concepts { background-color: rgba(51,152,251,1) !important; }
 .post-category-concepts-list { background-color: rgba(51,152,251,0.3); }
 
@@ -802,6 +803,49 @@ pre {
 
 .post-category-checklists { background-color: rgba(251,125,51,1) !important; }
 .post-category-checklists-list { background-color: rgba(251,125,51,0.3); }
+.card {width: 32%; padding: 5px; 
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+.card-body a h3 {
+  margin:-1px;
+  display:block;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  min-height: 52px;
+}
+.objectives-list, .slide-tags {
+  margin:-1px;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+.card-text {
+  
+  position: relative;
+  display: block;
+  padding: 0px 10px;
+  margin: 0px;
+  margin-bottom: -1px;
+  border-collapse: collapse;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #999;
+  font-size: 15px;
+  
+}
+.card-text::before {
+  content: " •";
+}
+.slide-tags{
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+}
+.slide-tags span{
+  border-radius: 5px;
+  background-color: #337ab7;
+  font-weight: 400;
+}
 /*
 .box,
 .box_done,
