@@ -1,10 +1,39 @@
 ---
 title: Slides Index
 ---
-<ul>
+<script src="/js/jquery-1.11.2.min.js"></script>
+<script src="/js/jQWCloudv3.4.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+<div class="card-group container-fluid">
   {% for slide in site.slides %}
-    <li>
-          <a href="{{ slide.url | relative_url }}"> {{ slide.title | replace: "_"," " }} </a>
-    </li>
+    <div class="card">
+      <div class="card-body">
+        <a href="{{ slide.url | relative_url }}"><h3 class="card-title"> {{ slide.title }} </h3></a>
+        <div class="objectives-list">
+          
+          {% for objective in slide.objectives %}
+          <p class="card-text" >{{ objective }}</p>
+          {% endfor %}
+        </div>
+        
+        <div class="slide-tags">
+          {% if site.link-tags %}
+          {% for tag in slide.tags %}
+          <span class="bg-primary badge label-primary" href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</span>
+          {% endfor %}
+          {% else %}
+            {{ slide.tags | join: ", " }}
+          {% endif %}
+        </div>
+      
+    </div>
+  </div>  
   {% endfor %}
-</ul>
+</div>
+
+<script>
+  $('.card-group').isotope({
+  itemSelector: '.card',
+  layoutMode: 'fitRows'
+})
+</script>
