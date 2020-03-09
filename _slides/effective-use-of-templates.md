@@ -4,8 +4,14 @@ objectives: [Purpose of using templates, Inspect your work, Automatize]
 title-image:
 
 ---
-<!--
-Note:
+
+# What is template?
+
+Note: 
+
+What do we use them for? Real life examples?
+What is common goal of making a template?
+Does templates hold creativity off?
 
 Objective:
 * Templates aren't evil
@@ -15,15 +21,6 @@ Agenda:
 * Inspect and then record your most common cases
 * Adapt tools at your disposal to the situation
 * Establish a template on how to make productive template
--->
-
-# What is template?
-
-Note: 
-
-What do we use them for? Real life examples?
-What is common goal of making a template?
-Does templates hold creativity off?
 
 ---
 
@@ -53,9 +50,10 @@ Examples:
 
 ---
 
-# Templates expand creativity
+## Templates expand creativity
 
 Note: 
+
 Focus on essence first while having prepared enviroment ready to go.
 Common ground to create high standard.
 Time saver.
@@ -64,7 +62,7 @@ Time saver.
 
 ---
 
-# Templates
+## Templates
 
 * Shortcut in common tasts
 * Inspect & Adapt method
@@ -100,6 +98,7 @@ Note:
 ## Set in stone
 
 Note:  
+
 Templating is a process not an one-time thing
 Establish feedback loop and decide on evaluation period
 Always remember what you measure and for what ends
@@ -112,6 +111,7 @@ Don't be scared to experiment
 ## "Nah, I don't use it"
 
 Note:  
+
 Encouragement to keep up discipline in applying developed template should come from following sources:
 
 * agreeing with identified goal (shared goal)

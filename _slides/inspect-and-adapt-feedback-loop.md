@@ -15,8 +15,9 @@ title-image:
 * Techniques
 * Key points
 
-![bg left:33%][horizon]
+
 Note:
+
 Objective:
 * Inspect & Adapt as part of work ethic
 * How to close the loop
@@ -57,6 +58,7 @@ Note:
 ## Hold yourself and other accoutable
 
 ## Change direction
+
 Note:
 
 ---

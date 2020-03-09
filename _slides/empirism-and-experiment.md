@@ -9,8 +9,6 @@ title-image:
 * Elements of experiment
 * Guideline to meaningful results
 
-![bg left:33%][experiment]
-Note:
 Objective:
     * rational decision-making should be based upon gathered data
     * experiments need: sponsor, group in charge, plan, definition of done, timebox
@@ -45,6 +43,7 @@ Note:
 * Feedback loop
 
 Note: 
+
 * Scientists - interested in results
 * Thesis - defined goals
 * Procedure
@@ -79,6 +78,7 @@ Note:
 ### What is the purpose of setting KPI
 
 Note: 
+
     * What is the connection between goals and KPI?
     * Do we observe alignment between measurements and goals declared in our organization?
     * KPI is M (measurable) in SMART
@@ -94,6 +94,7 @@ Note:
 * Checked on regular basis
 
 Note: 
+
     * We choose only few key qualities we focus on so we can agree on meaning and importance of chosen qualities to measure.
     * We must have believe we measure performance
       * How well are chosen qualities tell about performing on the job - adding value to product?
@@ -115,6 +116,7 @@ Note:
 ### "Early feedback" 😈 vs Let it sit
 
 Note: 
+
 How much time does experiment need for it results to be adequate?
 
 [bg fit][krol_julian]

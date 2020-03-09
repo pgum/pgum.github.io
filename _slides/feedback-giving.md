@@ -11,9 +11,9 @@ title-image:
 * Opportunities for feedback
 * Structure of feedback
 * Facts Feelings Consequences Expectations
-![bg left:33%][horizon]
 
 Note:
+
 Objective:
     * Feedback is one of the tools for people to grow
     * When and how to give effective feedback
@@ -29,6 +29,7 @@ Agenda:
 # What progress means to us
 
 Note:
+
     In what fields do we observe progress we make?
     How do we know we made progress?
  
@@ -38,6 +39,7 @@ Note:
 # feed-back
 
 Note: 
+
 Show respect by being engaged
 Taking steps for future actions
 Letting others know of consequences (results) of their actions
@@ -59,6 +61,7 @@ Letting others know of consequences (results) of their actions
 * Thinking
 
 Note:
+
 We can only reason about observable layers.
 How to divide facts from emotions?    
 
@@ -72,6 +75,7 @@ You don't **care** about *it* if you don't **notice** *it*
 Let yourself and others grow
 Make positive behaviour more frequent
 Identify negative behaviour and react
+
 Note:
 
 ---
@@ -93,6 +97,7 @@ Note:
 * Face to face
 * Questionaire
 * Official HR process
+
 Note:
 
 ---
@@ -107,6 +112,7 @@ Naming vs showing
 Context and outcome
 * Expectations
 What we want to achieve and when - measure, timebox
+
 Note:
 
 ---
@@ -117,6 +123,7 @@ Note:
 * Focus on behaviour not person
 * Be assertive
 * Use also official reward processes
+
 Note:
 
 ---
