@@ -1,13 +1,14 @@
 ---
-tags: [Defects, Overproduction, Waiting Non-used talent, Motion]
+tags: [Defects, Overproduction, Waiting, Non-used talent, Motion]
+objectives:
+ - Don't be rigid
+ - Backlog is not WBS
+ - Realize and leverage trade-offs
 ---
-# Planning and refinement
-+ Backlog is not WBS 
-+ What can we plan
-+ Just barely good enough
-+ Planning is a process
-![bg left:33%][horizon]
+
+<!--
 Note:
+
 Objective:
     * Being agile means we can fiddle with costs, content or deadline when agreed with the client
     * Backlog is fine-grained only on the top to avoid waste of replanning and no-work
@@ -20,6 +21,8 @@ Agenda:
 
 
 ---
+-->
+
 # Agenda \#
 Note:
 
@@ -31,7 +34,3 @@ Note:
 # Agenda \#
 Note:
 
----
-# Sources & further reading
-
-[horizon]: ../imgs/dominik-lange-ZUvF7qEIcVI-unsplash.jpg "Photo by Dominik Lange on Unsplash https://unsplash.com/photos/ZUvF7qEIcVI"

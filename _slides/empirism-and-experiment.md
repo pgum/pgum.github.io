@@ -1,9 +1,10 @@
 ---
 tags: [Extra-processing, Motion, Non-used talent, Defects, Overproduction]
+objectives: [Rational decision making process, Elements of successful setup, Getting most out of results]
+title-image:
+
 ---
-
-# Empirism and experiment
-
+<!--
 * Rational decision making process
 * Elements of experiment
 * Guideline to meaningful results
@@ -24,6 +25,7 @@ Agenda:
 
 
 ---
+-->
 
 # Rational decision making process
 

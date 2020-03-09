@@ -1,13 +1,29 @@
 ---
-
 tags: [Lean,]
-intro_background: /img/waste_intro.png
+title-image: /img/waste_intro.png
+
+objectives:
+ - Unmaintaned waste
+ - Identify waste
+ - Waste management
+
+readmore:
+ - title: 8 wastes of lean manufacturing
+   href: https://www.machinemetrics.com/blog/8-wastes-of-lean-manufacturing
+ - title: 8 wastes check sheet
+   href: https://goleansixsigma.com/the-8-wastes-checksheet/  
+ - title: 8 wastes of lean
+   href: https://theleanway.net/The-8-Wastes-of-Lean
+
 ---
 # Types of waste
+
 + What is waste
 + How to measure waste
 + Improvement action plan
+
 Note:
+
 Objective:
     * 8 types of waste in IT
     * consequences of unmaintained waste
@@ -22,6 +38,7 @@ Agenda:
 ---
 
 # What is waste for us?
+
 ---
 
 # Downtime
@@ -34,7 +51,9 @@ Agenda:
 6. Inventory
 7. Motion
 8. Extra-processing
+
 Note:
+
 Defects: 
     * wrong priorities
     * customer defects
@@ -71,13 +90,12 @@ Extra-processing:
     * Wrong (irrelevant) KPI
     * Ineffective toolset
 
-
-
 ---
 
 # How do we measure waste?
 
 Note:
+
 * How do we know what is important?
 * Do we understand reason between KPI we use?
 * Do they measure what is important to us?
@@ -92,17 +110,9 @@ Note:
 - Critical Path
 - Daily stand-up, Retrospection
 - RCA
+
 Note:
+
 * Which of these do we implement?
 * Do any of these have disadventages? What?
 * What else could we use to measure?
-
-
-
----
-# Sources & further reading
-
-[8 wastes of lean manufacturing](https://www.machinemetrics.com/blog/8-wastes-of-lean-manufacturing)  
-[8 wastes check sheet](https://goleansixsigma.com/the-8-wastes-checksheet/)  
-[8 wastes of lean](https://theleanway.net/The-8-Wastes-of-Lean)  
-[waste]: ../imgs/hamza-javaid-PizD8punZsw-unsplash.jpg "Photo by Hamza Javaid on Unsplash https://unsplash.com/photos/PizD8punZsw"

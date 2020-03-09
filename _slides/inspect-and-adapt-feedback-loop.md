@@ -1,5 +1,11 @@
 ---
 tags: [feedback loop, Motion, Waiting]
+objectives: 
+ - Rational decision making process
+ - Elements of successful setup
+ - Getting most out of results
+title-image:
+
 ---
 
 # Inspect & Adapt feedback spiral

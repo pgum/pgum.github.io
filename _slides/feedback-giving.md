@@ -1,5 +1,8 @@
 ---
 tags: [feedback loop, softskills, Non-used talent, Motion]
+objectives: [Rational decision making process, Elements of successful setup, Getting most out of results]
+title-image:
+
 ---
 
 # Feedback giving
@@ -123,9 +126,3 @@ Note:
 * How often do we offer feedback?
 * On what basis can we tell if feedback was successfull?
 * What to do with someone who doesn't take feedback?
-
----
-
-# Sources & further reading
-
-[horizon]: ../imgs/dominik-lange-ZUvF7qEIcVI-unsplash.jpg "Photo by Dominik Lange on Unsplash https://unsplash.com/photos/ZUvF7qEIcVI"

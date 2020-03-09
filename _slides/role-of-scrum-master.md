@@ -1,5 +1,9 @@
 ---
 tags: [Defects, Extra-processing, Waiting, Non-used talent, Motion, Scrum]
+objectives:
+ - Responsibilities
+ - Evaluation
+ - Inspect&Adapt agent
 ---
 # Role of Scrum Master
 + Resolving impediments

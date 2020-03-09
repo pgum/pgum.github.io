@@ -1,13 +1,12 @@
 ---
 tags: [Defects, Extra-processing, Waiting, Non-used talent, Motion]
+objectives: 
+ - Observe web around you 
+ - Analyze needs and ends
+ - Minimize conflicts by transparency
 ---
 
-# Synergy between the roles in organization
-+ Web of dependencies
-+ Different perspectives
-+ Methods to minimize and resolve conflicts
-![bg left:33%][horizon]
-Note:
+<!--
 Objective:
     * Learn about connections and dependencies between roles 
     * Be able to identify pain-points, and goals of different PoV
@@ -17,8 +16,7 @@ Agenda:
     * We want to identify potential areas of conflict of responsibilities
     * Early discussion between individuals is essential for prosperous cooperation
     * We all play in the same team
-    
-
+-->    
 
 ---
 # Web of dependencies
