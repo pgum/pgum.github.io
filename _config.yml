@@ -103,7 +103,6 @@ kramdown:
 collections:
  slides:
    output: true
-   permalink: /:collection/:path/
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
@@ -122,7 +121,7 @@ defaults:
       show-avatar: true  
   -
     scope:
-      path: "_slides"
+      path: "slides"
       type: "slides"
     values:
       layout: "reveal"
