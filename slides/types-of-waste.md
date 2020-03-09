@@ -1,5 +1,5 @@
 ---
-layout: reveal
+
 tags: [Lean,]
 intro_background: /img/waste_intro.png
 ---

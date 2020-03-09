@@ -1,9 +1,6 @@
 ---
-layout: reveal
 tags: [Defects, Extra-processing, Waiting, Non-used talent, Motion, Scrum]
 ---
-<!-- _class: lead invert 
-<!-- _paginate: false 
 # Role of Scrum Master
 + Resolving impediments
 + Change agent

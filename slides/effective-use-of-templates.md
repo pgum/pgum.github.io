@@ -1,17 +1,10 @@
 ---
-layout: reveal
 tags: [Extra-processing, Overproduction, Waiting]
+objectives: [Purpose of using templates, Inspect your work, Automatize]
+title-image:
+
 ---
-<!-- _class: lead invert 
-<!-- _paginate: false 
-
-# Effective use of templates
-
-* Purpose of templates
-* How to handle templates
-* Pitfalls
-
-![bg left:33%][horizon]
+<!--
 Note:
 
 Objective:
@@ -22,10 +15,8 @@ Agenda:
 * Inspect and then record your most common cases
 * Adapt tools at your disposal to the situation
 * Establish a template on how to make productive template
+-->
 
-
----
-<!-- _class: lead 
 # What is template?
 
 Note: 
@@ -33,7 +24,6 @@ Note:
 What do we use them for? Real life examples?
 What is common goal of making a template?
 Does templates hold creativity off?
-
 
 ---
 
@@ -63,7 +53,6 @@ Examples:
 
 ---
 
-<!-- _class: lead 
 # Templates expand creativity
 
 Note: 
@@ -104,31 +93,27 @@ Note:
   * Adapt in new version in new iteration
   * Record and share template and observations
 
-
-
 ---
-<!-- _class: lead 
 
 # Template pitfall #1
 
 ## Set in stone
 
-Note: 
+Note:  
 Templating is a process not an one-time thing
 Establish feedback loop and decide on evaluation period
 Always remember what you measure and for what ends
 Don't be scared to experiment
 
-
 ---
-<!-- _class: lead 
 
 # Template pitfall #2
 
 ## "Nah, I don't use it"
 
-Note: 
+Note:  
 Encouragement to keep up discipline in applying developed template should come from following sources:
+
 * agreeing with identified goal (shared goal)
 * understanding the need of template in given field (shared idea)
 * was part of working group that created it (shared work, relevancy)
@@ -137,23 +122,18 @@ Enforcement means external pressure, while encouragement is more like enabling i
 
 What problems do we encunter?
 
-
-
 ---
-<!-- _class: lead 
 
 # Template pitfall #3
 
 ## It's a bother and not an aid
 
 Note: 
+
 Is it relevant in our current workflow?
 Do all groups of interest agree that template is useful?
 What is valuable, what was the goal of it? What are main bothers?
 How can we keep valuable ideas while optmizing the template?
-
-
-
 
 ---
 

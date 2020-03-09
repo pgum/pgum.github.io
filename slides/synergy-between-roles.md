@@ -1,9 +1,7 @@
 ---
-layout: reveal
 tags: [Defects, Extra-processing, Waiting, Non-used talent, Motion]
 ---
-<!-- _class: lead invert 
-<!-- _paginate: false 
+
 # Synergy between the roles in organization
 + Web of dependencies
 + Different perspectives

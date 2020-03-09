@@ -1,5 +1,4 @@
 ---
-layout: reveal
 tags: [Defects, Overproduction, Waiting Non-used talent, Motion]
 ---
 # Planning and refinement

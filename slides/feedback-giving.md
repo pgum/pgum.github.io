@@ -1,5 +1,4 @@
 ---
-layout: reveal
 tags: [feedback loop, softskills, Non-used talent, Motion]
 ---
 <!-- _class: lead invert 

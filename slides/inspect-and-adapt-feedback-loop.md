@@ -1,5 +1,4 @@
 ---
-layout: reveal
 tags: [feedback loop, Motion, Waiting]
 ---
 <!-- _class: lead invert 

@@ -1,5 +1,5 @@
 ---
-layout: reveal
+
 tags: [Defects, Transportation, Waiting, Non-used talent, Motion]
 ---
 # Team agreements

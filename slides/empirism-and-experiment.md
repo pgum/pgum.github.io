@@ -1,5 +1,4 @@
 ---
-layout: reveal
 tags: [Extra-processing, Motion, Non-used talent, Defects, Overproduction]
 ---
 <!-- _class: lead invert 
