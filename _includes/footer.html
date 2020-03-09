@@ -1,3 +1,4 @@
+
 <footer>
   <div class="container beautiful-jekyll-footer">
     <div class="row">
@@ -30,13 +31,20 @@
 
       {% if site.url-pretty %}
       &nbsp;&bull;&nbsp;
-      <a href="{{ '' | absolute_url }}">{{ site.url-pretty }}</a>
+      <a class="site-pretty-url" href="{{ '' | absolute_url }}">{{ site.url-pretty }}</a>
       {% endif %}
-      </p>
+      <!-- pjg footer -->
+      &nbsp;&bull;&nbsp;
+      <a class="site-support-kofi" href='https://ko-fi.com/S6S11H353'>Support Me on Ko-fi</a>
+      <br/>
+        <a class="site-pretty-url" href="https://github.com/pgum/pgum.github.io/issues"> Leave feedback</a>
+        &nbsp;&bull;&nbsp;
+        <a class="site-pretty-url" href="https://github.com/pgum/pgum.github.io"> Hosted on Github ❤️</a>
+         </p>
           <!-- Please don't remove this, keep my open source work credited :) -->
     <p class="theme-by text-muted">
       Theme by
-      <a href="https://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+      <a class="theme-author-link" href="https://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
     </p>
       </div>
     </div>

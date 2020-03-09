@@ -1,6 +1,5 @@
 ---
 layout: page
-permalink: /categories/
 title: Categories
 description: Find resources you need
 ---
@@ -11,12 +10,6 @@ description: Find resources you need
     {%- endfor -%}
 {%- endcapture -%}
 {%- assign tags_list = site_categories | split:',' | sort -%}
-<div class="alert alert-primary" role="alert">
-    {{ site.collections }}
-  </div>
-    <!--<div class="row">-->
-      <!--<div class="col-lg-9 col-md-9">-->
-<!--<div id="full-tags-list" style="margin:-15px;">-->
 {%- for tag in tags_list -%}
 <div id="{{- tag -}}" class="posts-list category-list" style="display:none;">
     <h3 class=" post-category-name post-category-{{- tag -}}">
@@ -47,10 +40,6 @@ description: Find resources you need
     </div>
 </div>
 {%- endfor -%}
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-
 
 <script>
 function setAllCategoriesDisplay(value){

@@ -14,11 +14,6 @@ avatar: "/img/avatar-icon.png"
 navbar-links:
   Tags: "tags"
   Slides: "slides"
-  About: 
-    - pgum: "aboutme"  
-    - Github: "https://github.com/pgum/pgum.github.io"
-    - Feedback: "https://github.com/pgum/pgum.github.io/issues"
-      
 
 # --- Background colour/image options --- #
 
@@ -76,8 +71,6 @@ gtag: "UA-160061743-1"
 # Google Tag Manager ID
 gtm: "GTM-T6FH4Z6"
 
-
-
 # Excerpt Word Length
 # Truncates the excerpt to the specified number of words on the index page
 excerpt_length: 50
@@ -103,6 +96,8 @@ kramdown:
 collections:
  slides:
    output: true
+   order: 
+    - introduction.md
 
 # Default YAML values (more information on Jekyll's site)
 defaults:

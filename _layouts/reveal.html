@@ -79,20 +79,26 @@ html.intro body {
 				{% include toc.html html=content h_min=1 h_max=1 %}
 			</script>
 		</section>
-		<section data-markdown data-separator="^\n<hr />$" data-vertical="^\n--\n$" data-notes="^Note:">
+		<section data-markdown data-separator="^\n<hr />$" data-vertical="^\n--\n$" data-notes="^<p>Note:</p>">
 			  <script type="text/template">
 				{{ content }}
       		</script>
-    	</section>
+		</section>
+		{% if page.readmore %}
     	<section data-markdown>
       		<script type="text/markdown">
 				# Read more
-				 {% for more in readmore %}
+				 {% for more in page.readmore %}
 				 * [{{ more.title }}]({{ more.href }})
 				{% endfor %}
-
-				## [Go back to Slides]({{ 'slides' | relative_url }})
-      		</script>
+			</script>
+		</section>
+		{% endif %}
+		<section data-markdown>
+			<script type="text/markdown">
+	  			## [Go back to Slides]({{ 'slides' | relative_url }})
+			  </script>
+		</section>
 	</div>
 </div>
 
@@ -111,16 +117,17 @@ html.intro body {
 				transition: 'none', // default/cube/page/concave/zoom/linear/fade/none
 				slideNumber: 'c/t',
 				menu: {
-					width: 'third',
+					custom: [ 
+						{title: 'Github', style: 'fab', icon: 'fa-github', href: 'https://github.com/pgum/pgum.github.io/tree/master/{{ page.path }}' },
+						{title: 'LinkedIn', style: 'fab', icon: 'fa-linkedin', href: 'https://linkedin.com/in/piotr-gumulka' }, 
+						{title: 'Go back', style: 'fas', icon: 'fa-home', href: "{{ 'slides' | relative_url }}" } 
+					],	
+					customFields: [{ title: 'Go back', href: "{{ 'slides' | relative_url }}" }], //pjg hack
+					width: 'half',
 					numbers: false,
 					titleSelector: 'h1',
 					hideMissingTitles: true,
-					openSlideNumber: false,
-					custom: [ 
-						{title: 'Github', style: 'fab', icon: 'fa-github', href: 'https://github.com/pgum/pgum.github.io/tree/master/{{ page.path }}' },
-						{title: 'LinkedIn', style: 'fab', icon: 'fa-linkedin', href: 'https://linkedin.com/in/piotr-gumulka' } 
-					],	
-					customFields: [{ title: 'Go back', href: "{{ 'slides' | relative_url }}" }]
+					openSlideNumber: false
 				},
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
@@ -129,22 +136,6 @@ html.intro body {
 					{ src: '/js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
 					{ src: '/js/plugin/menu/menu.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
-			});
-		</script>
-		<script>
-			document.addEventListener("DOMContentLoaded", function() {
-				var titles = {}
-				var list_headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
-				var list_headers2 = document.querySelectorAll("section");
-				for (let h of list_headers){
-					titles[h.textContent]=h.id;
-				}
-				var list = document.getElementsByClassName("agenda-link");
-				for (let item of list) {
-					console.log(item);
-					item.href='#'+titles[item.text];
-					console.log(item.text, titles[item.text]);
-				}
 			});
 		</script>
 <!-- pjg base -->
