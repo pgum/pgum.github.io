@@ -74,11 +74,9 @@ html.intro body {
 			data-background-image="{{ page.title-image }}" data-background-size="30%" data-background-position="left" 
 			{% endif %}
 			data-markdown>
-			<script type="text/markdown" id="agenda-script">
-				## Agenda
-				{% for agenda_element in page.agenda %}
-				* <a class="agenda-link" href="#">{{ agenda_element }}</a>
-				{% endfor %}
+			<script type="text/markdown" id="agenda-script2">
+				## Agenda 
+				{% include toc.html html=content h_min=1 h_max=1 %}
 			</script>
 		</section>
 		<section data-markdown data-separator="^\n<hr />$" data-vertical="^\n--\n$" data-notes="^Note:">
@@ -117,8 +115,12 @@ html.intro body {
 					numbers: false,
 					titleSelector: 'h1',
 					hideMissingTitles: true,
-					openSlideNumber: false,	
-					customFields: [{ title: "Go back", href: "{{ 'slides' | relative_url }}" }]
+					openSlideNumber: false,
+					custom: [ 
+						{title: 'Github', style: 'fab', icon: 'fa-github', href: 'https://github.com/pgum/pgum.github.io/{{ page.path }}' },
+						{title: 'LinkedIn', style: 'fab', icon: 'fa-linkedin', href: 'https://linkedin.com/in/piotr-gumulka' } 
+					],	
+					customFields: [{ title: 'Go back', href: "{{ 'slides' | relative_url }}" }]
 				},
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
