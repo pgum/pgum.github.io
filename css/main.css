@@ -1,6 +1,7 @@
 ---
 layout: null
 ---
+@charset "UTF-8";
 
 @import url("pygment_highlights.css");
 
@@ -23,6 +24,7 @@ p {
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #404040;
   font-weight: 800;
 }
 a {
@@ -787,15 +789,20 @@ pre {
   font-size: 16px;
 }
 /* PJG */
-.post-category-concepts { background-color: rgba(51,152,251,1) !important;}
+.post-category-list { padding-top: 10px; }
+.post-category-list .preview { border-bottom: 1px solid #eee; }
+.post-category-list .blog-tags { margin-bottom: 5px; }
+.post-category-name { padding: 10px 10px; text-transform:capitalize; }
+/*.post-category-list a { }*/
+.post-category-concepts { background-color: rgba(51,152,251,1) !important; }
 .post-category-concepts-list { background-color: rgba(51,152,251,0.3); }
 
-.post-category-scenarios { background-color: rgba(51,251,125,1) !important;}
+.post-category-scenarios { background-color: rgba(51,251,125,1) !important; }
 .post-category-scenarios-list { background-color: rgba(51,251,125,0.3); }
 
-.post-category-checklists { background-color: rgba(251,125,51,1) !important;}
+.post-category-checklists { background-color: rgba(251,125,51,1) !important; }
 .post-category-checklists-list { background-color: rgba(251,125,51,0.3); }
-
+/*
 .box,
 .box_done,
 .task-list-item {
@@ -809,4 +816,4 @@ pre {
 
 .task-list-item+.task-list-item {
   margin-top: 3px;
-}
+}*/

@@ -11,33 +11,45 @@ description: Find resources you need
     {%- endfor -%}
 {%- endcapture -%}
 {%- assign tags_list = site_categories | split:',' | sort -%}
-
-    <div class="row">
-      <div class="col-lg-9 col-md-9">
-<div id="full-tags-list" style="margin:-15px;">
+<div class="alert alert-primary" role="alert">
+    {{ site.collections }}
+  </div>
+    <!--<div class="row">-->
+      <!--<div class="col-lg-9 col-md-9">-->
+<!--<div id="full-tags-list" style="margin:-15px;">-->
 {%- for tag in tags_list -%}
-<div id="{{- tag -}}" class="category-list" style="display:none;">
-    <h2 class=" post-category-{{- tag -}}">
+<div id="{{- tag -}}" class="posts-list category-list" style="display:none;">
+    <h3 class=" post-category-name post-category-{{- tag -}}">
     
         <i class="fa fa-book" aria-hidden="true"></i>
         &nbsp;{{- tag -}}&nbsp;({{site.categories[tag].size}})
-    </h2>
-    <div class="post-list post-category-{{- tag -}}-list">
+    </h3>
+    <div class="post-list post-category-list post-category-{{- tag -}}-list">
         {%- for post in site.categories[tag] -%}
-            <div class="tag-entry">
-                <a href="{{ post.url | relative_url }}">{{- post.title -}}</a>
-                <div class="entry-date">
-                    <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: site.date_format -}}</time>
+            <article class="preview">
+                <a href="{{ post.url | relative_url }}">
+                    <h4 >{{ post.title }}</h4></a>
+                <!--<a class="post-title" href="{{ post.url | relative_url }}">{{- post.title -}}</a>-->
+                {% if post.tags.size > 0 %}
+                <div class="blog-tags">
+                  Tags:
+                  {% if site.link-tags %}
+                  {% for tag in post.tags %}
+                  <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
+                  {% endfor %}
+                  {% else %}
+                    {{ post.tags | join: ", " }}
+                  {% endif %}
                 </div>
-            </div>
+                {% endif %}
+            </article>
         {%- endfor -%}
     </div>
 </div>
 {%- endfor -%}
-</div>
-        
-        </div>
-    </div>
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
 
 
 <script>
