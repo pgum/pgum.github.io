@@ -834,6 +834,7 @@ pre {
   display: block;
   padding: 0px 10px;
   margin: 0px;
+  margin-left: 10px;
   margin-bottom: -1px;
   border-collapse: collapse;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -842,7 +843,7 @@ pre {
   
 }
 .card-text::before {
-  content: " •";
+  content: "• ";
 }
 .slide-tags{
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
