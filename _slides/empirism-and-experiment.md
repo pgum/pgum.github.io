@@ -1,8 +1,7 @@
 ---
 tags: [Extra-processing, Motion, Non-used talent, Defects, Overproduction]
 ---
-<!-- _class: lead invert 
-<!-- _paginate: false 
+
 # Empirism and experiment
 
 * Rational decision making process
@@ -25,8 +24,7 @@ Agenda:
 
 
 ---
-<!-- _class: lead 
-<!-- _paginate: false 
+
 # Rational decision making process
 
 ## What does it mean to act rational
@@ -36,7 +34,7 @@ Note:
 
 
 ---
-<!--![bg left:33%][]
+
 ## Elements of experiment
 
 * Sponsor
@@ -57,7 +55,7 @@ Note:
 
 
 ---
-<!--![bg left:33%][]
+
 ## Sponsor and group in charge
 
 * Sponsor - Strongly interested person
@@ -67,14 +65,13 @@ Note:
   * spare time
   * strong motivation to do the work
 
-<!--![bg left:33%][]
+
 Note: 
 
 
 
 ---
-<!-- _class: lead 
-<!--![bg left:33%][]
+
 ## Smart goals and KPI
 
 ### What is the purpose of setting KPI
@@ -86,7 +83,7 @@ Note:
 
 
 ---
-<!--![bg left:33%][]
+
 ## Key Performance Indicator
 
 * Not **every** indicator
@@ -110,8 +107,7 @@ Note:
 
 
 ---
-<!--![bg left:33%][]
-<!-- _class: lead 
+
 ## Implementing change
 
 ### "Early feedback" 😈 vs Let it sit
@@ -123,7 +119,7 @@ How much time does experiment need for it results to be adequate?
 
 
 ---
-<!-- _class: lead 
+
 ## Implementing change
 
 ### Observer effect
@@ -133,7 +129,7 @@ Note:
 
 
 ---
-<!-- _class: lead 
+
 ## Measure what matters
 
 ### and only that
@@ -145,7 +141,7 @@ Note:
 ---
 
 ## Analyze gathered data
-<!--![bg left:33%][]
+
 Note: 
 
 
@@ -153,14 +149,13 @@ Note:
 ---
 
 ## Analyze method of gathering data
-<!--![bg left:33%][]
+
 Note: 
 
 
 
 ---
-<!-- _class: lead 
-<!-- _paginate: false 
+
 # Purpose of experiment
 
 ## What is end goal of experimentation
@@ -175,7 +170,7 @@ Note:
 ---
 
 ## Importance of sharing
-<!--![bg left:33%][]
+
 #### Our work and results
 
 * Planned, Ongoing, Done

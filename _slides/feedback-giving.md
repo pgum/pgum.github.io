@@ -1,8 +1,7 @@
 ---
 tags: [feedback loop, softskills, Non-used talent, Motion]
 ---
-<!-- _class: lead invert 
-<!-- _paginate: false 
+
 # Feedback giving
 
 * Purpose of feedback
@@ -23,7 +22,7 @@ Agenda:
 
 
 ---
-<!-- _class: lead 
+
 # What progress means to us
 
 Note:
@@ -32,7 +31,7 @@ Note:
  
 
 ---
-<!-- _class: lead 
+
 # feed-back
 
 Note: 

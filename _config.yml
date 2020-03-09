@@ -121,7 +121,7 @@ defaults:
       show-avatar: true  
   -
     scope:
-      path: "slides"
+      path: "_slides"
       type: "slides"
     values:
       layout: "reveal"

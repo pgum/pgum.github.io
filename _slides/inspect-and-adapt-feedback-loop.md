@@ -1,8 +1,7 @@
 ---
 tags: [feedback loop, Motion, Waiting]
 ---
-<!-- _class: lead invert 
-<!-- _paginate: false 
+
 # Inspect & Adapt feedback spiral
 
 * Feedback loop and closed circut

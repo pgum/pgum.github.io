@@ -1,8 +1,6 @@
 ---
 tag: slide deck
 ---
-<!-- _class: lead invert 
-<!-- _paginate: false 
 
 # Let's begin!
 
@@ -130,11 +128,8 @@ Note:
 ---
 # References
 
-<!--Images
 [horizon]: ../imgs/dominik-lange-ZUvF7qEIcVI-unsplash.jpg "Photo by Dominik Lange on Unsplash https://unsplash.com/photos/ZUvF7qEIcVI"
 [piotr]: ../imgs/pjg.PNG "Piotr Gumulka"
 [common agreement]: ../imgs/cody-hiscox-Hp5Acad1H0k-unsplash.jpg "Photo by Cody Hiscox on Unsplash https://unsplash.com/photos/Hp5Acad1H0k"
 [backlog of needs]: ../imgs/thomas-kinto-y94LEl6ESWc-unsplash.jpg "Photo by Thomas Kinto on Unsplash https://unsplash.com/photos/y94LEl6ESWc"
 [topics]: ../imgs/inaki-del-olmo-NIJuEQw0RKg-unsplash.jpg "Photo by Iñaki del Olmo on Unsplash https://unsplash.com/photos/NIJuEQw0RKg"
-<!--Sources
-<!--Internal links
