@@ -1,4 +1,5 @@
 # --- General options --- #
+encoding: utf-8
 title: pgum space
 description: My interpretation of reality
 # Image to show in the navigation bar - image must be a square (width = height)
@@ -67,15 +68,13 @@ share-links-active:
 url-pretty: "pgum.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
-
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
-#gtag: ""
-
+gtag: "UA-160061743-1"
 # Fill in your Google Analytics ID to track your website using GA
 #google_analytics: ""
 
 # Google Tag Manager ID
-#gtm: ""
+gtm: "GTM-T6FH4Z6"
 
 
 
@@ -90,18 +89,21 @@ title-separator: "-"
 # Ruby Date Format
 date_format: "%B %-d, %Y"
 
-# --- Don't need to touch anything below here (but you can if you want) --- #
-
 # Output options (more information on Jekyll's site)
 timezone: "Europe/Warsaw"
 markdown: kramdown
 highlighter: rouge
 #permalink: /:year-:month-:day-:title/
 permalink: /:categories/:title/
-paginate: 5
+paginate: 10
 
 kramdown:
   input: GFM
+
+collections:
+ slides:
+   output: true
+   permalink: /:collection/:path/
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
@@ -120,11 +122,10 @@ defaults:
       show-avatar: true  
   -
     scope:
-      path: "slides/*" # all files
-      type: "posts"
+      path: "_slides"
+      type: "slides"
     values:
       layout: "reveal"
-      show-avatar: false
 
 # Use tags index page and make tags on each post clickable
 link-tags: true
@@ -139,10 +140,7 @@ exclude:
   - LICENSE
   - README.md
   - Vagrantfile
-
-collections:
- slides:
-   output: true
+  - Rakefile
 
 plugins:
   - jekyll-paginate
@@ -152,15 +150,5 @@ plugins:
 # 2fc73a3a967e97599c9763d05e564189
 
 #revealjs
-reveal_theme: moon.css
+reveal_theme: pjg.css
 reveal_theme_path: /css/theme/ 
-# Additional custom CSS paths
-extra_css: 
-# Custom CSS for highlighting (defaults to reveal.js/lib/css/zenburn.css)
-highlight_style_sheet: 
-# Embed Server-side speaker notes?
-reveal_notes_server: false
-# Additional reveal.js options
-reveal_options: 
-reveal_path: /reveal.js/
-
