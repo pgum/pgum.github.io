@@ -114,9 +114,3 @@ Note:
 ## All neccessary means to deliver
 
 Note:
-
----
-
-# Sources & further reading
-
-[horizon]: ../imgs/dominik-lange-ZUvF7qEIcVI-unsplash.jpg "Photo by Dominik Lange on Unsplash https://unsplash.com/photos/ZUvF7qEIcVI"

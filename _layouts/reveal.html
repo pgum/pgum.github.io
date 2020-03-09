@@ -86,11 +86,13 @@ html.intro body {
 		</section>
 		{% if page.readmore %}
     	<section data-markdown>
-      		<script type="text/markdown">
-				# Read more
-				 {% for more in page.readmore %}
-				 * [{{ more.title }}]({{ more.href }})
+      		<script type="text/template">
+				<h1> Read more </h1>
+				<ul> 
+				{% for more in page.readmore %}
+				 <li><a href="{{ more.href }}" target="_blank">{{ more.title }}</a></li>
 				{% endfor %}
+				</ul>
 			</script>
 		</section>
 		{% endif %}

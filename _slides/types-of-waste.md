@@ -16,6 +16,7 @@ readmore:
    href: https://theleanway.net/The-8-Wastes-of-Lean
 
 ---
+
 # Types of waste
 
 + What is waste

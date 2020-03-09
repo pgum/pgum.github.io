@@ -98,9 +98,6 @@ Note:
     * "Types of waste" is introduction into mindset - mandatory
 
 
----
-# References
-
 [horizon]: ../imgs/dominik-lange-ZUvF7qEIcVI-unsplash.jpg "Photo by Dominik Lange on Unsplash https://unsplash.com/photos/ZUvF7qEIcVI"
 [piotr]: ../imgs/pjg.PNG "Piotr Gumulka"
 [common agreement]: ../imgs/cody-hiscox-Hp5Acad1H0k-unsplash.jpg "Photo by Cody Hiscox on Unsplash https://unsplash.com/photos/Hp5Acad1H0k"

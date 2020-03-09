@@ -1,10 +1,24 @@
 ---
 tags: [Extra-processing, Motion, Non-used talent, Defects, Overproduction]
-objectives: [Rational decision making process, Elements of successful setup, Getting most out of results]
-title-image:
+objectives: 
+ - Rational decision making process
+ - Elements of successful setup
+ - Getting most out of results
+title-image: /img/thisisengineering-raeng-kiVBdtYILQc-unsplash.jpg
 
+readmore:
+ - title: What is empirism
+   href: https://study.com/academy/lesson/empiricism-definition-meaning-philosophy.html
+ - title: Logical Empiricism
+   href: https://plato.stanford.edu/entries/logical-empiricism    
 ---
-<!--
+
+# Rational decision making process
+
+## What does it mean to act rational
+
+Note: 
+
 * Rational decision making process
 * Elements of experiment
 * Guideline to meaningful results
@@ -20,17 +34,6 @@ Agenda:
     * defining plan - scope, DoD and timebox - 
     * analyze results: not only bussiness, also method and KPIs involved
     * if you don't measure it its not important for you
-
-
----
--->
-
-# Rational decision making process
-
-## What does it mean to act rational
-
-Note: 
-
 
 
 ---
@@ -189,13 +192,4 @@ Note:
 
 Note: 
 
-
-
----
-
-# Sources & further reading
-
-[what is empirism]()
-
-[experiment]: ../imgs/thisisengineering-raeng-kiVBdtYILQc-unsplash.jpg "Photo by ThisisEngineering RAEng on Unsplash https://unsplash.com/photos/kiVBdtYILQc"
 [krol_julian]: https://i1.memy.pl/obrazki/2053349038_.jpg "https://memy.pl/mem_349038"

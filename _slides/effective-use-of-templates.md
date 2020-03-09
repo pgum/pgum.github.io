@@ -134,9 +134,3 @@ Is it relevant in our current workflow?
 Do all groups of interest agree that template is useful?
 What is valuable, what was the goal of it? What are main bothers?
 How can we keep valuable ideas while optmizing the template?
-
----
-
-# Sources & further reading
-
-[horizon]: ../imgs/dominik-lange-ZUvF7qEIcVI-unsplash.jpg "Photo by Dominik Lange on Unsplash https://unsplash.com/photos/ZUvF7qEIcVI"
