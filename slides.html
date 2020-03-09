@@ -8,24 +8,23 @@ title: Slides Index
   {% for slide in site.slides %}
     <div class="card">
       <div class="card-body">
-        <a href="{{ slide.url | relative_url }}"><h3 class="card-title"> {{ slide.title }} </h3></a>
+        <a href="{{ slide.url | relative_url }}"><h3 class="post-category-name card-title"><i class="fa fa-book" aria-hidden="true"></i> {{ slide.title }} </h3></a>
         <div class="objectives-list">
-          
+          <p class="description" >Objectives: </p>
           {% for objective in slide.objectives %}
           <p class="card-text" >{{ objective }}</p>
           {% endfor %}
         </div>
-        
+        {% if slide.tags.size > 0 %}
         <div class="slide-tags">
-          {% if site.link-tags %}
-          {% for tag in slide.tags %}
-          <span class="bg-primary badge label-primary" href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</span>
-          {% endfor %}
-          {% else %}
-            {{ slide.tags | join: ", " }}
-          {% endif %}
+          <p class="description" >Tags: </p>
+          <div class="container-fluid">
+            {% for tag in slide.tags %}
+            <a class="bg-primary badge label-primary" href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
+            {% endfor %}
+          </div>
         </div>
-      
+        {% endif %}
     </div>
   </div>  
   {% endfor %}
