@@ -17,21 +17,21 @@
 
   </div><!--//profile-container-->
 
-  {% include resume_contact.html %}
+  {% include sections/contact.html %}
 
   {% if sidebar.skills %}
-    {% include resume_skills.html %}
+    {% include sections/skills.html %}
   {% endif %}
 
   {% if sidebar.education %}
-    {% include resume_education.html %}
+    {% include sections/education.html %}
   {% endif %}
 
-  {% include resume_language.html %}
-  {% include resume_interests.html %}
+  {% include sections/language.html %}
+  {% include sections/interests.html %}
 
   {% if sidebar.about %}
-    {% include resume_about.html %}
+    {% include sections/about.html %}
   {% endif %}
 
 </div><!--//sidebar-wrapper-->

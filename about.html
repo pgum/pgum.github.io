@@ -2,16 +2,16 @@
 layout: resume
 ---
 
-{% include sections/resume_career-profile.html %}
+{% include sections/sections/career-profile.html %}
 
 {% unless site.data.resume.sidebar.education %}
-  {% include resume_education.html %}
+  {% include sections/education.html %}
 {% endunless %}
 
-{% include resume_experiences.html %}
+{% include sections/experiences.html %}
 
-{% include resume_projects.html %}
+{% include sections/projects.html %}
 
-{% include resume_certs.html %}
+{% include sections/certs.html %}
 
-{% include resume_skills.html %}
+{% include sections/skills.html %}

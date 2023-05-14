@@ -4,21 +4,11 @@ title: About me
 description: My résumé, curriculum vitae
 ---
 
-{% include head.html %}
-
-<body>
   <div class="wrapper">
-    {% include resume_sidebar.html %}
+    {% include sections/sidebar.html %}
 
     <div class="main-wrapper">
         {{ content }}
     </div>
   </div>
-
-  {% include footer.html %}
-
-{% include resume_scripts.html %}
-</body>
-
-</html>
 
