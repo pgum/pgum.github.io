@@ -2,14 +2,13 @@
 layout: post
 title: 8 wastes od manufacturing - DOWNTIME
 subtitle: This is where I will tell my friends way too much about me
-image: /img/daoudi-aissa-absT1BNRDAI-unsplash.jpg
 category: concepts
 tags: [lean, waste]
 ---
 
 ## Downtime is the consequence of waste
 
-Its also acronym for 8 types of waste as defined by lean management.
+It's also acronym for 8 types of waste as defined by lean management.
 In IT some kinds of waste is hard to observe and measure as we don't produce physical objects.
 
 ## Defects
@@ -65,15 +64,15 @@ In IT some kinds of waste is hard to observe and measure as we don't produce phy
 
 ## Transportation
 
-* Continous Integration and repository
+* Continuous Integration and repository
 * Build time
-* Time, budget, work in-between demo/customer feedback
+* Work in-between "built" and demo for customer
 
 ## Motion
 
 * Office space
 * Access to information
-* Colocation of team
+* Collocation of team
 * All roles needed to complete project in team
 
 ## Extra-processing
