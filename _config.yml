@@ -12,8 +12,13 @@ description: Notepad of ideas
 # --- Navigation bar options --- #
 # List of links in the navigation bar
 navbar-links:
+  Notes: "categories"
+    Checklists: "#checklists"
+    Concepts: "#concepts"
+    Scenarios: "#scenarios"
   Tags: "tags"
   Slides: "slides"
+  "About Me": "about"
 
 # --- Background colour/image options --- #
 
@@ -60,7 +65,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "pgum.github.io"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "gumulka.net"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
