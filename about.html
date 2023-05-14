@@ -1,0 +1,18 @@
+---
+layout: resume
+---
+
+
+{% include resume_career-profile.html %}
+
+{% unless site.data.resume.sidebar.education %}
+  {% include resume_education.html %}
+{% endunless %}
+
+{% include resume_experiences.html %}
+
+{% include resume_projects.html %}
+
+{% include resume_certs.html %}
+
+{% include skills.html %}
