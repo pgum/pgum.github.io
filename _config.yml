@@ -12,13 +12,13 @@ description: Notepad of ideas
 # --- Navigation bar options --- #
 # List of links in the navigation bar
 navbar-links:
+  "About Me": "about"
+  Slides: "slides"
   Notes: "categories"
   Checklists: "categories#checklists"
   Concepts: "categories#concepts"
   Scenarios: "categories#scenarios"
   Tags: "tags"
-  Slides: "slides"
-  "About Me": "about"
 
 # --- Background colour/image options --- #
 
