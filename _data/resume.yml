@@ -124,15 +124,15 @@ projects:
     intro: 
     assignments:
       - title: “Evaluation of Scrum Master work performance in corporation” 
-        link: "#"
+        link: 
         tagline: ALE Kraków meetup, Talk with Q&A session - 2017. Talk focused on the history of early transformation that took place in our company, the following problems and their solutions. 
 
       - title: “Scrum with Nokia” 
-        link: "#"
+        link: 
         tagline: Kraków University of Economics - Lectures and workshops - 2018. Cycle of lectures and workshops covering introduction to scrum, modern approach to scaling scrum in corporate environment setting and possible pitfalls.
 
       - title: “Agile - how to cooperate” 
-        link: "#"
+        link: 
         tagline: Kraków University of Technology - Lectures and workshops - 2019, lectures - 2020 - 2023. Part of Nokia university subject. Lecture focused on multiple agile tricks that students can use in their upcoming project work. Workshop sessions with elements of retrospectives, planning and problem solving.
 
       - title: Baduk Dojang - WordPress plugin - club management system - bibabaduk.online
@@ -143,23 +143,28 @@ skills:
     title: Skills &amp; Proficiency
 
     toolset:
-      - name: Python & Django
-        level: 98%
+      - name: Linux, Bash
+        level: 71%
 
-      - name: Javascript & jQuery
-        level: 98%
+      - name: git, gitlab, github
+        level: 61%
 
-      - name: Angular
-        level: 98%
+      - name: Jenkins, JCasC, DSL
+        level: 88%
 
-      - name: HTML5 & CSS
-        level: 95%
+      - name: Openstack, Ansible, Docker
+        level: 71%
 
-      - name: Ruby on Rails
-        level: 85%
+      - name: Scrum, Kanban, agile
+        level: 84%
 
-      - name: Sketch & Photoshop
-        level: 60%
+      - name: Coaching, mentoring
+        level: 82%
+        
+      - name: Jira, MS Teams, Office365
+        level: 74%
 
 footer: >
-    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a><br/>
+    Made into jekyll theme <a href="https://github.com/sharu725/online-cv" target="_blank" rel="nofollow">online-cv</a> by sharu725 <i class="fas fa-heart"></i><br/>
+    With Piotr Gumulka's modifications.
