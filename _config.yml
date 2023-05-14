@@ -13,9 +13,9 @@ description: Notepad of ideas
 # List of links in the navigation bar
 navbar-links:
   Notes: "categories"
-    Checklists: "#checklists"
-    Concepts: "#concepts"
-    Scenarios: "#scenarios"
+  Checklists: "categories#checklists"
+  Concepts: "categories#concepts"
+  Scenarios: "categories#scenarios"
   Tags: "tags"
   Slides: "slides"
   "About Me": "about"
