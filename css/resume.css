@@ -165,7 +165,7 @@
 }
 #resume .main-wrapper .job-title,
 #resume .main-wrapper .degree,
-#resume .main-wrapper .project-title, {
+#resume .main-wrapper .project-title {
     font-size: 20px;
     margin-top: 20px;
     color: #3f4650;
@@ -187,10 +187,10 @@
 }
 #resume .main-wrapper .project-title {
     font-size: 20px;
-    font-weight: 500;
-    margin-top: 0;
+    margin-top: 20px;
+    color: #3f4650;
     margin-bottom: 0;
-    color: #2d7788;
+    font-weight: 500;
     display: block;
 }
 #resume .main-wrapper .projects-section .intro {
