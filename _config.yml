@@ -14,11 +14,9 @@ description: Notepad of ideas
 navbar-links:
   "about me": "about"
   slides: "slides"
-  "all notes": "/"
   checklists: "/#checklists"
   concepts: "/#concepts"
   scenarios: "/#scenarios"
-  tags: "tags"
 
 # --- Background colour/image options --- #
 
