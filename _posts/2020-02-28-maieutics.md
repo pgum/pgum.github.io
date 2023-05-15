@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Maieutics - Socratic method #2
-image: /img/daoudi-aissa-absT1BNRDAI-unsplash.jpg
+date: 2020-02-28
 category: concepts
 tags: [lean, philosophy]
 ---

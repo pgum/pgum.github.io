@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Workplace checklist
+date: 2020-03-01
 category: checklists
 tag: check
 ---

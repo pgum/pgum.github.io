@@ -1,7 +1,7 @@
 ---
 layout: post
 title: End the sentence
-image: /img/daoudi-aissa-absT1BNRDAI-unsplash.jpg
+date: 2023-05-16
 category: scenarios
 tags: []
 ---

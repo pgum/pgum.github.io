@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Opportunities and challenges
-image: /img/daoudi-aissa-absT1BNRDAI-unsplash.jpg
+date: 2020-03-01
 category: scenarios
 tags: []
 --- 

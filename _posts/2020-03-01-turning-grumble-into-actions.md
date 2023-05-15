@@ -2,7 +2,7 @@
 layout: post
 title: Turning grumble into actions
 subtitle: This is where I will tell my friends way too much about me
-image: /img/daoudi-aissa-absT1BNRDAI-unsplash.jpg
+date: 2020-03-01
 category: scenarios
 tags: retro
 duration: 60
