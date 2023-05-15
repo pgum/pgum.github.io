@@ -18,6 +18,9 @@ body {
   background-attachment: fixed;
   {% endif %}
 }
+.main-container {
+
+}
 p {
   line-height: 1.5;
   margin: 30px 0;
@@ -550,7 +553,7 @@ footer .theme-by, footer .hosted-on {
 }
 @media only screen and (min-width: 768px) {
   .intro-header {
-    margin-top: 130px;
+    margin-top: 60px;
   }
   .intro-header.big-img {
     margin-top: 91px; /* Full navbar is small navbar + 20px padding on each side when expanded */
@@ -560,10 +563,10 @@ footer .theme-by, footer .hosted-on {
     padding: 150px 0;
   }
   .intro-header .page-heading h1 {
-    font-size: 80px;
+    font-size: 60px;
   }
   .intro-header .post-heading h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
   .intro-header.big-img .img-desc {
     font-size: 14px;
@@ -829,14 +832,11 @@ pre {
 .post-category-list .blog-tags { margin-bottom: 5px; }
 .post-category-name { padding: 10px 10px; text-transform:capitalize; }
 /*.post-category-list a { }*/
-/*todo przeniesc jako zmienne do _data; ustandaryzowac ze slajdami*/
-.post-category-concepts { background-color: rgba(51,152,251,1) !important; }
+
 .post-category-concepts-list { background-color: rgba(51,152,251,0.3); }
 
-.post-category-scenarios { background-color: rgba(51,251,125,1) !important; }
 .post-category-scenarios-list { background-color: rgba(51,251,125,0.3); }
 
-.post-category-checklists { background-color: rgba(251,125,51,1) !important; }
 .post-category-checklists-list { background-color: rgba(251,125,51,0.3); }
 .card {
   width: 100%; 
@@ -890,18 +890,3 @@ pre {
   font-weight: 400;
   margin-bottom:5px;
 }
-/*
-.box,
-.box_done,
-.task-list-item {
-    list-style-type: none;
-}
-
-.task-list-item input {
-  margin: 0 0.2em 0.25em -1.6em;
-  vertical-align: middle;
-}
-
-.task-list-item+.task-list-item {
-  margin-top: 3px;
-}*/
