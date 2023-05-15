@@ -1,34 +1,27 @@
-body {
-    font-family: roboto, sans-serif;
-    color: #545e6c;
-    background: #f5f5f5;
-    font-size: 14px;
-    padding: 30px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
+#resume h1,
+#resume h2,
+#resume h3,
+#resume h4,
+#resume h5,
+#resume h6 {
+    font-weight: 700;
+    color: #fff
+
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 700
-}
-a {
+#resume a {
     color: #2d7788
 }
-a:hover {
+#resume a:hover {
     text-decoration: underline;
     color: #1a454f
 }
-a:focus {
+#resume a:focus {
     text-decoration: none
 }
-p {
+#resume p {
     line-height: 1.5
 }
-.wrapper {
+#resume .wrapper {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     background: #42a8c0;
@@ -39,116 +32,116 @@ p {
     -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1)
 }
-.sidebar-wrapper {
+#resume .sidebar-wrapper {
     grid-column: span 3;
     order: 2;
     background: #42a8c0;
     color: #fff
 }
-.sidebar-wrapper a {
+#resume .sidebar-wrapper a {
     color: #fff
 }
-.sidebar-wrapper .profile-container {
+#resume .sidebar-wrapper .profile-container {
     padding: 30px;
     background: rgba(0, 0, 0, .2);
     text-align: center;
     color: #fff
 }
-.sidebar-wrapper .name {
+#resume .sidebar-wrapper .name {
     font-size: 32px;
     font-weight: 900;
     margin-top: 0;
     margin-bottom: 10px
 }
-.sidebar-wrapper .tagline {
+#resume .sidebar-wrapper .tagline {
     color: rgba(255, 255, 255, .6);
     font-size: 16px;
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 0
 }
-.sidebar-wrapper .profile {
+#resume .sidebar-wrapper .profile {
     margin-bottom: 15px
 }
-.sidebar-wrapper .avatar {
+#resume .sidebar-wrapper .avatar {
     max-width: 100px;
     margin-bottom: 15px;
     border: 0 solid #fff;
     border-radius: 100%;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .1)
 }
-.sidebar-wrapper .contact-list .fas,
-.sidebar-wrapper .contact-list .fab,
-.sidebar-wrapper .contact-list .far {
+#resume .sidebar-wrapper .contact-list .fas,
+#resume .sidebar-wrapper .contact-list .fab,
+#resume .sidebar-wrapper .contact-list .far {
     margin-right: 5px;
     font-size: 18px;
     vertical-align: middle
 }
-.sidebar-wrapper .contact-list li {
+#resume .sidebar-wrapper .contact-list li {
     margin-bottom: 15px
 }
-.sidebar-wrapper .contact-list li:last-child {
+#resume .sidebar-wrapper .contact-list li:last-child {
     margin-bottom: 0
 }
-.sidebar-wrapper .container-block {
+#resume .sidebar-wrapper .container-block {
     padding: 30px
 }
-.sidebar-wrapper .container-block-title {
+#resume .sidebar-wrapper .container-block-title {
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 15px
 }
-.sidebar-wrapper .degree {
+#resume .sidebar-wrapper .degree {
     font-size: 14px;
     margin-top: 0;
     margin-bottom: 5px
 }
-.sidebar-wrapper .education-container .item {
+#resume .sidebar-wrapper .education-container .item {
     margin-bottom: 15px
 }
-.sidebar-wrapper .education-container .item:last-child {
+#resume .sidebar-wrapper .education-container .item:last-child {
     margin-bottom: 0
 }
-.sidebar-wrapper .education-container .meta {
+#resume .sidebar-wrapper .education-container .meta {
     color: rgba(255, 255, 255, .6);
     font-weight: 500;
     margin-bottom: 0;
     margin-top: 0
 }
-.sidebar-wrapper .education-container .time {
+#resume .sidebar-wrapper .education-container .time {
     color: rgba(255, 255, 255, .6);
     font-weight: 500;
     margin-bottom: 0
 }
-.sidebar-wrapper .languages-container .lang-desc {
+#resume .sidebar-wrapper .languages-container .lang-desc {
     color: rgba(255, 255, 255, .6)
 }
-.sidebar-wrapper .languages-list {
+#resume .sidebar-wrapper .languages-list {
     margin-bottom: 0
 }
-.sidebar-wrapper .languages-list li {
+#resume .sidebar-wrapper .languages-list li {
     margin-bottom: 10px
 }
-.sidebar-wrapper .languages-list li:last-child {
+#resume .sidebar-wrapper .languages-list li:last-child {
     margin-bottom: 0
 }
-.sidebar-wrapper .interests-list {
+#resume .sidebar-wrapper .interests-list {
     margin-bottom: 0
 }
-.sidebar-wrapper .interests-list li {
+#resume .sidebar-wrapper .interests-list li {
     margin-bottom: 10px
 }
-.sidebar-wrapper .interests-list li:last-child {
+#resume .sidebar-wrapper .interests-list li:last-child {
     margin-bottom: 0
 }
-.main-wrapper {
+#resume .main-wrapper {
     grid-column: span 7;
     background: #fff;
     padding: 60px
 }
-.main-wrapper .section-title {
+#resume .main-wrapper .section-title {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 500;
@@ -157,21 +150,21 @@ p {
     margin-top: 0;
     margin-bottom: 20px
 }
-.main-wrapper .section {
+#resume .main-wrapper .section {
     margin-bottom: 60px
 }
-.main-wrapper .experiences-section .item,
-.main-wrapper .educations-section .item {
+#resume .main-wrapper .experiences-section .item,
+#resume .main-wrapper .educations-section .item {
     margin-bottom: 30px
 }
-.main-wrapper .upper-row {
+#resume .main-wrapper .upper-row {
     position: relative;
     overflow: hidden;
     margin-bottom: 2px;
     display: flex
 }
-.main-wrapper .job-title,
-.main-wrapper .degree {
+#resume .main-wrapper .job-title,
+#resume .main-wrapper .degree {
     color: #3f4650;
     font-size: 16px;
     margin-top: 0;
@@ -179,7 +172,7 @@ p {
     font-weight: 500;
     flex: 75%
 }
-.main-wrapper .time {
+#resume .main-wrapper .time {
     position: absolute;
     right: 0;
     top: 0;
@@ -230,7 +223,7 @@ p {
     margin-top: 0;
     margin-bottom: 12px
 }
-.skillset .level-bar {
+#resume .skillset .level-bar {
     height: 12px;
     background: #f5f5f5
 }
@@ -251,7 +244,7 @@ p {
 }
 @media(max-width:767px) {
     body {
-        padding: 0
+        padding: 10px 0
     }
     .sidebar-wrapper {
         position: static;
