@@ -241,9 +241,6 @@
     color: #545e6c;
     font-size: 13px;
 }
-#resume .footer .fa-heart {
-    color: #fb866a;
-}
 
 @media print {
     @page {

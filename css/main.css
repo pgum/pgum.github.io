@@ -48,6 +48,9 @@ hr.small {
   border-color: inherit;
   border-radius: 3px;
 }
+.fa-heart {
+  color: #fb866a;
+}
 
 .main-content {
   padding-top: 80px;
@@ -63,10 +66,10 @@ hr.small {
   }
   #resume .sidebar-wrapper {
       position: static;
-      width: inherit
+      width: inherit;
   }
-  #resume .wrapper {
-      display: block
+  #resume.wrapper{
+      display: block;
   }
   #resume .main-wrapper {
       padding: 30px
