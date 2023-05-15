@@ -4,19 +4,19 @@
 
     {% if contact.email %}
     <li class="email"><i class="fas fa-envelope"></i>
-      <a href="mailto:{{ sidebar.email }}">{{ sidebar.email }}</a>
+      <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
     </li>
     {% endif %}
 
     {% if contact.phone %}
     <li class="phone"><i class="fas fa-phone"></i>
-      <a href="tel:{{ sidebar.phone }}">{{ sidebar.phone }}</a>
+      <a href="tel:{{ contact.phone }}">{{ contact.phone }}</a>
     </li>
     {% endif %}
 
     {% if site.author.citizenship %}
     <li class="phone"><i class="fas fa-passport"></i>
-      {{ sidebar.citizenship }}
+      {{ site.author.citizenship }}
     </li>
     {% endif %}
 
@@ -28,25 +28,25 @@
 
     {% if contact.website %}
     <li class="website"><i class="fas fa-earth-europe"></i>
-      <a href="http://{{ sidebar.website }}" target="_blank">{{ sidebar.website }}</a>
+      <a href="http://{{ contact.website }}" target="_blank">{{ contact.website }}</a>
     </li>
     {% endif %}
 
     {% if contact.linkedin %}
     <li class="linkedin"><i class="fab fa-linkedin"></i>
-      <a href="https://linkedin.com/in/{{ sidebar.linkedin }}" target="_blank">{{ sidebar.linkedin }}</a>
+      <a href="https://linkedin.com/in/{{ contact.linkedin }}" target="_blank">{{ contact.linkedin }}</a>
     </li>
     {% endif %}
 
     {% if contact.github %}
     <li class="github"><i class="fab fa-github"></i>
-      <a href="http://github.com/{{ sidebar.github }}" target="_blank">{{ sidebar.github }}</a>
+      <a href="http://github.com/{{ contact.github }}" target="_blank">{{ contact.github }}</a>
     </li>
     {% endif %}
 
-    {% if contact.pdf %}
+    {% if contact.print %}
     <li class="pdf"><i class="fas fa-file-pdf"></i>
-      <a href="{{ '/print' | absolute_url }}" target="_blank">Printable</a>
+      <a href="{{ '/print' | absolute_url }}" target="_blank">Printable version</a>
     </li>
     {% endif %}
 

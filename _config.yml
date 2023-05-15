@@ -62,6 +62,7 @@ contact:
   github: pgum
   linkedin: piotr-gumulka
   youtube: turtleCalledCalmie
+  print: true
 
 # Select which share links to show in posts
 share-links-active:
@@ -72,7 +73,7 @@ resume:
   sidebar:
     education: true
     certs: false
-    skills: true
+    skills: false
 
 url-pretty: "gumulka.net"
 
