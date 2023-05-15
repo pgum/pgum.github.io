@@ -21,7 +21,7 @@
 #resume p {
     line-height: 1.5
 }
-#resume .wrapper {
+#resume.wrapper {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     background: #42a8c0;
