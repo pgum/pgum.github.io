@@ -10,14 +10,14 @@ permalink: /print
 
 {% include sections/projects.html %}
 
-{% unless site.data.resume.sidebar.certs %}
+{% unless site.resume.sidebar.certs %}
   {% include sections/certs.html %}  
 {% endunless %}
 
-{% unless site.data.resume.sidebar.education %}
+{% unless site.resume.sidebar.education %}
   {% include sections/education.html %}
 {% endunless %}
 
-{% unless site.data.resume.sidebar.skills %}
+{% unless site.resume.sidebar.skills %}
   {% include sections/skills.html %}
 {% endunless %}
