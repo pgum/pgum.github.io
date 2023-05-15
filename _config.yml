@@ -60,7 +60,6 @@ contact:
   github: pgum
   linkedin: piotr-gumulka
   youtube: turtleCalledCalmie
-  print: true
 
 # Select which share links to show in posts
 share-links-active:
@@ -68,6 +67,7 @@ share-links-active:
   linkedin: true
 
 resume:
+  print: false
   sidebar:
     education: true
     certs: false
