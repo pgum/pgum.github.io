@@ -69,7 +69,7 @@ hr.small {
       width: inherit;
   }
   #resume.wrapper{
-      display: block;
+      display: block !important;
   }
   #resume .main-wrapper {
       padding: 30px
