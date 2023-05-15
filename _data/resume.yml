@@ -162,8 +162,3 @@ skills:
         
       - name: Jira, MS Teams, Office365
         level: 74%
-
-footer: >
-    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a><br/>
-    Made into jekyll theme <a href="https://github.com/sharu725/online-cv" target="_blank" rel="nofollow">online-cv</a> by sharu725 <i class="fas fa-heart"></i><br/>
-    With Piotr Gumulka's modifications.
