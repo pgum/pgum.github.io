@@ -9,22 +9,22 @@
 facebook:
   name: "Facebook"
   baseURL: "https://www.facebook.com/"
-  icon: "fa-facebook"
+  icon: "fa-brands fa-facebook"
 
 github:
   name: "GitHub"
   baseURL: "https://github.com/"
-  icon: "fa-github"
+  icon: "fa-brands fa-github"
 
 twitter:
   name: "Twitter"
   baseURL: "https://twitter.com/"
-  icon: "fa-twitter"
+  icon: "fa-brands fa-twitter"
 
 reddit:
   name: "Reddit"
   baseURL: "https://reddit.com/u/"
-  icon: "fa-reddit"
+  icon: "fa-brands fa-reddit-alien"
 
 email:
   name: "Email me"
@@ -34,7 +34,7 @@ email:
 linkedin:
   name: "LinkedIn"
   baseURL: "https://linkedin.com/in/"
-  icon: "fa-linkedin"
+  icon: fa-brands fa-linkedin"
 
 xing:
   name: "Xing"
@@ -44,32 +44,32 @@ xing:
 stackoverflow:
   name: "StackOverflow"
   baseURL: "https://stackoverflow.com/users/"
-  icon: "fa-stack-overflow"
+  icon: "fa-brands fa-stack-overflow"
 
 snapchat:
   name: "Snapchat"
   baseURL: "https://www.snapchat.com/add/"
-  icon: "fa-snapchat-ghost"
+  icon: "fa-brands fa-snapchat-ghost"
 
 instagram:
   name: "Instagram"
   baseURL: "https://www.instagram.com/"
-  icon: "fa-instagram"
+  icon: "fa-brands fa-instagram"
 
 youtube:
   name: "YouTube"
   baseURL: "https://www.youtube.com/"
-  icon: "fa-youtube"
+  icon: "fa-brands fa-youtube"
 
 spotify:
   name: "Spotify"
   baseURL: "https://open.spotify.com/user/"
-  icon: "fa-spotify"
+  icon: "fa-brands fa-spotify"
 
 telephone:
   name: "Phone"
   baseURL: "tel:"
-  icon: "fa-phone"
+  icon: "fa-solid fa-phone"
 
 rss:
   name: "RSS"
@@ -79,14 +79,14 @@ rss:
 steam:
   name: "Steam"
   baseURL: "https://steamcommunity.com/id/"
-  icon: "fa-steam"
+  icon: "fa-brands fa-steam"
 
 twitch:
   name: "Twitch"
   baseURL: "https://www.twitch.tv/"
-  icon: "fa-twitch"
+  icon: "fa-brands fa-twitch"
 
 yelp:
   name: "Yelp"
   baseURL: "https://{{ site.author.yelp }}.yelp.com"
-  icon: "fa-yelp"
+  icon: "fa-brands fa-yelp"
