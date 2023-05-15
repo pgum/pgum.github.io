@@ -14,7 +14,7 @@ sidebar:
     # Sidebar links
     email: pjgumulka@gmail.com
     phone: 517 463 789
-    timezone: Poland/Central European Time
+    timezone: Poland/CET
     citizenship: Polish
     website: gumulka.net
     linkedin: piotr-gumulka
@@ -27,8 +27,7 @@ sidebar:
     stack-overflow: # Number/Username, e.g. 123456/alandoe
     codewars:
     goodreads: # Number-Username, e.g. 123456-alandoe
-    pdf: https://gumulka.net/resume.pdf # link to your pdf resume
-
+    
     languages:
       title: Languages
       info:
