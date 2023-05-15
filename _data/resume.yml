@@ -137,6 +137,24 @@ projects:
         link: "https://www.bibabaduk.online/"
         tagline: PHP, JavaScript, HTML, CSS - new webpage and WordPress plugin for club management system. Plugin is used by BIBA Korean School of Baduk. Features based on clients use cases to host online teaching program for students.
 
+certificates:
+    title: Certificates
+    intro: 
+    certs:
+      - name: Certified Scrum Professional - Scrum Master
+        issuer: Scrum Alliance, Inc.
+        link: https://www.scrumalliance.org/community/profile/gpiotr2
+        date: 2016
+
+      - name: Certified Scrum Professional - Product Owner
+        issuer: Scrum Alliance, Inc.
+        link: https://www.scrumalliance.org/community/profile/gpiotr2
+        date: 2016
+
+      - name: SAFe 4.5 Scrum Master
+        issuer: Scaled Agile, Inc.
+        date: 2018
+
 skills:
     title: Skills &amp; Proficiency
 
