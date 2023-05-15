@@ -18,13 +18,14 @@
 
   {% for cert in certificates.certs %}
   <div class="item">
+    <span class="certificate-title">
     {% if cert.link %}
-      <li><a href="{{ cert.link }}">{{ cert.name }}</a>
+      <a href="{{ cert.link }}">{{ cert.name }}</a>
     {% else %}
-      <li>{{ cert.name }}
+      {{ cert.name }}
     {% endif %}
-    - <span class="project-tagline">{{ cert.issuer }}({{ cert.date }})</span>  
-  </li>
+    </span>
+    <span class="certificate-details">{{ cert.issuer }}({{ cert.date }})</span>
   </div><!--//item-->
   {% endfor %}
 
