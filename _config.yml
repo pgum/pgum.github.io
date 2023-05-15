@@ -14,10 +14,10 @@ description: Notepad of ideas
 navbar-links:
   "about me": "about"
   slides: "slides"
-  "all notes": "categories"
-  checklists: "categories#checklists"
-  concepts: "categories#concepts"
-  scenarios: "categories#scenarios"
+  "all notes": "/"
+  checklists: "/#checklists"
+  concepts: "/#concepts"
+  scenarios: "/#scenarios"
   tags: "tags"
 
 # --- Background colour/image options --- #
