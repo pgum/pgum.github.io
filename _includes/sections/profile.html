@@ -1,0 +1,16 @@
+{% assign author = site.author %}
+<div class="profile-container">
+
+    {% if author.avatar %}
+    <img class="avatar" src="{{ site.baseurl }}/img/{{ author.avatar }}" alt="profile picture" />
+    {% endif %}
+
+    {% if author.name %}
+    <h1 class="name">{{ author.name }}</h1>
+    {% endif %}
+
+    {% if author.tagline %}
+    <h3 class="tagline">{{ author.tagline }}</h3>
+    {% endif %}
+
+</div><!--//profile-container-->

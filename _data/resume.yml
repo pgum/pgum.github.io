@@ -1,56 +1,27 @@
-#
-# Be aware that even a small syntax error here can lead to failures in output.
-#
 
-sidebar:
-    #about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
-    education: True # set to False if you want education in main section instead of in sidebar
+languages:
+  title: Languages
+  info:
+    - idiom: Polish
+      level: Native
 
-    # Profile information
-    name: Piotr Jacek Gumulka
-    tagline: Automation enthusiast
-    avatar: pjg.PNG  #place a square picture inside /img/ folder and provide the filename here
+    - idiom: English
+      level: Advanced
 
-    # Sidebar links
-    email: pjgumulka@gmail.com
-    phone: 517 463 789
-    timezone: Poland/CET
-    citizenship: Polish
-    website: gumulka.net
-    linkedin: piotr-gumulka
-    xing: 
-    github: pgum
-    telegram: # add your nickname without '@' sign
-    gitlab:
-    bitbucket:
-    twitter: 
-    stack-overflow: # Number/Username, e.g. 123456/alandoe
-    codewars:
-    goodreads: # Number-Username, e.g. 123456-alandoe
-    
-    languages:
-      title: Languages
-      info:
-        - idiom: Polish
-          level: Native
+interests:
+  title: Interests
+  info:
+    - item: Game of Go
+      link: https://www.europeangodatabase.eu/EGD/Player_Card.php?&key=15849295
 
-        - idiom: English
-          level: Professional
+    - item: Philosophy (BPhil)
+      link:
 
-    interests:
-      title: Interests
-      info:
-        - item: Game of Go
-          link: https://www.europeangodatabase.eu/EGD/Player_Card.php?&key=15849295
+    - item: Music Production
+      link: https://www.youtube.com/@TurtleCalledCalmie
 
-        - item: Philosophy (BPhil)
-          link:
-
-        - item: Music Production
-          link: https://www.youtube.com/@TurtleCalledCalmie
-
-        - item: Frank Herbert's Dune
-          link: 
+    - item: Frank Herbert's Dune
+      link: 
 
 career-profile:
     title: Career Profile

@@ -1,33 +1,25 @@
-{% assign sidebar = site.data.resume.sidebar %}
+{% assign author = site.author %}
+{% assign sidebar = site.resume.sidebar %}
 <div class="sidebar-wrapper">
 
-  <div class="profile-container">
-
-    {% if sidebar.avatar %}
-    <img class="avatar" src="{{ site.baseurl }}/img/{{ sidebar.avatar }}" alt="profile picture" />
-    {% endif %}
-
-    {% if sidebar.name %}
-    <h1 class="name">{{ sidebar.name }}</h1>
-    {% endif %}
-
-    {% if sidebar.tagline %}
-    <h3 class="tagline">{{ sidebar.tagline }}</h3>
-    {% endif %}
-
-  </div><!--//profile-container-->
+  {% include sections/profile.html %}
 
   {% include sections/contact.html %}
 
+  {% include sections/language.html %}
+  
   {% if sidebar.education %}
     {% include sections/education.html %}
   {% endif %}
 
-  {% include sections/language.html %}
-  {% include sections/interests.html %}
-
-  {% if sidebar.about %}
-    {% include sections/about.html %}
+  {% if sidebar.certs %}
+    {% include sections/certs.html %}
   {% endif %}
+
+  {% if sidebar.skills %}
+    {% include sections/skills.html %}
+  {% endif %}
+  
+  {% include sections/interests.html %}
 
 </div><!--//sidebar-wrapper-->

@@ -47,7 +47,8 @@ footer-link-col: "#404040"
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Piotr Jacek Gumulka
-
+  tagline: Automation enthusiast
+  avatar: pjg.PNG  
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
 # You can reorder the items to define the link order.
@@ -55,6 +56,9 @@ author:
 social-network-links:
   rss: true
   email: "pjgumulka@gmail.com"
+  phone: 517 463 789
+  timezone: Poland/CET
+  citizenship: Polish
   github: pgum
   linkedin: piotr-gumulka
   youtube: turtleCalledCalmie
@@ -63,6 +67,12 @@ share-links-active:
   facebook: true
   linkedin: true
 
+resume:
+  sidebar:
+    education: true
+    certs: false
+    skills: true
+  
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
 url-pretty: "gumulka.net"  # eg. "deanattali.com/beautiful-jekyll"
