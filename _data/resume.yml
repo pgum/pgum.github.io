@@ -1,10 +1,8 @@
-
 languages:
   title: Languages
   info:
     - idiom: Polish
       level: Native
-
     - idiom: English
       level: Advanced
 
@@ -13,15 +11,10 @@ interests:
   info:
     - item: Game of Go
       link: https://www.europeangodatabase.eu/EGD/Player_Card.php?&key=15849295
-
     - item: Philosophy (BPhil)
-      link:
-
     - item: Music Production
       link: https://www.youtube.com/@TurtleCalledCalmie
-
     - item: Frank Herbert's Dune
-      link: 
 
 career-profile:
     title: Career Profile
@@ -29,6 +22,7 @@ career-profile:
       I help projects, teams and individuals in finding the way to achieve their goals. I have experience in transforming and fine tuning 
       systems, helping and leading teams, coaching and training individuals. I have been servant leader with 5 years of experience. 
       I am looking for a position where I can utilize my skill sets and abilities to help teams and individuals to grow and deliver while having fun.
+
 education:
     title: Education
     info:
@@ -88,25 +82,23 @@ experiences:
         company: Nokia, Kraków
         details: |
           I was part of development team in telecommunication software project for LTE. 
+
 projects:
     title: Projects
     intro: 
     assignments:
       - title: “Evaluation of Scrum Master work performance in corporation” 
         link: 
-        tagline: ALE Kraków meetup, Talk with Q&A session - 2017. Talk focused on the history of early transformation that took place in our company, the following problems and their solutions. 
-
+        description: ALE Kraków meetup, Talk with Q&A session - 2017. Talk focused on the history of early transformation that took place in our company, the following problems and their solutions. 
       - title: “Scrum with Nokia” 
         link: 
-        tagline: Kraków University of Economics - Lectures and workshops - 2018. Cycle of lectures and workshops covering introduction to scrum, modern approach to scaling scrum in corporate environment setting and possible pitfalls.
-
+        description: Kraków University of Economics - Lectures and workshops - 2018. Cycle of lectures and workshops covering introduction to scrum, modern approach to scaling scrum in corporate environment setting and possible pitfalls.
       - title: “Agile - how to cooperate” 
         link: 
-        tagline: Kraków University of Technology - Lectures and workshops - 2019, lectures - 2020 - 2023. Part of Nokia university subject. Lecture focused on multiple agile tricks that students can use in their upcoming project work. Workshop sessions with elements of retrospectives, planning and problem solving.
-
+        description: Kraków University of Technology - Lectures and workshops - 2019, lectures - 2020 - 2023. Part of Nokia university subject. Lecture focused on multiple agile tricks that students can use in their upcoming project work. Workshop sessions with elements of retrospectives, planning and problem solving.
       - title: Baduk Dojang - WordPress plugin - club management system - bibabaduk.online
         link: "https://www.bibabaduk.online/"
-        tagline: PHP, JavaScript, HTML, CSS - new webpage and WordPress plugin for club management system. Plugin is used by BIBA Korean School of Baduk. Features based on clients use cases to host online teaching program for students.
+        description: PHP, JavaScript, HTML, CSS - new webpage and WordPress plugin for club management system. Plugin is used by BIBA Korean School of Baduk. Features based on clients use cases to host online teaching program for students.
 
 certificates:
     title: Certificates
@@ -116,37 +108,28 @@ certificates:
         issuer: Scrum Alliance, Inc.
         link: https://www.scrumalliance.org/community/profile/gpiotr2
         date: 2016
-
       - name: Certified Scrum Professional - Product Owner
         issuer: Scrum Alliance, Inc.
         link: https://www.scrumalliance.org/community/profile/gpiotr2
         date: 2016
-
       - name: SAFe 4.5 Scrum Master
         issuer: Scaled Agile, Inc.
         date: 2018
 
 skills:
     title: Skills &amp; Proficiency
-
     toolset:
       - name: Linux, Bash
         level: 71%
-
       - name: git, gitlab, github
         level: 61%
-
       - name: Jenkins, JCasC, DSL
         level: 88%
-
       - name: Openstack, Ansible, Docker
         level: 71%
-
       - name: Scrum, Kanban, agile
         level: 84%
-
       - name: Coaching, mentoring
-        level: 82%
-        
+        level: 82%  
       - name: Jira, MS Teams, Office365
         level: 74%

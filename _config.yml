@@ -49,19 +49,20 @@ author:
   name: Piotr Jacek Gumulka
   tagline: Automation enthusiast
   avatar: pjg.PNG  
+  citizenship: Polish
+
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
-social-network-links:
+contact:
   rss: true
   email: "pjgumulka@gmail.com"
   phone: 517 463 789
-  timezone: Poland/CET
-  citizenship: Polish
   github: pgum
   linkedin: piotr-gumulka
   youtube: turtleCalledCalmie
+
 # Select which share links to show in posts
 share-links-active:
   facebook: true
@@ -72,10 +73,8 @@ resume:
     education: true
     certs: false
     skills: true
-  
-# How to display the link to the website in the footer
-# Remove this if you don't want a link in the footer
-url-pretty: "gumulka.net"  # eg. "deanattali.com/beautiful-jekyll"
+
+url-pretty: "gumulka.net"
 
 # --- Web Statistics Section --- #
 # Fill in your Google Analytics gtag.js ID to track your website using gtag

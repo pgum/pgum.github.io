@@ -1,4 +1,4 @@
-{% assign contact = site.social-network-links %}
+{% assign contact = site.contact %}
 <div class="contact-container container-block">
   <ul class="list-unstyled contact-list">
 
@@ -14,20 +14,20 @@
     </li>
     {% endif %}
 
-    {% if contact.citizenship %}
+    {% if site.author.citizenship %}
     <li class="phone"><i class="fas fa-passport"></i>
-      <a href="">{{ sidebar.citizenship }}</a>
+      {{ sidebar.citizenship }}
     </li>
     {% endif %}
 
-    {% if contact.timezone %}
+    {% if site.timezone %}
     <li class="timezone"><i class="fas fa-clock"></i>
-      <a href="">{{ sidebar.timezone }}</a>
+      {{ site.timezone }}
     </li>
     {% endif %}
 
     {% if contact.website %}
-    <li class="website"><i class="fas fa-globe-americas"></i>
+    <li class="website"><i class="fas fa-earth-europe"></i>
       <a href="http://{{ sidebar.website }}" target="_blank">{{ sidebar.website }}</a>
     </li>
     {% endif %}
@@ -46,7 +46,7 @@
 
     {% if contact.pdf %}
     <li class="pdf"><i class="fas fa-file-pdf"></i>
-      <a href="{{ sidebar.pdf }}" target="_blank">Resume PDF</a>
+      <a href="{{ '/print' | absolute_url }}" target="_blank">Printable</a>
     </li>
     {% endif %}
 
