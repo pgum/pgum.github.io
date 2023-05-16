@@ -1,0 +1,10 @@
+<section data-markdown>
+    <script type="text/template">
+      <h1> Read more </h1>
+      <ul> 
+      {% for more in page.readmore %}
+       <li><a href="{{ more.href }}" target="_blank">{{ more.title }}</a></li>
+      {% endfor %}
+      </ul>
+  </script>
+</section>

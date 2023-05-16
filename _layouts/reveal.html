@@ -1,143 +1,42 @@
 ---
-
+common-css:
+  - "/css/reveal.css"
+  - "/css/theme/pjg.css"
+  - "/css/lib/zenburn.css"
+common-ext-css:
+  - "//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  common-googlefonts:
+  - "Lora:400,700,400italic,700italic"
+  - "Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+common-js:
+  - "/js/jquery-1.11.2.min.js"
+  - "/js/jQWCloudv3.4.1.js"
+  - "/js/bootstrap.min.js"
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-
-		{% if site.title %}<title>{{ site.title }}</title>{% endif %}
-
-		{% if site.description %}<meta name="description" content="{{ site.description }}">{% endif %}
-		{% if site.author %}<meta name="author" content=" {{ site.author.name }} "> {% endif %}
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-		<link rel="stylesheet" href="/css/reveal.css">
-		<link rel="stylesheet" href="{{ site.reveal_theme_path }}{{ site.reveal_theme }}" id="theme">
-
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<!-- For syntax highlighting -->
-		{% if site.highlight_style_sheet %}
-			{% assign highlight_style_sheet = site.highlight_style_sheet %}
-		{% else %}
-			{% capture highlight_style_sheet %}/css/lib/zenburn.css {% endcapture %}
-		{% endif %}
-		<link rel="stylesheet" href="{{ highlight_style_sheet }}">
-
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
-		<script>
-			document.write( '<link rel="stylesheet" href="/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-		</script>
-
-		<!--[if lt IE 9]>
-		<script src="/js/lib/html5shiv.js"></script>
-		<![endif]-->
-	</head>
-
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
+  {% include head.html %}
   <body>
-
-<!-- pjg base -->
-{% if page.intro_background %}
-<style>
-html.intro body {
-	background:url("{{ page.intro_background }}");
-	background-position:center;
-	background-size: 100%;
-}
-</style>
-{% endif %}
-<div class="reveal">
-	<div class="slides">
-		<section 
-			{% if page.title-image %}
-			class="with-image" 
-			data-background-image="{{ page.title-image }}" data-background-size="30%" data-background-position="left" 
-			{% endif %}
-			data-markdown>
-			<script type="text/markdown">
-				# {{ page.title }}  
-				{% for objective in page.objectives %}
-				* {{ objective }}
-				{% endfor %}
-			</script>
-		</section>
-		<section 
-			{% if page.title-image %}
-			class="with-image" 
-			data-background-image="{{ page.title-image }}" data-background-size="30%" data-background-position="left" 
-			{% endif %}
-			data-markdown>
-			<script type="text/markdown" id="agenda-script2">
-				## Agenda 
-				{% include toc.html html=content h_min=1 h_max=1 %}
-			</script>
-		</section>
-		<section data-markdown data-separator="^\n<hr />$" data-vertical="^\n--\n$" data-notes="^<p>Note:</p>">
-			  <script type="text/template">
-				{{ content }}
-      		</script>
-		</section>
-		{% if page.readmore %}
-    	<section data-markdown>
-      		<script type="text/template">
-				<h1> Read more </h1>
-				<ul> 
-				{% for more in page.readmore %}
-				 <li><a href="{{ more.href }}" target="_blank">{{ more.title }}</a></li>
-				{% endfor %}
-				</ul>
-			</script>
-		</section>
-		{% endif %}
-		<section data-markdown>
-			<script type="text/markdown">
-	  			## [Go back to Slides]({{ 'slides' | relative_url }})
-			  </script>
-		</section>
-	</div>
-</div>
-
-		<script src="/js/lib/head.min.js"></script>
-		<script src="/js/reveal.js"></script>
-		<script>
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: false,
-
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: 'none', // default/cube/page/concave/zoom/linear/fade/none
-				slideNumber: 'c/t',
-				menu: {
-					custom: [ 
-						{title: 'Github', style: 'fab', icon: 'fa-github', href: 'https://github.com/pgum/pgum.github.io/tree/master/{{ page.path }}' },
-						{title: 'LinkedIn', style: 'fab', icon: 'fa-linkedin', href: 'https://linkedin.com/in/piotr-gumulka' }, 
-						{title: 'Slides', style: 'fas', icon: 'fa-home', href: "{{ 'slides' | relative_url }}" } 
-					],	
-					customFields: [{ title: 'Back', href: "{{ 'slides' | relative_url }}" }], //pjg hack
-					width: 'half',
-					numbers: false,
-					titleSelector: 'h1',
-					hideMissingTitles: true,
-					openSlideNumber: false
-				},
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: '/js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: '/js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: '/js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: '/js/plugin/menu/menu.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
-		</script>
+    {% include reveal/intro_background.html %}
+    {% include gtm_body.html %}
+    <div class="reveal">
+      <div class="slides">
+        {% include reveal/sections/objectives.html %}
+        {% include reveal/sections/toc.html %}
+        <section data-markdown data-separator="^\n<hr />$" data-vertical="^\n--\n$" data-notes="^<p>Note:</p>">
+          <script type="text/template">
+            {{ content }}
+          </script>
+        </section>
+	    {% if page.readmore %}
+          {% include reveal/sections/readmore.html %}
+      	{% endif %}
+      	{% include reveal/sections/back.html %}
+      </div>
+    </div>
+    {% include reveal/body_scripts.html %}
+    {% include footer-scripts.html %}
   </body>
 </html>

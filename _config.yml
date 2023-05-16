@@ -1,7 +1,10 @@
 # --- General options --- #
 encoding: utf-8
 title: gumulka.net
-description: Notepad of ideas
+url-pretty: gumulka.net
+url-source: https://github.com/pgum/pgum.github.io/tree/master
+
+description: the notepad of ideas
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
 # avatar: "/img/avatar-icon.png"
@@ -17,29 +20,6 @@ navbar-links:
   checklists: "notes/#checklists"
   concepts: "notes/#concepts"
   scenarios: "notes/#scenarios"
-
-# --- Background colour/image options --- #
-
-# Personalize the colors in your website. Colour values can be any valid CSS colour
-
-navbar-col: "#F5F5F5"
-navbar-text-col: "#404040"
-navbar-children-col: "#F5F5F5"
-page-col: "#f5f5f5"
-link-col: "#008AFF"
-hover-col: "#0085A1"
-footer-col: "#F5F5F5"
-footer-text-col: "#777777"
-footer-link-col: "#404040"
-
-# Alternatively, the navbar, footer, and page background can be set to use background images
-# instead of colour
-
-# navbar-img: "/img/bgimage.png"
-# footer-img: "/img/bgimage.png"
-# page-img: "/img/bgimage.png"
-
-# --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
@@ -72,17 +52,6 @@ resume:
     education: true
     certs: false
     skills: true
-
-url-pretty: "gumulka.net"
-
-# --- Web Statistics Section --- #
-# Fill in your Google Analytics gtag.js ID to track your website using gtag
-gtag: "UA-160061743-1"
-# Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
-
-# Google Tag Manager ID
-gtm: "GTM-T6FH4Z6"
 
 # Excerpt Word Length
 # Truncates the excerpt to the specified number of words on the index page
@@ -126,7 +95,8 @@ defaults:
       path: "" # all files
     values:
       layout: "page"
-      show-avatar: true  
+      show-avatar: false  
+      social-share: true # add social media sharing buttons to all blog posts
   -
     scope:
       path: "_slides"
@@ -152,7 +122,3 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
-
-#revealjs
-reveal_theme: pjg.css
-reveal_theme_path: /css/theme/ 
