@@ -1,26 +1,26 @@
 # pgum
 
-## favicon 
+### favicon 
 
 * https://favicon.io/favicon-generator/
 
-## jekyll-toc
+### jekyll-toc
 
 * https://github.com/allejo/jekyll-toc
 
-## jekyll-revealjs 
+### jekyll-revealjs 
 
 * https://github.com/dploeger/jekyll-revealjs
 
-## reveal.js-menu
+### reveal.js-menu
 
 * https://github.com/denehyg/reveal.js-menu
 
-## Beautiful Jekyll
+### Beautiful Jekyll
 
 * https://deanattali.com/beautiful-jekyll/
 
-## images
+### images
 
 * https://www.pxfuel.com/
 * https://unsplash.com/

@@ -2,15 +2,15 @@
 {% if skills %}
 
 {% if site.resume.sidebar.skills %}
-<div class="skills-container container-block">
+<div class="skills-container container-block skillset">
 
   <h2 class="container-block-title">
-    {{ education.title }}
+    {{ skills.title }}
   </h2>
 
   {% for skill in skills.toolset %}
   <div class="item">
-    <h4 class="degree">{{ skill.name }}</h4>
+    <h4 class="level-title">{{ skill.name }}</h4>
     <div class="level-bar">
       <div class="level-bar-inner" data-level="{{ skill.level }}">
       </div>
