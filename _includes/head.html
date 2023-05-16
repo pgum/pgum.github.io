@@ -23,13 +23,13 @@
     {% endfor %}
   {% endif %}
 
+  {% if layout.unique-css %}
+    <link rel="stylesheet" href="{{ layout.unique-css.path | relative_url }}" id="{{ layout.unique-css.id }}" />
+  {% endif %}
+
   {% if layout.common-css %}
     {% for css in layout.common-css %}
-      {% if css.id %}
-        <link rel="stylesheet" href="{{ css.path | relative_url }}" id="{{ css.id }}" />
-      {% else %}
-        <link rel="stylesheet" href="{{ css | relative_url }}" />
-      {% endif %}
+      <link rel="stylesheet" href="{{ css | relative_url }}" />
     {% endfor %}
   {% endif %}
 
