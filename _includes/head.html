@@ -25,7 +25,11 @@
 
   {% if layout.common-css %}
     {% for css in layout.common-css %}
-      <link rel="stylesheet" href="{{ css | relative_url }}" />
+      {% if css.id %}
+        <link rel="stylesheet" href="{{ css.path | relative_url }}" id="{{ css.id }}" />
+      {% else %}
+        <link rel="stylesheet" href="{{ css | relative_url }}" />
+      {% endif %}
     {% endfor %}
   {% endif %}
 
