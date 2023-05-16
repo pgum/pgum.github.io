@@ -22,21 +22,9 @@ common-js:
   <body>
     {% include reveal/intro_background.html %}
     {% include gtm_body.html %}
-    <div class="reveal">
-      <div class="slides">
-        {% include reveal/sections/objectives.html %}
-        {% include reveal/sections/toc.html %}
-        <section data-markdown data-separator="^\n<hr />$" data-vertical="^\n--\n$" data-notes="^<p>Note:</p>">
-          <script type="text/template">
-            {{ content }}
-          </script>
-        </section>
-	    {% if page.readmore %}
-          {% include reveal/sections/readmore.html %}
-      	{% endif %}
-      	{% include reveal/sections/back.html %}
-      </div>
-    </div>
+
+    {{ content }}
+
     {% include reveal/body_scripts.html %}
     {% include footer-scripts.html %}
   </body>

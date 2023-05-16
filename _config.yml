@@ -102,7 +102,7 @@ defaults:
       path: "_slides"
       type: "slides"
     values:
-      layout: "reveal"
+      layout: "slides"
 
 # Exclude these files from production site
 exclude:
