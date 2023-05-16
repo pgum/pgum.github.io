@@ -9,6 +9,8 @@
 
   {% if page.subtitle %}
   <meta name="description" content="{{ page.subtitle }}">
+  {% else %}
+  <meta name="description" content="{{ site.data.resume.description }}">
   {% endif %}
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} {{ site.title-separator }} {{ site.description }}" href="{{ '/feed.xml' | absolute_url }}" />
@@ -23,14 +25,14 @@
     {% endfor %}
   {% endif %}
 
-  {% if layout.unique-css %}
-    <link rel="stylesheet" href="{{ layout.unique-css.path | relative_url }}" id="{{ layout.unique-css.id }}" />
-  {% endif %}
-
   {% if layout.common-css %}
     {% for css in layout.common-css %}
       <link rel="stylesheet" href="{{ css | relative_url }}" />
     {% endfor %}
+  {% endif %}
+
+  {% if layout.unique-css %}
+    <link rel="stylesheet" href="{{ layout.unique-css.path | relative_url }}" id="{{ layout.unique-css.id }}" />
   {% endif %}
 
   {% if layout.common-googlefonts %}
@@ -49,6 +51,10 @@
     {% for css in page.css %}
       <link rel="stylesheet" href="{{ css | relative_url }}" />
     {% endfor %}
+  {% endif %}
+  
+  {% if page.unique-css %}
+    <link rel="stylesheet" href="{{ page.unique-css.path | relative_url }}" id="{{ page.unique-css.id }}" />
   {% endif %}
 
   {% if page.googlefonts %}
