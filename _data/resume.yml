@@ -125,9 +125,9 @@ certificates:
 skills:
     title: Skills &amp; Proficiency
     toolset:
-      - name: Linux, Bash
+      - name: Linux, Bash, git
         level: 75%
-      - name: git, gitlab, github
+      - name: gitlab, github, gerrit
         level: 61%
       - name: Python, PHP, JavaScript, C++
         level: 51%
@@ -135,11 +135,7 @@ skills:
         level: 88%
       - name: Openstack, Ansible, Docker
         level: 71%
-      - name: Scrum, Kanban, Agile
+      - name: Scrum, Agile, coaching
         level: 84%
-      - name: Coaching, mentoring
-        level: 82%  
-      - name: Managing teams&projects
-        level: 58%
-      - name: Jira, MS Teams, Office365
+      - name: Managing teams&projects, Jira, MS Teams, Office365
         level: 64%

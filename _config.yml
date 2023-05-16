@@ -71,7 +71,7 @@ resume:
   sidebar:
     education: true
     certs: false
-    skills: false
+    skills: true
 
 url-pretty: "gumulka.net"
 
