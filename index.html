@@ -4,15 +4,15 @@ title: Piotr Jacek Gumulka
 use-site-title: true
 
 ---
-{% include sections/career-profile.html %}
-{% include sections/experiences.html %}
-{% include sections/projects.html %}
+{% include resume/sections/career-profile.html %}
+{% include resume/sections/experiences.html %}
+{% include resume/sections/projects.html %}
 {% unless site.resume.sidebar.certs %}
-  {% include sections/certs.html %}  
+  {% include resume/sections/certs.html %}  
 {% endunless %}
 {% unless site.resume.sidebar.education %}
-  {% include sections/education.html %}
+  {% include resume/sections/education.html %}
 {% endunless %}
 {% unless site.resume.sidebar.skills %}
-  {% include sections/skills.html %}
+  {% include resume/sections/skills.html %}
 {% endunless %}
