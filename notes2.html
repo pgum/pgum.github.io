@@ -3,9 +3,6 @@ layout: page
 title: All notes
 subtitle: Resources I've collected
 ---
-<script src="/js/jquery-1.11.2.min.js"></script>
-<script src="/js/jQWCloudv3.4.1.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
 <div class="card-group container-fluid">
 {% for post in site.posts %}
   {%- capture post_tags -%}
@@ -34,6 +31,7 @@ subtitle: Resources I've collected
   {% endfor %}
 </div>
 
+<!--
 <script>
 function setAllCategoriesDisplay(value){
   for (let item of document.getElementsByClassName("card")) {
@@ -59,3 +57,4 @@ $('.card-group').isotope({
   layoutMode: 'fitRows'
 })
 </script>
+-->
