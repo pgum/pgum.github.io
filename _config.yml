@@ -52,10 +52,7 @@ resume:
     education: true
     certs: false
     skills: true
-  description: |
-  My name is Piotr Jacek Gumulka. I help projects, teams and individuals find the way to achieve their business objectives.  
-  I am servant leader, DevOps engineer, university lecturer and public speaker open to new challenges.
-
+  
 # Excerpt Word Length
 # Truncates the excerpt to the specified number of words on the index page
 excerpt_length: 50
