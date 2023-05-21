@@ -14,6 +14,9 @@ subtitle: Resources I've collected
             {{ post.title }} 
           </h3>
         </a>
+        <div class="category">
+          {{ post.category }}
+        </div>
         {% if post.category == "scenario" %}
           <div class="duration">
             {{ post.scenario.duration }}
@@ -31,11 +34,11 @@ subtitle: Resources I've collected
             <p>{{ post.content | strip_html | xml_escape | truncatewords: site.excerpt_length }}...</p>
           </div>            
         {% endif %}
-        {% if slide.tags.size > 0 %}
+        {% if post.tags.size > 0 %}
           <div class="slide-tags">
             <p class="description" >Tags: </p>
             <div class="container-fluid">
-              {% for tag in slide.tags %}
+              {% for tag in post.tags %}
                 <a class="bg-primary badge label-primary" href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
               {% endfor %}
             </div>
