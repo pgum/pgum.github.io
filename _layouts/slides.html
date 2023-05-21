@@ -9,14 +9,7 @@ layout: reveal
   	  # {{ page.title }}  
       </script>
     </section>
-    <section data-markdown>
-      <script type="text/markdown">
-      ## Objectives
-      {% for objective in page.objectives %}
-      * {{ objective }}
-      {% endfor %}
-      </script>
-    </section>
+    {% include reveal/sections/objectives.html %}
     {% include reveal/sections/toc.html %}
     <section data-markdown data-separator="^\n<hr />$" data-vertical="^\n--\n$" data-notes="^<p>Note:</p>">
       <script type="text/template">
