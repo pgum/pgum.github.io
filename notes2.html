@@ -8,7 +8,7 @@ subtitle: Resources I've collected
   {% for post in site.posts %}
     <div class="card {{ post.category }}">
       <div class="card-body">
-        {% include listing/card_title.html title={{ post.title }} icon={{ post.list-icon }} %}
+        {% include listing/card_title.html title=post.title list-icon=post.list-icon url=post.url %}
         {% if post.category == "scenario" %}
           <div class="duration">
             {{ post.scenario.duration }}

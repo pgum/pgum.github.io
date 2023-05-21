@@ -8,7 +8,7 @@ subtitle: Slides for various topics
   {% for slide in site.slides %}
     <div class="card {{ slide.category }}">
       <div class="card-body">
-        {% include listing/card_title.html title={{ slide.title }} icon={{ slide.list-icon }} %}
+        {% include listing/card_title.html title=slide.title list-icon=slide.list-icon url=slide.url %}
         <div class="objectives-list">
             <p class="description" >Objectives: </p>
             {% for objective in slide.objectives %}
