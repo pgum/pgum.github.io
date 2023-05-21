@@ -4,11 +4,7 @@ layout: reveal
 <!-- slide deck -->
 <div class="reveal">
   <div class="slides">
-    <section data-markdown>
-      <script type="text/template">
-  	  <h1> {{ page.title }} </h1>
-      </script>
-    </section>
+    {% include reveal/sections/title.html %}
     {% include reveal/sections/objectives.html %}
     {% include reveal/sections/toc.html %}
     <section data-markdown data-separator="^\n<hr />$" data-vertical="^\n--\n$" data-notes="^<p>Note:</p>">
