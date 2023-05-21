@@ -1,13 +1,13 @@
 <section 
-	{% if page.title-image %}
-	class="with-image" 
-	data-background-image="{{ page.title-image }}" 
+  {% if page.toc-image %}
+  	class="with-image" 
+	data-background-image="{{ page.toc-image }}" 
     data-background-size="30%" 
     data-background-position="left" 
-	{% endif %}
+  {% endif %}
 data-markdown>
-	<script type="text/markdown" id="agenda-script2">
-		## Agenda 
-		{% include toc.html html=content h_min=1 h_max=1 %}
-	</script>
+  <script type="text/markdown">
+	## Agenda 
+	{% include toc.html html=content h_min=1 h_max=1 %}
+  </script>
 </section>
