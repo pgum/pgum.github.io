@@ -5,3 +5,12 @@ subtitle: Resources I've collected
 list-of: site.posts
 card-type: post
 ---
+
+<div class="card-group container-fluid">
+    {% for post in site.posts %}
+      {% captute post_category %}
+      post.category
+      {% endcapture %}
+      {% include listing/card.html card=post type=post_category %}
+    {% endfor %}
+</div>

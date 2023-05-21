@@ -1,18 +1,10 @@
 ---
 layout: page
 ---
-<div class="card-group container-fluid">
-  {% for post in {{ page.list-of }} %}
-    {% if page.card-type == "post" %}
-      {% include listing/card.html card=post type={{ post.category }} %}
-    {% else %}
-      {% include listing/card.html card=slide type={{ page.card-type }} %}
-    {% endif %}
-  {% endfor %}
-</div>
+
+{{ content }}
 
 <script>
-  
   $('.card-group').isotope({
     itemSelector: '.card',
     layoutMode: 'fitRows'

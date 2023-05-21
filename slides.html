@@ -2,6 +2,10 @@
 layout: listing
 title: Slides Index
 subtitle: Slides for various topics
-list-of: site.slides
-card-type: slide
 ---
+
+<div class="card-group container-fluid">
+    {% for slide in site.slides %}
+      {% include listing/card.html card=slide type=slide %}
+    {% endfor %}
+</div>
