@@ -40,9 +40,6 @@ resume:
 navbar-links:
   slides: "slides"
   notes: "notes"
-  checklists: "notes/#checklist"
-  concepts: "notes/#concept"
-  scenarios: "notes/#scenario"
 
 # Select which share links to show in posts
 share-links-active:
