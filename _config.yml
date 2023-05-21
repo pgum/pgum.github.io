@@ -99,7 +99,7 @@ defaults:
   -
     scope:
       path: "_slides"
-      type: ""
+      type: "slides"
     values:
       layout: "slides"
       list-icon: "fa-book" 
