@@ -98,7 +98,7 @@ defaults:
       type: "slides"
     values:
       layout: "slides"
-      list-icon: "fa-presentation-screen" 
+      list-icon: "fa-note-sticky" 
 
 # Exclude these files from production site
 exclude:
