@@ -31,7 +31,3 @@ phone:
   baseURL: "tel:"
   icon: "fa-solid fa-phone"
 
-rss:
-  name: "RSS"
-  baseURL: "{{ '/feed.xml' | relative_url }}"
-  icon: "fa-rss"
