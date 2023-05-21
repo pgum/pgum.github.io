@@ -11,15 +11,15 @@ subtitle: Resources I've collected
         <a href="{{ post.url | relative_url }}">
           <h3 class="post-category-name card-title">
             <i class="fa fas
-            {{% if post.list-icon %}}
+            {% if post.list-icon %}
             {{ post.list-icon }}
-            {{% elsif post.category == "scenario" %}}
+            {% elsif post.category == "scenario" %}
             fa-people-arrows
-            {{% elsif post.category == "checklist" %}}
+            {% elsif post.category == "checklist" %}
             fa-check-square
-            {{% elsif post.category == "concept" %}}
+            {% elsif post.category == "concept" %}
             fa-thought-bubble
-            {{% endif %}}}
+            {% endif %}}
             aria-hidden="true"></i> 
             {{ post.title }} 
           </h3>
