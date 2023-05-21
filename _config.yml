@@ -85,13 +85,11 @@ defaults:
       type: "posts"
     values:
       layout: "fa-post"
-      list-icon: "fa-pencil" 
   -
     scope:
       path: "" # all files
     values:
       layout: "page"
-      list-icon: "fa-page" 
       show-avatar: false  
       social-share: true # add social media sharing buttons to all blog posts
   -
@@ -100,7 +98,7 @@ defaults:
       type: "slides"
     values:
       layout: "slides"
-      list-icon: "fa-book" 
+      list-icon: "fa-presentation-screen" 
 
 # Exclude these files from production site
 exclude:

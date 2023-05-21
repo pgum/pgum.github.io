@@ -4,7 +4,6 @@ title: Workplace checklist
 date: 2020-03-01
 category: checklist
 tags: []
-list-icon: "fa-book" 
 ---
 
 Making workplace better is a never ending process. Having a checklist of different  practices and behaviors to take notice of eases the task by providing a starting point in `inspect` phase of `inspect&adapt` cycle.

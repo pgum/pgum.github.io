@@ -19,7 +19,9 @@ subtitle: Resources I've collected
             fa-check-square
             {% elsif post.category == "concept" %}
             fa-thought-bubble
-            {% endif %}}
+            {% else %}
+            fa-file-lines
+            {% endif %}
             aria-hidden="true"></i> 
             {{ post.title }} 
           </h3>

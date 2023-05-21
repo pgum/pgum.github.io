@@ -10,7 +10,13 @@ subtitle: Slides for various topics
       <div class="card-body">
         <a href="{{ slide.url | relative_url }}">
           <h3 class="post-category-name card-title">
-            <i class="fa {{ slide.list-icon }}" aria-hidden="true"></i> 
+            <i class="fa fas
+            {% if slide.list-icon %}
+            {{ slide.list-icon }}" 
+            {% else %}
+            fa-file-lines
+            {% endif %}
+            aria-hidden="true"></i> 
             {{ slide.title }} 
           </h3>
         </a>
