@@ -893,15 +893,15 @@ pre {
 
 .scenario .post-category-name {
   background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 85%, rgba(140,140,255,1) 100%);
+  background: linear-gradient(135deg, rgba(255,255,255,1) 85%, rgba(140,140,255,1) 100%);
 }
 
 .concept .post-category-name {
   background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 85%, rgba(140,255,140,1) 100%);
+  background: linear-gradient(135deg, rgba(255,255,255,1) 85%, rgba(140,255,140,1) 100%);
 }
 
 .checklist .post-category-name {
   background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 85%, rgba(255,140,140,1) 100%);
+  background: linear-gradient(135deg, rgba(255,255,255,1) 85%, rgba(255,140,140,1) 100%);
 }
