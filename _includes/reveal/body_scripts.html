@@ -16,8 +16,8 @@
                 {% if site.url-source %}
 				  {title: 'Github', style: 'fab', icon: 'fa-github', href: '{{ site.url-source }}/{{ page.path }}' },
                 {% endif %} 
-				{% if site.contact.linkedin %}
-                  {title: 'LinkedIn', style: 'fab', icon: 'fa-linkedin', href: 'https://linkedin.com/in/{{ contact.linkedin }}' }, 
+				{% if site.author.contact.linkedin %}
+                  {title: 'LinkedIn', style: 'fab', icon: 'fa-linkedin', href: 'https://linkedin.com/in/{{ author.contact.linkedin }}' }, 
                 {% endif %}
 				{title: 'Slides', style: 'fas', icon: 'fa-home', href: "{{ 'slides' | relative_url }}" } 
 			],	

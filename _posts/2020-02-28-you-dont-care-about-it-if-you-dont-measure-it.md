@@ -2,7 +2,7 @@
 layout: post
 title: You care only about what you measure
 date: 2020-02-28
-category: concepts
+category: concept
 tags: [lean, waste, inspect, inspect&adapt]
 ---
 ### What is measurement

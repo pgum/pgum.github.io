@@ -1,13 +1,27 @@
 ---
 layout: post
 title: Turning grumble into actions
-subtitle: This is where I will tell my friends way too much about me
+subtitle: Turn grumpy cats into agents of change
 date: 2020-03-01
-category: scenarios
-tags: retro
-duration: 60
-outcome: improvement
+category: scenario
+tags: []
+readmore: 
+scenario:
+  audience: Team
+  duration: 60
+  outcome:
+    - Team learns how to express grumbles in constructive way
+    - Team identifies underlaying needs behind recent grumbles
+    - Team defines action items for involved parties
 ---
+
+Being a grupmy cat is not a bad thing, but it's not very productive either. In this scenario we try to teach our team how to turn their grumbles in constructive way.  
+Team learns how to express their needs in actionable way, so that they can be addressed by involved parties.  
+
+Key thing to remember as a leader is that only successful closing off of feedback loop - **actual change** in identified areas of improvement - will turn grumpy cats into agents of change. But that said, it's basic need of any change to happen. Often grumpy cats are just people who are frustrated by lack of change, and they are not able to express their needs in constructive way. A role of a mentor is to help them to do so. A role of a leader is to hold the team accountable for their actions and express those needs higher up the chain of command if needed. Coach should observe if all involved parties are doing their part in closing off feedback loop, and if not, raise questions about it. 
+
+
+
 ## Goals
 
 * Group understand negative effects of grumble
@@ -45,12 +59,12 @@ outcome: improvement
 
 ## Scenario description
 
-![grumpy cat into smart action][grumpy-cat-into-smart-action]
 
 ### 10 mins - Set the stage - Explain meeting goals to the Team
 
 * How do we differ between being grumpy and constructive criticism?
 * What are the consequences of being grumpy
+* Being grumpy is valid human feeling, its the things that hurt us we want to identify and address
 
 ### 15 mins - Explain method
 
@@ -69,13 +83,3 @@ outcome: improvement
 * Define way to synchronize status information
 * Define follow-up meeting for Backlog refinement, add generated items to appropriate backlogs
 * Gather feedback on methodology used
-
-## Helpful information
-
-## Reference
-
-* "Photo by Daoudi Aissa on Unsplash https://unsplash.com/photos/absT1BNRDAI"
-
-[grumble_to_need_example_file]: ./stash/grumble_to_need_example_file.md 
-
-[grumpy-cat-into-smart-action]: ../imgs/daoudi-aissa-absT1BNRDAI-unsplash.jpg "Photo by Daoudi Aissa on Unsplash https://unsplash.com/photos/absT1BNRDAI"

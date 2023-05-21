@@ -1,39 +1,41 @@
 ---
 layout: post
 title: Teams vision of goal
-subtitle: This is where I will tell my friends way too much about me
+subtitle: Defining common goal, and steps to achieve it
 date: 2020-03-01
-category: scenarios
-tags: [retro, team building]
-duration: 60
-outcome: improvement actions
+category: scenario
+tags: []
+readmore: 
+scenario:
+  audience: Team
+  duration: 60
+  outcome:
+    - Team defines goal state
+    - Team identifies key components of goal state
+    - Team asserts current state
+    - Team defines action items leading to the goal
 ---
-## Goals
-* Team identifies "ideal" vision
-* Team asserts current state
-* Team defines steps toward "ideal" state
 
-## Time and place
+In this scenario we try to define a common goal for the team, and steps to achieve it. It's a good idea to do this exercise at the beginning of a new project, or when team is formed. It's also a good idea to repeat it from time to time, to check if team is still on track with established goals. By identyfing key components of goal state, team naturally gravitates towards discussion about current state, and what can be done to improve it, which is the point of this exercise.
+
+### Time and place
 * Around 1 hour long
 * Room to sit in circle
 
-## Participants
+### Participants
 * Group of interest
 * Moderator
 
-## Prerequisites
+### Prerequisites
 * Team members have defined team goals
 * Team members understand requirements for empirical process
 
-## Room and items needed
+### Room and items needed
 * Room with U-shaped or round table
 * Flipchart & markers
 * Post-its & pens
 
 ## Scenario description
-
-
-![visualization of ideal state][capturing-the-sun]
 
 ### 5 mins - Set the stage - Explain meeting goals to the Team 
   - Let's hold on for a second and think about how our would would look like in its ideal state.
@@ -65,12 +67,5 @@ outcome: improvement actions
 ### 10 mins - Define Review Date and next steps
   * Define one plane to store actions and their status in transparent way
   * Define follow-up meeting for Backlog refinement
-  * Gather feedback on methodology used
-
-## Helpful information
-
-
-## Reference
-* "Photo by Daoudi Aissa on Unsplash https://unsplash.com/photos/absT1BNRDAI"
-
-[capturing-the-sun]: /img/daoudi-aissa-absT1BNRDAI-unsplash.jpg "Photo by Daoudi Aissa on Unsplash https://unsplash.com/photos/absT1BNRDAI"
+  * Thank everyone for participation
+  * Gather feedback on concluded event

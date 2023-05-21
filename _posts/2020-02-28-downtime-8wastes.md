@@ -3,7 +3,7 @@ layout: post
 title: 8 wastes od manufacturing - DOWNTIME
 date: 2020-02-28
 subtitle: This is where I will tell my friends way too much about me
-category: concepts
+category: concept
 tags: [lean, waste]
 ---
 

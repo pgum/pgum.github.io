@@ -1,0 +1,40 @@
+---
+layout: page
+---
+<div class="card-group container-fluid">
+  {% for post in {{ page.list-of }} %}
+    {% if page.card-type == "post" %}
+      {% include listing/card.html card=post type={{ post.category }} %}
+    {% else %}
+      {% include listing/card.html card=slide type={{ page.card-type }} %}
+    {% endif %}
+  {% endfor %}
+</div>
+
+<script>
+  
+  $('.card-group').isotope({
+    itemSelector: '.card',
+    layoutMode: 'fitRows'
+  })
+/*
+function setAllCategoriesDisplay(value){
+  for (let item of document.getElementsByClassName("card")) {
+      item.style.display=value;
+  }
+}
+function showSelectedCategory(){
+  let tag= location.hash.substring(1);
+  if(document.getElementsByClassName(tag) != null){
+    setAllCategoriesDisplay("none");
+    for (let item of document.getElementsByClassName(tag)) {
+      item.style.display="block";
+    }
+  }else{
+    setAllCategoriesDisplay("block");
+  }
+}
+window.onhashchange = showSelectedCategory
+showSelectedCategory();
+*/
+</script>

@@ -1,0 +1,11 @@
+{%- assign tags = include.post.tags -%}
+{% if tags.size > 0 %}
+<div class="slide-tags">
+    <p class="description" >Tags: </p>
+    <div class="container-fluid">
+      {% for tag in slide.tags %}
+      <a class="bg-primary badge label-primary" href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

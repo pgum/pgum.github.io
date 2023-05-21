@@ -1,9 +1,17 @@
 ---
 layout: post
-title: Opportunities and challenges
+title: Dixit cards - opportunities and challenges
 date: 2020-03-01
-category: scenarios
+category: scenario
 tags: []
+readmore: 
+scenario:
+  audience: Team
+  duration: 60
+  outcome:
+    - Team observes how their work interacts with one another
+    - Team identifies which 
+    - Team defines action items for involved parties
 --- 
 
 ## Goals
@@ -50,6 +58,3 @@ tags: []
 
 
 ### 5 mins - Write down three agreements that we all should remember to have a good start, have all sign it
-
-## Helpful information
-
