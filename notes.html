@@ -10,13 +10,20 @@ subtitle: Resources I've collected
       <div class="card-body">
         <a href="{{ post.url | relative_url }}">
           <h3 class="post-category-name card-title">
-            <i class="fa {{ post.list-icon }}" aria-hidden="true"></i> 
+            <i class="fa fas
+            {{% if post.list-icon %}}
+            {{ post.list-icon }}
+            {{% elsif post.category == "scenario" %}}
+            fa-people-arrows
+            {{% elsif post.category == "checklist" %}}
+            fa-check-square
+            {{% elsif post.category == "concept" %}}
+            fa-thought-bubble
+            {{% endif %}}}
+            aria-hidden="true"></i> 
             {{ post.title }} 
           </h3>
         </a>
-        <div class="category">
-          {{ post.category }}
-        </div>
         {% if post.category == "scenario" %}
           <div class="duration">
             {{ post.scenario.duration }}
