@@ -41,9 +41,10 @@ navbar-links:
   slides: "slides"
   notes: "notes"
 
-# Select which share links to show in posts
+# Select which share links to show with social-share
 share-links-active:
   facebook: true
+  twitter: true
   linkedin: true
 
 # Enable rss feed for site
