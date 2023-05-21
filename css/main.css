@@ -905,3 +905,8 @@ pre {
   background: rgb(255,255,255);
   background: linear-gradient(135deg, rgba(255,255,255,1) 85%, rgba(255,140,140,1) 100%);
 }
+
+.slide .post-category-name {
+  background: rgb(255,255,255);
+  background: linear-gradient(135deg, rgba(255,255,255,1) 85%, rgb(250, 228, 129) 100%);
+}
