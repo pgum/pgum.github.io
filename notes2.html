@@ -2,15 +2,32 @@
 layout: listing
 title: All notes
 subtitle: Resources I've collected
-list-of: site.posts
-card-type: post
 ---
 
 <div class="card-group container-fluid">
-    {% for post in site.posts %}
-      {% capture post_category %}
-      post.category
-      {% endcapture %}
-      {% include listing/card.html card=post type=post_category %}
-    {% endfor %}
+  {% for post in site.posts %}
+    <div class="card {{ post.category }}">
+      <div class="card-body">
+        {% include listing/card_title.html title={{ post.title }} icon={{ post.list-icon }} %}
+        {% if post.category == "scenario" %}
+          <div class="duration">
+            {{ post.scenario.duration }}
+          </div>
+          <div class="audience">
+            {{ post.scenario.audience }}
+          </div>
+          <div class="outcomes">
+            {% for outcome in post.scenario.outcome %}
+              <p class="card-text" >{{ outcome }}</p>
+            {% endfor %}
+          </div>
+        {% else %}
+          <div class="excerpt">
+            <p>{{ post.content | strip_html | xml_escape | truncatewords: site.excerpt_length }}...</p>
+          </div>            
+        {% endif %}
+        {% include listing/card_tags.html tags=post.tags %}
+      </div>
+    </div>
+  {% endfor %}
 </div>

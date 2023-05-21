@@ -5,7 +5,18 @@ subtitle: Slides for various topics
 ---
 
 <div class="card-group container-fluid">
-    {% for slide in site.slides %}
-      {% include listing/card.html card=slide type=slide %}
-    {% endfor %}
+  {% for slide in site.slides %}
+    <div class="card {{ slide.category }}">
+      <div class="card-body">
+        {% include listing/card_title.html title={{ slide.title }} icon={{ slide.list-icon }} %}
+        <div class="objectives-list">
+            <p class="description" >Objectives: </p>
+            {% for objective in slide.objectives %}
+              <p class="card-text" >{{ objective }}</p>
+            {% endfor %}
+          </div>        
+        {% include listing/card_tags.html tags=slide.tags %}
+     </div>
+    </div>  
+  {% endfor %}
 </div>
