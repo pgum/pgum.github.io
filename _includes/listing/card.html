@@ -1,7 +1,0 @@
-<div class="card {{ include.card.category }}">
-  <div class="card-body">
-    {% include listing/card_title.html card=post %}
-    {% include listing/types/{{ include.type }}.html card=include.card.post %}
-    {% include listing/card_tags.html tags=include.card.post.tags %}
-  </div>
-</div>  

@@ -8,7 +8,12 @@ subtitle: Resources I've collected
   {% for post in site.posts %}
     <div class="card {{ post.category }}">
       <div class="card-body">
-        {% include listing/card_title.html title=post.title list-icon=post.list-icon url=post.url %}
+        <a href="{{ post.url | relative_url }}">
+          <h3 class="post-category-name card-title">
+            <i class="fa {{ post.list-icon }}" aria-hidden="true"></i> 
+            {{ post.title }} 
+          </h3>
+        </a>
         {% if post.category == "scenario" %}
           <div class="duration">
             {{ post.scenario.duration }}
@@ -26,7 +31,16 @@ subtitle: Resources I've collected
             <p>{{ post.content | strip_html | xml_escape | truncatewords: site.excerpt_length }}...</p>
           </div>            
         {% endif %}
-        {% include listing/card_tags.html tags=post.tags %}
+        {% if slide.tags.size > 0 %}
+          <div class="slide-tags">
+            <p class="description" >Tags: </p>
+            <div class="container-fluid">
+              {% for tag in slide.tags %}
+                <a class="bg-primary badge label-primary" href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
       </div>
     </div>
   {% endfor %}

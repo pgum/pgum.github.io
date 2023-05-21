@@ -8,15 +8,29 @@ subtitle: Slides for various topics
   {% for slide in site.slides %}
     <div class="card {{ slide.category }}">
       <div class="card-body">
-        {% include listing/card_title.html title=slide.title list-icon=slide.list-icon url=slide.url %}
+        <a href="{{ slide.url | relative_url }}">
+          <h3 class="post-category-name card-title">
+            <i class="fa {{ slide.list-icon }}" aria-hidden="true"></i> 
+            {{ slide.title }} 
+          </h3>
+        </a>
         <div class="objectives-list">
-            <p class="description" >Objectives: </p>
-            {% for objective in slide.objectives %}
-              <p class="card-text" >{{ objective }}</p>
-            {% endfor %}
-          </div>        
-        {% include listing/card_tags.html tags=slide.tags %}
-     </div>
+          <p class="description" >Objectives: </p>
+          {% for objective in slide.objectives %}
+            <p class="card-text" >{{ objective }}</p>
+          {% endfor %}
+        </div>        
+        {% if slide.tags.size > 0 %}
+          <div class="slide-tags">
+            <p class="description" >Tags: </p>
+            <div class="container-fluid">
+              {% for tag in slide.tags %}
+                <a class="bg-primary badge label-primary" href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+      </div>
     </div>  
   {% endfor %}
 </div>
