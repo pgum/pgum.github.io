@@ -96,6 +96,24 @@ defaults:
       social-share: true # add social media sharing buttons to all blog posts
   -
     scope:
+      path: "" # all files
+      category: "concept"
+    values:
+      list-icon: "fa-thought-bubble" 
+  -
+    scope:
+      path: "" # all files
+      category: "checklist"
+    values:
+      list-icon: "fa-list-check" 
+  -
+    scope:
+      path: "" # all files
+      category: "scenario"
+    values:
+      list-icon: "fa-people-arrows" 
+  -
+    scope:
       path: "_slides"
       type: "slides"
     values:
