@@ -5,67 +5,7 @@ subtitle: Resources I've collected
 ---
 
 <div class="card-group container-fluid">
-  {% for post in site.notes %}
-    <div class="card {{ post.category }}">
-      <div class="card-body">
-        <a href="{{ post.url | relative_url }}">
-          <h3 class="post-category-name card-title">
-            <i class="fa fas
-            {% if post.list-icon %}
-            {{ post.list-icon }}
-            {% elsif post.category == "slide" %}
-            fa-note-sticky
-            {% elsif post.category == "scenario" %}
-            fa-people-arrows
-            {% elsif post.category == "checklist" %}
-            fa-list-check
-            {% elsif post.category == "concept" %}
-            fa-lightbulb
-            {% else %}
-            fa-file-lines
-            {% endif %}
-            aria-hidden="true"></i> 
-            {{ post.title }} 
-          </h3>
-        </a>
-        {% if post.category == "slide" %}
-          <div class="objectives-list">
-            <p class="description" >Objectives: </p>
-            {% for objective in post.objectives %}
-              <p class="card-text" >{{ objective }}</p>
-            {% endfor %}
-          </div>
-        {% elsif post.category == "scenario" %}
-          <div class="duration">
-            <p class="description" >Duration: </p>
-            {{ post.scenario.duration }}
-          </div>
-          <div class="audience">
-            <p class="description" >Audience: </p>
-            {{ post.scenario.audience }}
-          </div>
-          <div class="outcomes-list">
-            <p class="description" >Expected outcomes: </p>
-            {% for outcome in post.scenario.outcome %}
-              <p class="card-text" >{{ outcome }}</p>
-            {% endfor %}
-          </div>
-        {% else %}
-          <div class="excerpt">
-            <p>{{ post.content | strip_html | xml_escape | truncatewords: site.excerpt_length }}...</p>
-          </div>            
-        {% endif %}
-        {% if post.tags.size > 0 %}
-          <div class="slide-tags">
-            <p class="description" >Tags: </p>
-            <div class="container-fluid">
-              {% for tag in post.tags %}
-                <a class="bg-primary badge label-primary" href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
-              {% endfor %}
-            </div>
-          </div>
-        {% endif %}
-      </div>
-    </div>
+  {% for post in site.notes | sort:"order" %}
+    {{ include listing_card.html post=post }}
   {% endfor %}
 </div>

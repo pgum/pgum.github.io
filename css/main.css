@@ -853,7 +853,7 @@ pre {
   border-collapse: collapse;
   min-height: 52px;
 }
-.objectives-list, .slide-tags, .description {
+.card-information-box, .slide-tags, .description {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 15px;
   margin:-1px;
@@ -877,7 +877,7 @@ pre {
   font-size: 15px;
   
 }
-.card-text::before {
+.card-text-list::before {
   content: "• ";
 }
 .slide-tags{

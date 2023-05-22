@@ -3,7 +3,7 @@
 # In addition to that you need to specify the following properties:
 #   name: Specify a user-friendly name that will be used as a link title
 #   baseURL: Define a base URL which will be combined with the value of
-#            site.contact.<key>
+#            site.author.contact.<key>
 #   icon: Specify a valid fontawesome icon class
 
 github:

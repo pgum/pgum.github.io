@@ -20,3 +20,11 @@ footer-link-col: "#404040"
 # page-img: "/img/bgimage.png"
 
 # --- Footer options --- #
+
+# --- Icon mapping options --- #
+icons:
+  slide: fa-note-sticky
+  scenario: fa-people-arrows
+  checklist: fa-list-check
+  concept: fa-lightbulb
+  default: fa-file-lines
