@@ -7,7 +7,7 @@ subtitle: Notes on various topics that I find interesting
   {% assign categories = site.notes | where_exp: "item", "item.category != nil" | group_by: "category" %}
   {% assign sortedCategories = categories | sort: "name" %}
   {% for current_category in sortedCategories %}
-    {% for post in site.notes | where: 'category',current_category %}
+    {% for post in site.notes | where: 'category' , current_category %}
       <div class="card {{ post.category }}">
         <div class="card-body">
           <a href="{{ post.url | relative_url }}">
