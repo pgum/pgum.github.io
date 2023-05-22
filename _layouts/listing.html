@@ -19,8 +19,6 @@ layout: page
       $grid.isotope({ filter: tag })
       $grid.isotope('reLayout');
     });
-    let tag= "."+location.hash.substring(1);
-    if(tag==".") tag="*";
     $grid.isotope({ filter: tag })
     $grid.isotope('reLayout');  
   });
