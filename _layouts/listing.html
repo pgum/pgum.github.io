@@ -4,22 +4,4 @@ layout: page
 
 {{ content }}
 
-<script>
-  jQuery(document).ready(function($) {
-    let tag= "."+location.hash.substring(1);
-    if(tag==".") tag="*";
-    var $grid = $('.card-group').isotope({
-    itemSelector: '.card',
-    layoutMode: 'masonry',
-    filter: tag,
-    masonry: {
-      gutter: 15}
-    });
-    $(window).on('onhashchange', function() {
-      $grid.isotope({ filter: tag })
-      $grid.isotope('layout');
-    });
-    $grid.isotope({ filter: tag })
-    $grid.isotope('layout');  
-  });
-</script>
+
