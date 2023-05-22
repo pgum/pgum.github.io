@@ -3,9 +3,58 @@ layout: listing
 title: All notes
 subtitle: Resources I've collected
 ---
-
 <div class="card-group container-fluid">
-  {% for post in site.notes | sort:"order" %}
-    {{ include listing_card.html post=post }}
+  {% for slide in site.slides | sort: "order" %}
+  {%- assign icon = post.list-icon -%}
+  {%- assign default_icon = site.data.theme.icon["default"] -%}
+  {%  unless icon -%}
+    {%- assign icon = site.data.theme.icon[post.category] -%}
+  {% endunless -%}
+  <div class="card {{ post.category }}">
+    <div class="card-body">
+      <a href="{{ post.url | relative_url }}">
+        <h3 class="post-category-name card-title">
+          <i class="fa fas
+          {% if post.list-icon %}
+          {{ post.list-icon }}
+          {% elsif icon %}
+          {{ icon }}
+          {% else %}
+          {{ default_icon }}
+          {% endif %}
+          aria-hidden="true"></i> 
+          {{ post.title }} 
+        </h3>
+      </a>
+      <!-- Card information -->
+      <div class="card-information-box">
+        {% if post.category == "scenario" %}
+          <div class="badge duration">{{ post.scenario.duration }}</div>
+          <div class="badge audience">{{ post.scenario.audience }}</div>
+        {% else %}
+          {%- assign keypoints = post.key-points | truncate: {{ site.truncate_keypoints }} -%}
+          {% if keypoints %}
+          <p class="description">Key points: </p>
+            {% for keypoint in keypoints %}
+            <p class="card-text card-text-list" >{{ keypoint }}</p>
+            {% endfor %}
+          {% else %}
+            <p class="card-text" >{{ post.content | strip_html | xml_escape | truncatewords: site.excerpt_length }}...</p>
+          {% endif %}
+        {% endif %}
+      </div>
+      <!-- Tags -->
+      {% if post.tags.size > 0 %}
+        <div class="card-tags">
+          <p class="description" >Tags: </p>
+          <div class="container-fluid">
+            {% for tag in post.tags %}
+              <a class="bg-primary badge label-primary" href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
   {% endfor %}
 </div>

@@ -1,9 +1,9 @@
 ---
 layout: slides
+category: slides
 tags: [introduction]
 objectives: [introduce myself, set workshop rules, get input for discussion, show prepared topics]
 title-image:
-category: slides
 ---
 
 # Piotr Gumułka, MSc BA

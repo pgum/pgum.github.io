@@ -1,11 +1,11 @@
 ---
 layout: slides
+category: slides
 tags: [Defects, Extra-processing, Waiting, Non-used talent, Motion]
 objectives: 
  - Observe web around you 
  - Analyze needs and ends
  - Minimize conflicts by transparency
-category: slides
 ---
 
 # Web of dependencies

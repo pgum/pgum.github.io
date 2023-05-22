@@ -38,7 +38,7 @@ resume:
 # --- Navigation bar options --- #
 # List of links in the navigation bar
 navbar-links:
-  slides: "slides"
+  "about me": "/"
   notes: "notes"
 
 # Select which share links to show with social-share
@@ -78,10 +78,6 @@ collections:
     sort_by: category
     order: 
       - introduction.md
-  slides:
-    output: true
-    order: 
-      - introduction.md
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
@@ -98,13 +94,6 @@ defaults:
     values:
       layout: "page"
       show-avatar: false  
-  -
-    scope:
-      path: ""
-      type: "slides"
-    values:
-      layout: "slides"
-      list-icon: "fa-note-sticky" 
 
 # Exclude these files from production site
 exclude:

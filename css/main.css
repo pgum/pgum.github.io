@@ -880,11 +880,11 @@ pre {
 .card-text-list::before {
   content: "• ";
 }
-.slide-tags{
+.card-tags{
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 15px;
 }
-.slide-tags a{
+.card-tags a{
   border-radius: 5px;
   background-color: #337ab7;
   font-weight: 400;

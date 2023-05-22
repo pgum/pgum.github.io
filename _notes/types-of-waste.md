@@ -1,8 +1,8 @@
 ---
 layout: slides
+category: slides
 tags: [Lean,]
 title-image: /img/waste_intro.png
-category: slides
 objectives:
  - Unmaintaned waste
  - Identify waste

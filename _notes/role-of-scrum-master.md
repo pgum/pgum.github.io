@@ -1,11 +1,11 @@
 ---
 layout: slides
+category: slides
 tags: [Defects, Extra-processing, Waiting, Non-used talent, Motion, Scrum]
 objectives:
  - Responsibilities
  - Evaluation
  - Inspect&Adapt agent
-category: slides
 ---
 # Role of Scrum Master
 
