@@ -10,11 +10,12 @@ layout: page
       $(".navbar-collapse").collapse('hide');
     }
   });
-  let tag= "."+location.hash.substring(1);
+  let section= location.hash.substring(1);
+  let tag= "."+section;
   if(tag =="."){
     tag="*";
   }else{
-    $('.page-heading h1').text(tag);
+    $('.page-heading h1').text(section.charAt(0).toUpperCase() + section.slice(1));
     $('.page-subheading').text("");
   }
   var $grid = $('.card-group').isotope({
