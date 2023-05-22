@@ -55,11 +55,11 @@
   });
   */
   let tag= "."+location.hash.substring(1);
-  if(tag !="."){
+  if(tag =="."){
     tag="*";
+  }else{
     $('.page-heading h1').text(tag);
     $('.page-subheading').text("");
-
   }
   var $grid = $('.card-group').isotope({
     itemSelector: '.card',
