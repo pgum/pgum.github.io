@@ -51,7 +51,7 @@ rss: true
 
 # Excerpt Word Length
 excerpt_length: 50
-truncate_keypoints: 5
+max_keypoints: 5
 
 # Character used to separate site title and description in HTML document title
 # and RSS feed title
