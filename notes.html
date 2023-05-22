@@ -4,7 +4,7 @@ title: All notes
 subtitle: Resources I've collected
 ---
 <div class="card-group container-fluid">
-  {% for post in site.notes | sort: "order" %}
+  {% for post in site.notes %}
   <div class="card {{ post.category }}">
     <div class="card-body">
       <a href="{{ post.url | relative_url }}">
@@ -15,11 +15,13 @@ subtitle: Resources I've collected
       </a>
       <!-- Card information -->
       <div class="card-information-box">
-        {% if post.category == "scenario" %}
-          <div class="badge duration">{{ post.scenario.duration }}</div>
+        {% if post.duration %}
+        <div class="badge duration">{{ post.scenario.duration }}</div>
+        {% endif %}
+        {% if post.audience %}
           <div class="badge audience">{{ post.scenario.audience }}</div>
         {% endif %}
-        {%- assign keypoints = post.key-points | truncate: {{ site.truncate_keypoints }} -%}
+        {%- assign keypoints = post.key-points | truncate: site.truncate_keypoints -%}
         {% if keypoints %}
           <p class="description">Key points: </p>
           {% for keypoint in keypoints %}

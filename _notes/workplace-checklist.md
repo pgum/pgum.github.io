@@ -1,5 +1,4 @@
 ---
-layout: post
 category: checklist
 title: Workplace checklist
 date: 2020-03-01

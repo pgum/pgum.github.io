@@ -1,5 +1,4 @@
 ---
-layout: post
 category: concept
 title: You care only about what you measure
 date: 2020-02-28

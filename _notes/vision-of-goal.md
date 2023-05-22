@@ -1,19 +1,17 @@
 ---
-layout: post
 category: scenario
 title: Teams vision of goal
 subtitle: Defining common goal, and steps to achieve it
 date: 2020-03-01
 tags: []
 readmore: 
-scenario:
-  audience: Team
-  duration: 60
-  outcome:
-    - Team defines goal state
-    - Team identifies key components of goal state
-    - Team asserts current state
-    - Team defines action items leading to the goal
+audience: Team
+duration: 60
+key-points:
+  - Team defines goal state
+  - Team identifies key components of goal state
+  - Team asserts current state
+  - Team defines action items leading to the goal
 ---
 
 In this scenario we try to define a common goal for the team, and steps to achieve it. It's a good idea to do this exercise at the beginning of a new project, or when team is formed. It's also a good idea to repeat it from time to time, to check if team is still on track with established goals. By identyfing key components of goal state, team naturally gravitates towards discussion about current state, and what can be done to improve it, which is the point of this exercise.

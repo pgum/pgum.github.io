@@ -1,5 +1,4 @@
 ---
-layout: post
 category: concept
 title: Maieutics - Socratic method #2
 date: 2020-02-28

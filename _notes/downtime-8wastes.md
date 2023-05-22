@@ -1,5 +1,4 @@
 ---
-layout: post
 category: concept
 title: 8 wastes od manufacturing - DOWNTIME
 date: 2020-02-28

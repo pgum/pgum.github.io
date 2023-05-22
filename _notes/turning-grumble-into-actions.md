@@ -1,5 +1,4 @@
 ---
-layout: post
 category: scenario
 title: Turning grumble into actions
 subtitle: Turn grumpy cats into agents of change

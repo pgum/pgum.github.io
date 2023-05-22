@@ -1,5 +1,4 @@
 ---
-layout: post
 category: scenario
 title: Dixit cards - opportunities and challenges
 date: 2020-03-01
