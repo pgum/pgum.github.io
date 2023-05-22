@@ -5,6 +5,7 @@
   {%- assign icon = site.data.theme.icon[this_post.category] -%}
 {% endunless -%}
 
+title of this: {{ this_post.title }}
 <div class="card {{ this_post.category }}">
   <div class="card-body">
     <a href="{{ this_post.url | relative_url }}">
