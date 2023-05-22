@@ -55,7 +55,12 @@
   });
   */
   let tag= "."+location.hash.substring(1);
-  if(tag==".") tag="*";
+  if(tag=="."){
+    tag="*";
+    $('.page-heading h1').text(tag);
+    $('.page-subheading').text("");
+
+  }
   var $grid = $('.card-group').isotope({
     itemSelector: '.card',
     layoutMode: 'masonry',
