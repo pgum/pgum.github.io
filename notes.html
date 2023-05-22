@@ -3,8 +3,7 @@ layout: listing
 title: Notes
 subtitle: Notes on various topics that I find interesting
 ---
-<div class="card-group container-fluid"
-  data-isotope='{ "itemSelector": ".card", "masonry": { "columnWidth": 200 } }'>
+<div class="card-group container-fluid">
   {% assign categories = site.notes | where_exp: "item", "item.category != nil" | group_by: "category" %}
   {% assign sortedCategories = categories | sort: "name" %}
   {% for current_category in sortedCategories %}

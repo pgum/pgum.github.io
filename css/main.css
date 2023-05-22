@@ -877,13 +877,14 @@ pre {
 }
 .card-icon{
   float: right;
-  margin-top: -8px;
+  margin-top: 0px;
+  padding-right: 2px;
 }
 .card-tags a{
   border-radius: 5px;
   background-color: {{ site.data.theme.tags-col }};
   font-weight: 400;
-  margin-bottom:5px;
+  margin-bottom: 5px;
 }
 {% for category in site.data.theme.colours %}
 .{{category[0]}} .post-category-name {
