@@ -1,6 +1,6 @@
 ---
 layout: slides
-category: slide
+category: slides
 tags: [introduction]
 key-points: 
   - I would like to introduce myself

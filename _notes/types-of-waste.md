@@ -1,6 +1,6 @@
 ---
 layout: slides
-category: slide
+category: slides
 tags: [Lean,]
 title-image: /img/waste_intro.png
 key-points:

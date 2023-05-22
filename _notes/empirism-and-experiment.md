@@ -1,6 +1,6 @@
 ---
 layout: slides
-category: slide
+category: slides
 tags: [Extra-processing, Motion, Non-used talent, Defects, Overproduction]
 key-points: 
  - Rational decision making process

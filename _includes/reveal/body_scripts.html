@@ -19,9 +19,9 @@
 				{% if site.author.contact.linkedin %}
         {title: 'LinkedIn', style: 'fab', icon: 'fa-linkedin', href: 'https://linkedin.com/in/{{ site.author.contact.linkedin }}' }, 
         {% endif %}
-				{title: 'Slides', style: 'fas', icon: 'fa-home', href: "{{ 'slides' | relative_url }}" } 
+				{title: 'Go back', style: 'fas', icon: 'fa-home', href: "{{ '/notes/#slides' | absolute_url }}" } 
 			],	
-			customFields: [{ title: 'Back to slides', href: "{{ 'slides' | relative_url }}" }],
+			customFields: [{ title: 'Back to slides', href: "{{ '/notes/#slides' | absolute_url }}" }],
 			width: 'half',
 			numbers: false,
 			titleSelector: 'h1',

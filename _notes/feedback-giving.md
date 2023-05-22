@@ -1,6 +1,6 @@
 ---
 layout: slides
-category: slide
+category: slides
 tags: [feedback loop, softskills, Non-used talent, Motion]
 key-points: 
   - Rational decision making process

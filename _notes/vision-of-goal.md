@@ -1,5 +1,5 @@
 ---
-category: scenario
+category: scenarios
 title: Teams vision of goal
 subtitle: Defining common goal, and steps to achieve it
 date: 2020-03-01

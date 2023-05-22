@@ -1,6 +1,6 @@
 ---
 layout: slides
-category: slide
+category: slides
 tags: [Defects, Overproduction, Waiting, Non-used talent, Motion]
 key-points:
  - Don't be rigid

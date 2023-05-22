@@ -1,5 +1,5 @@
 ---
-category: concept
+category: concepts
 title: Maieutics - Socratic method #2
 date: 2020-02-28
 tags: [lean, philosophy]

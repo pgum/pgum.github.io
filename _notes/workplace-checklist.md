@@ -1,5 +1,5 @@
 ---
-category: checklist
+category: checklists
 title: Workplace checklist
 date: 2020-03-01
 tags: []

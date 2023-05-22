@@ -826,18 +826,9 @@ pre {
   font-style: italic;
   font-size: 16px;
 }
-/* PJG */
-.post-category-list { padding-top: 10px; }
-.post-category-list .preview { border-bottom: 1px solid #eee; }
-.post-category-list .blog-tags { margin-bottom: 5px; }
-.post-category-name { padding: 10px 10px; text-transform:capitalize; }
-/*.post-category-list a { }*/
 
-.post-category-concepts-list { background-color: rgba(51,152,251,0.3); }
+/* Listing page */
 
-.post-category-scenarios-list { background-color: rgba(51,251,125,0.3); }
-
-.post-category-checklists-list { background-color: rgba(251,125,51,0.3); }
 .card {
   width: 100%; 
   margin-bottom:5px;
@@ -884,29 +875,29 @@ pre {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 15px;
 }
+.card-icon{
+  float: right;
+  margin-top: -8px;
+}
 .card-tags a{
   border-radius: 5px;
-  background-color: #337ab7;
+  background-color: {{ site.data.theme.tags-col }};
   font-weight: 400;
   margin-bottom:5px;
 }
-
-.scenario .post-category-name {
+{% for category in site.data.theme.colours %}
+.{{category[0]}} .post-category-name {
   background: rgb(255,255,255);
-  background: linear-gradient(135deg, rgba(255,255,255,1) 85%, rgba(140,140,255,1) 100%);
+  background: linear-gradient(
+                135deg, 
+                rgba(255, 255, 255, 1) 82%, 
+                {{category[1]}} 100%);
 }
-
-.concept .post-category-name {
+.{{category[0]}}-navbar {
   background: rgb(255,255,255);
-  background: linear-gradient(135deg, rgba(255,255,255,1) 85%, rgba(140,255,140,1) 100%);
+  background: linear-gradient(
+                0deg, 
+                rgba(255,255,255,0) 82%, 
+                {{category[1]}} 100%);
 }
-
-.checklist .post-category-name {
-  background: rgb(255,255,255);
-  background: linear-gradient(135deg, rgba(255,255,255,1) 85%, rgba(255,140,140,1) 100%);
-}
-
-.slide .post-category-name {
-  background: rgb(255,255,255);
-  background: linear-gradient(135deg, rgba(255,255,255,1) 85%, rgb(250, 228, 129) 100%);
-}
+{% endfor %}

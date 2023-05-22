@@ -1,6 +1,6 @@
 ---
 layout: slides
-category: slide
+category: slides
 tags: [feedback loop, Motion, Waiting]
 key-points: 
  - Rational decision making process

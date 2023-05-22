@@ -38,7 +38,7 @@ resume:
 # --- Navigation bar options --- #
 # List of links in the navigation bar
 navbar-links:
-  notes: "notes"
+  "all notes": "notes"
 
 # Select which share links to show with social-share
 share-links-active:
@@ -64,8 +64,7 @@ date_format: "%B %-d, %Y"
 timezone: "Europe/Warsaw"
 markdown: kramdown
 highlighter: rouge
-#permalink: /:year-:month-:day-:title/
-permalink: /:title/
+permalink: /:year-:month-:day-:title/
 paginate: 10
 
 kramdown:
@@ -74,9 +73,7 @@ kramdown:
 collections:
   notes:
     output: true
-    sort_by: category
-    order: 
-      - introduction.md
+    permalink: /:title
 
 # Default YAML values (more information on Jekyll's site)
 defaults:

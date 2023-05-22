@@ -1,5 +1,5 @@
 ---
-category: scenario
+category: scenarios
 title: Turning grumble into actions
 subtitle: Turn grumpy cats into agents of change
 date: 2020-03-01

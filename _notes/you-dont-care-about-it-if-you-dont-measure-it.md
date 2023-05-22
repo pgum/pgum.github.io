@@ -1,5 +1,5 @@
 ---
-category: concept
+category: concepts
 title: You care only about what you measure
 date: 2020-02-28
 tags: [lean, waste, inspect, inspect&adapt]

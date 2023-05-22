@@ -1,6 +1,6 @@
 ---
 layout: slides
-category: slide
+category: slides
 tags: [Extra-processing, Overproduction, Waiting]
 objectives: [Purpose of using templates, Inspect your work, Automatize]
 title-image:

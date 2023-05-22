@@ -1,6 +1,6 @@
 ---
 layout: slides
-category: slide
+category: slides
 tags: [Defects, Extra-processing, Waiting, Non-used talent, Motion, Scrum]
 key-points:
  - Responsibilities
