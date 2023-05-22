@@ -1,8 +1,8 @@
 ---
 layout: slides
-category: slides
+category: slide
 tags: [Extra-processing, Motion, Non-used talent, Defects, Overproduction]
-objectives: 
+key-points: 
  - Rational decision making process
  - Elements of successful setup
  - Getting most out of results

@@ -1,8 +1,8 @@
 ---
 layout: slides
-category: slides
+category: slide
 tags: [Defects, Extra-processing, Waiting, Non-used talent, Motion, Scrum]
-objectives:
+key-points:
  - Responsibilities
  - Evaluation
  - Inspect&Adapt agent

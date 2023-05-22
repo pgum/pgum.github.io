@@ -3,8 +3,11 @@ layout: post
 category: concept
 title: 8 wastes od manufacturing - DOWNTIME
 date: 2020-02-28
-subtitle: This is where I will tell my friends way too much about me
+subtitle: How to spot wasteful activities in your work
 tags: [lean, waste]
+key-points:
+  - D.O.W.N.T.I.M.E.
+  - What to look out for when inspecting your work
 ---
 
 ## Downtime is the consequence of waste

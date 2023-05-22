@@ -1,8 +1,11 @@
 ---
 layout: slides
-category: slides
+category: slide
 tags: [feedback loop, softskills, Non-used talent, Motion]
-objectives: [Rational decision making process, Elements of successful setup, Getting most out of results]
+key-points: 
+  - Rational decision making process
+  - Elements of successful setup
+  - Getting most out of experiments results
 title-image:
 ---
 

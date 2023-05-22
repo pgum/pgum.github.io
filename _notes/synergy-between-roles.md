@@ -1,8 +1,8 @@
 ---
 layout: slides
-category: slides
+category: slide
 tags: [Defects, Extra-processing, Waiting, Non-used talent, Motion]
-objectives: 
+key-points: 
  - Observe web around you 
  - Analyze needs and ends
  - Minimize conflicts by transparency

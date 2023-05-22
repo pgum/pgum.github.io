@@ -1,9 +1,9 @@
 ---
 layout: slides
-category: slides
+category: slide
 tags: [Lean,]
 title-image: /img/waste_intro.png
-objectives:
+key-points:
  - Unmaintaned waste
  - Identify waste
  - Waste management

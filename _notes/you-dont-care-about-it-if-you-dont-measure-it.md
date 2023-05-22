@@ -5,7 +5,6 @@ title: You care only about what you measure
 date: 2020-02-28
 tags: [lean, waste, inspect, inspect&adapt]
 ---
-### What is measurement
 
 Measurement is a key part of tracking progress of any kind of work. Well defined and transparent way of measuring, with a goal of improving key areas of focus is a key to success. It's not enough to just measure, we need to act on the results, of course, but usually the first steps of improvement are the hardest. If we don't know where we are now, there is no way to know if any change we introduce is for better or worse.
 

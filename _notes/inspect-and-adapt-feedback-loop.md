@@ -1,8 +1,8 @@
 ---
 layout: slides
-category: slides
+category: slide
 tags: [feedback loop, Motion, Waiting]
-objectives: 
+key-points: 
  - Rational decision making process
  - Elements of successful setup
  - Getting most out of results

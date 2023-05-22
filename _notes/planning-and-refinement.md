@@ -1,8 +1,8 @@
 ---
 layout: slides
-category: slides
+category: slide
 tags: [Defects, Overproduction, Waiting, Non-used talent, Motion]
-objectives:
+key-points:
  - Don't be rigid
  - Backlog is not WBS
  - Realize and leverage trade-offs

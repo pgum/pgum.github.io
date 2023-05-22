@@ -5,24 +5,12 @@ subtitle: Resources I've collected
 ---
 <div class="card-group container-fluid">
   {% for post in site.notes | sort: "order" %}
-  {%- assign icon = post.list-icon -%}
-  {%- assign default_icon = site.data.theme.icon["default"] -%}
-  {%  unless icon -%}
-    {%- assign icon = site.data.theme.icon[post.category] -%}
-  {% endunless -%}
+  {%- assign icon = site.data.theme.icon[post.category] -%}
   <div class="card {{ post.category }}">
     <div class="card-body">
       <a href="{{ post.url | relative_url }}">
         <h3 class="post-category-name card-title">
-          <i class="fa fas
-          {% if post.list-icon %}
-          {{ post.list-icon }}
-          {% elsif icon %}
-          {{ icon }}
-          {% else %}
-          {{ default_icon }}
-          {% endif %}
-          aria-hidden="true"></i> 
+          <i class="fa fas {{ icon }} aria-hidden="true"></i> 
           {{ post.title }} 
         </h3>
       </a>
@@ -31,16 +19,15 @@ subtitle: Resources I've collected
         {% if post.category == "scenario" %}
           <div class="badge duration">{{ post.scenario.duration }}</div>
           <div class="badge audience">{{ post.scenario.audience }}</div>
-        {% else %}
-          {%- assign keypoints = post.key-points | truncate: {{ site.truncate_keypoints }} -%}
-          {% if keypoints %}
+        {% endif %}
+        {%- assign keypoints = post.key-points | truncate: {{ site.truncate_keypoints }} -%}
+        {% if keypoints %}
           <p class="description">Key points: </p>
-            {% for keypoint in keypoints %}
+          {% for keypoint in keypoints %}
             <p class="card-text card-text-list" >{{ keypoint }}</p>
-            {% endfor %}
-          {% else %}
-            <p class="card-text" >{{ post.content | strip_html | xml_escape | truncatewords: site.excerpt_length }}...</p>
-          {% endif %}
+          {% endfor %}
+        {% else %}
+          <p class="card-text" >{{ post.content | strip_html | xml_escape | truncatewords: site.excerpt_length }}...</p>
         {% endif %}
       </div>
       <!-- Tags -->

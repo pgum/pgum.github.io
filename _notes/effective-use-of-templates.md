@@ -1,10 +1,15 @@
 ---
 layout: slides
-category: slides
+category: slide
 tags: [Extra-processing, Overproduction, Waiting]
 objectives: [Purpose of using templates, Inspect your work, Automatize]
 title-image:
-
+key-points:
+  - Templates aren't evil
+  - Optimize most boring stuff
+  - Don't misuse good tools
+  - Adapt tools at your disposal to the situation
+  - Establish a template on how to make productive template
 ---
 
 # What is template?

@@ -1,8 +1,12 @@
 ---
 layout: slides
-category: slides
+category: slide
 tags: [introduction]
-objectives: [introduce myself, set workshop rules, get input for discussion, show prepared topics]
+key-points: 
+  - I would like to introduce myself
+  - Setting up workshop rules
+  - Get input for discussion
+  - Present prepared topics
 title-image:
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: slides
-category: slides
+category: slide
 tags: [Defects, Transportation, Waiting, Non-used talent, Motion]
-objectives: [Organizational culture, Sharing good practices, Teambuilding]
+key-points: [Organizational culture, Sharing good practices, Teambuilding]
 title-image:
 ---
 
