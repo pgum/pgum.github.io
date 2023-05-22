@@ -1,4 +1,5 @@
 ---
+layout: slides
 tags: [Defects, Extra-processing, Waiting, Non-used talent, Motion, Scrum]
 objectives:
  - Responsibilities

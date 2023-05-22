@@ -1,4 +1,5 @@
 ---
+layout: slides
 tags: [Defects, Overproduction, Waiting, Non-used talent, Motion]
 objectives:
  - Don't be rigid

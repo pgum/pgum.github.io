@@ -1,4 +1,5 @@
 ---
+layout: slides
 tags: [Extra-processing, Motion, Non-used talent, Defects, Overproduction]
 objectives: 
  - Rational decision making process

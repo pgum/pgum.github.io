@@ -13,6 +13,8 @@ subtitle: Resources I've collected
             <i class="fa fas
             {% if post.list-icon %}
             {{ post.list-icon }}
+            {% elsif post.category == "slide" %}
+            fa-note-sticky
             {% elsif post.category == "scenario" %}
             fa-people-arrows
             {% elsif post.category == "checklist" %}
@@ -26,14 +28,24 @@ subtitle: Resources I've collected
             {{ post.title }} 
           </h3>
         </a>
-        {% if post.category == "scenario" %}
+        {% if post.category == "slide" %}
+          <div class="objectives-list">
+            <p class="description" >Objectives: </p>
+            {% for objective in post.objectives %}
+              <p class="card-text" >{{ objective }}</p>
+            {% endfor %}
+          </div>
+        {% elsif post.category == "scenario" %}
           <div class="duration">
+            <p class="description" >Duration: </p>
             {{ post.scenario.duration }}
           </div>
           <div class="audience">
+            <p class="description" >Audience: </p>
             {{ post.scenario.audience }}
           </div>
-          <div class="outcomes">
+          <div class="outcomes-list">
+            <p class="description" >Expected outcomes: </p>
             {% for outcome in post.scenario.outcome %}
               <p class="card-text" >{{ outcome }}</p>
             {% endfor %}

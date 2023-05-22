@@ -1,4 +1,5 @@
 ---
+layout: slides
 tags: [feedback loop, Motion, Waiting]
 objectives: 
  - Rational decision making process

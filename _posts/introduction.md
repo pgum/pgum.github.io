@@ -2,6 +2,7 @@
 layout: slides
 tags: [introduction]
 objectives: [introduce myself, set workshop rules, get input for discussion, show prepared topics]
+category: slide
 title-image:
 
 ---

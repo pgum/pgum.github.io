@@ -1,4 +1,5 @@
 ---
+layout: slides
 tags: [Lean,]
 title-image: /img/waste_intro.png
 
