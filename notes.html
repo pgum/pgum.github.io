@@ -37,7 +37,7 @@ subtitle: Notes on various topics that I find interesting
             <p class="description" >Tags: </p>
             <div class="container-fluid">
               {% for tag in post.tags %}
-                <a class="bg-primary badge label-primary" href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
+                <a class="bg-primary badge label-primary" href="{{ '/tags' | relative_url }}#{{- tag | slugify -}}">{{- tag -}}</a>
               {% endfor %}
             </div>
           </div>
