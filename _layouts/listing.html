@@ -5,16 +5,15 @@ layout: page
 {{ content }}
 
 <script>
-  var $grid = $('.card-group').isotope({
+  jQuery(document).ready(function($) {
+    var $grid = $('.card-group').isotope({
     itemSelector: '.card',
     layoutMode: 'fitColumns'
-  })
-function showSelectedCategory(){
-  let tag= "."+location.hash.substring(1);
-  if(tag=="") tag="*";
-  $grid.isotope({ filter: tag });
-}
-window.onhashchange = showSelectedCategory
-showSelectedCategory();
-
+    });
+    $(window).on('onhashchange', function() {
+      let tag= "."+location.hash.substring(1);
+      if(tag==".") tag="*";
+      $grid.isotope({ filter: tag })
+    });
+});
 </script>
