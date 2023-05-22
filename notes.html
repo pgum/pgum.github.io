@@ -9,7 +9,7 @@ subtitle: Notes on various topics that I find interesting
       <div class="card-body">
         <a href="{{ post.url | relative_url }}">
           <h3 class="post-category-name card-title">
-            <i class="fa fas fa-2x fa-inverse card-icon {{ site.data.theme.icons[post.category] }}" aria-hidden="true"></i> 
+            <i class="fa fas {{ site.data.theme.icons[post.category] }}" aria-hidden="true"></i> 
             {{ post.title }} 
           </h3>
         </a>

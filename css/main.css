@@ -876,11 +876,7 @@ pre {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 15px;
 }
-.card-icon{
-  float: right;
-  margin-top: 0px;
-  padding-right: 2px;
-}
+
 .card-tags a{
   border-radius: 5px;
   background-color: {{ site.data.theme.tags-col }};

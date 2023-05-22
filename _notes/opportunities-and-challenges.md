@@ -1,7 +1,6 @@
 ---
 category: scenarios
 title: opportunities and challenges
-date: 2020-03-01
 tags: [dixit, team, retro]
 readmore: 
 scenario:

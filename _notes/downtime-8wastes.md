@@ -1,7 +1,6 @@
 ---
 category: concepts
 title: 8 wastes od manufacturing - DOWNTIME
-date: 2020-02-28
 subtitle: How to spot wasteful activities in your work
 tags: [lean, waste]
 key-points:

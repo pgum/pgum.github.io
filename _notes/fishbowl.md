@@ -1,7 +1,6 @@
 ---
 category: scenarios
 title: Fishbowl
-date: 2020-03-01
 tags: []
 ---
 # Fishbowl
