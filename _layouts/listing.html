@@ -8,7 +8,10 @@ layout: page
   jQuery(document).ready(function($) {
     var $grid = $('.card-group').isotope({
     itemSelector: '.card',
-    layoutMode: 'masonry'
+    layoutMode: 'masonry',
+    masonry: {
+      gutter: 15
+    }
     });
     $(window).on('onhashchange', function() {
       let tag= "."+location.hash.substring(1);
