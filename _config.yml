@@ -72,29 +72,32 @@ kramdown:
   input: GFM
 
 collections:
- slides:
-   output: true
-   order: 
-    - introduction.md
+  notes:
+    output: true
+    sort_by: category
+  slides:
+    output: true
+    order: 
+      - introduction.md
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
   -
     scope:
       path: ""
-      type: "posts"
+      type: "notes"
     values:
-      layout: "fa-post"
+      layout: "post"
+      social-share: true # add social media sharing buttons to all blog posts
   -
     scope:
       path: "" # all files
     values:
       layout: "page"
       show-avatar: false  
-      social-share: true # add social media sharing buttons to all blog posts
   -
     scope:
-      path: "_slides"
+      path: ""
       type: "slides"
     values:
       layout: "slides"
