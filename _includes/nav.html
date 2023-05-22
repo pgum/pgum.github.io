@@ -32,8 +32,7 @@
         {% assign sortedCategories = categories | sort: "name" %}
         {% for category in sortedCategories %}
           <li><a href="notes#{{category}}">{{ category }}</a></li>
-        {%- endif -%}
-      {%- endfor -%}
+        {%- endfor -%}
       </ul>
     </div>
 
