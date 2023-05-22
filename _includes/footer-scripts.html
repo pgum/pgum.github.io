@@ -35,6 +35,7 @@
       $(".navbar-collapse").collapse('hide');
     }
   });
+  /*
   jQuery(document).ready(function($) {
     let tag= "."+location.hash.substring(1);
     if(tag==".") tag="*";
@@ -52,5 +53,14 @@
     $grid.isotope({ filter: tag })
     $grid.isotope('layout');  
   });
+  */
+  let tag= "."+location.hash.substring(1);
+  if(tag==".") tag="*";
+  var $grid = $('.card-group').isotope({
+    itemSelector: '.card',
+    layoutMode: 'masonry',
+    filter: tag,
+    masonry: {
+      gutter: 15 }});
 </script>
       
