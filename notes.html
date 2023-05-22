@@ -5,12 +5,11 @@ subtitle: Resources I've collected
 ---
 <div class="card-group container-fluid">
   {% for post in site.notes | sort: "order" %}
-  {%- assign icon = site.data.theme.icon[post.category] -%}
   <div class="card {{ post.category }}">
     <div class="card-body">
       <a href="{{ post.url | relative_url }}">
         <h3 class="post-category-name card-title">
-          <i class="fa fas {{ icon }} aria-hidden="true"></i> 
+          <i class="fa fas {{ site.data.theme.icon[post.category] }} aria-hidden="true"></i> 
           {{ post.title }} 
         </h3>
       </a>
