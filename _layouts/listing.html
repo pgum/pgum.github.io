@@ -15,5 +15,8 @@ layout: page
       if(tag==".") tag="*";
       $grid.isotope({ filter: tag })
     });
+    let tag= "."+location.hash.substring(1);
+      if(tag==".") tag="*";
+      $grid.isotope({ filter: tag })
 });
 </script>
