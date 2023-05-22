@@ -3,7 +3,7 @@ layout: slides
 tags: [feedback loop, softskills, Non-used talent, Motion]
 objectives: [Rational decision making process, Elements of successful setup, Getting most out of results]
 title-image:
-
+category: slides
 ---
 
 # Feedback giving

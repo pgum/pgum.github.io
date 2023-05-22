@@ -31,7 +31,7 @@
         {% assign categories = site.notes | where_exp: "item", "item.category != nil" | group_by: "category" %}
         {% assign sortedCategories = categories | sort: "name" %}
         {% for category in sortedCategories %}
-          <li><a href="notes#{{category}}">{{ category }}</a></li>
+          <li><a href="/notes#{{category.name}}">{{ category.name }}</a></li>
         {%- endfor -%}
       </ul>
     </div>

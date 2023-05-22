@@ -5,6 +5,7 @@ objectives:
  - Don't be rigid
  - Backlog is not WBS
  - Realize and leverage trade-offs
+category: slides
 ---
 
 <!--

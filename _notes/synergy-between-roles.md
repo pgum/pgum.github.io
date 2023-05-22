@@ -5,6 +5,7 @@ objectives:
  - Observe web around you 
  - Analyze needs and ends
  - Minimize conflicts by transparency
+category: slides
 ---
 
 # Web of dependencies

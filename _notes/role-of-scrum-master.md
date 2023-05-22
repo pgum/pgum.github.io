@@ -5,6 +5,7 @@ objectives:
  - Responsibilities
  - Evaluation
  - Inspect&Adapt agent
+category: slides
 ---
 # Role of Scrum Master
 

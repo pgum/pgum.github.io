@@ -6,7 +6,7 @@ subtitle: Slides for various topics
 
 <div class="card-group container-fluid">
   {% for slide in site.slides | sort: "order" %}
-    {{ slide.title}}
+    {{ slide.title }}
     {{ include listing_card.html post=slide }}
   {% endfor %}
 </div>

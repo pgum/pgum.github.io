@@ -6,7 +6,7 @@ objectives:
  - Elements of successful setup
  - Getting most out of results
 title-image:
-
+category: slides
 ---
 
 # Inspect & Adapt feedback spiral

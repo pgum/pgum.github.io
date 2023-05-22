@@ -6,7 +6,7 @@ objectives:
  - Elements of successful setup
  - Getting most out of results
 title-image: /img/thisisengineering-raeng-kiVBdtYILQc-unsplash.jpg
-
+category: slides
 readmore:
  - title: What is empirism
    href: https://study.com/academy/lesson/empiricism-definition-meaning-philosophy.html

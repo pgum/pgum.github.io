@@ -3,7 +3,7 @@ layout: slides
 tags: [Defects, Transportation, Waiting, Non-used talent, Motion]
 objectives: [Organizational culture, Sharing good practices, Teambuilding]
 title-image:
-
+category: slides
 ---
 
 ## What agreements do we have?
