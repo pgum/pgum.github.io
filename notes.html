@@ -4,7 +4,7 @@ title: All notes
 subtitle: Resources I've collected
 ---
 <div class="card-group container-fluid">
-  {% for slide in site.slides | sort: "order" %}
+  {% for post in site.notes | sort: "order" %}
   {%- assign icon = post.list-icon -%}
   {%- assign default_icon = site.data.theme.icon["default"] -%}
   {%  unless icon -%}
