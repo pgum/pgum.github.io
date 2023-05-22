@@ -24,12 +24,12 @@
     <div class="collapse navbar-collapse" id="main-navbar">
       <ul class="nav navbar-nav">
         {%- for link in site.navbar-links -%}
-          <li class="{{link[0]}}"><a href="{{ link[1] | relative_url }}">{{ link[0] }}</a></li>
+          <li class="{{link[0] | slugify }}"><a href="{{ link[1] | relative_url }}">{{ link[0] }}</a></li>
         {%- endfor -%}
         {% assign categories = site.notes | where_exp: "item", "item.category != nil" | group_by: "category" %}
         {% assign sortedCategories = categories | sort: "name" %}
         {% for category in sortedCategories %}
-          <li class="{{category.name}}"><a href="/notes#{{category.name}}">{{ category.name }}</a></li>
+          <li class="{{category.name | slugify }}"><a href="/notes#{{category.name}}">{{ category.name }}</a></li>
         {%- endfor -%}
       </ul>
     </div>

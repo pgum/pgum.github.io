@@ -34,5 +34,5 @@ colours:
   scenarios: rgba(140,140,255,1)
   checklists: rgba(255,140,140,1)
   concepts: rgba(140,255,140,1)
-  # You can add nav-bar items, keys have to match
-  "all notes": rgb(214, 165, 255) 
+  # You can add nav-bar items, keys are slugified
+  all-notes: rgb(214, 165, 255) 
