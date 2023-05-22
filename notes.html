@@ -3,8 +3,9 @@ layout: listing
 title: Notes
 subtitle: Notes on various topics that I find interesting
 ---
-<div class="card-group container-fluid">
-  {% for current_category in categories | where: 'category',current_category %}
+<div class="card-group container-fluid"
+  data-isotope='{ "itemSelector": ".card", "masonry": { "columnWidth": 200 } }'>
+  {% for current_category in categories %}
     {% for post in site.notes | where: 'category',current_category %}
       <div class="card {{ post.category }}">
         <div class="card-body">

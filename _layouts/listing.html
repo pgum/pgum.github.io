@@ -5,26 +5,14 @@ layout: page
 {{ content }}
 
 <script>
-  $('.card-group').isotope({
+  var $grid = $('.card-group').isotope({
     itemSelector: '.card',
-    layoutMode: 'fitRows'
+    layoutMode: 'fitColumns'
   })
-
-function setAllCategoriesDisplay(value){
-  for (let item of document.getElementsByClassName("card")) {
-      item.style.display=value;
-  }
-}
 function showSelectedCategory(){
-  let tag= location.hash.substring(1);
-  if(document.getElementsByClassName(tag) != null){
-    setAllCategoriesDisplay("none");
-    for (let item of document.getElementsByClassName(tag)) {
-      item.style.display="block";
-    }
-  }else{
-    setAllCategoriesDisplay("block");
-  }
+  let tag= "."+location.hash.substring(1);
+  if(tag=="") tag="*";
+  $grid.isotope({ filter: tag });
 }
 window.onhashchange = showSelectedCategory
 showSelectedCategory();
