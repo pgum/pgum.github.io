@@ -27,7 +27,7 @@
       <ul class="nav navbar-nav">
         {%- for link in site.navbar-links -%}
           <li><a href="{{ link[1] | relative_url }}">{{ link[0] }}</a></li>
-        {%- endif -%}
+        {%- endfor -%}
         {% assign categories = site.notes | where_exp: "item", "item.category != nil" | group_by: "category" %}
         {% assign sortedCategories = categories | sort: "name" %}
         {% for category in sortedCategories %}
