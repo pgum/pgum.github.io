@@ -894,7 +894,7 @@ pre {
                 rgba(255, 255, 255, 1) 82%, 
                 {{category[1]}} 100%);
 }
-.{{category[0]}}-navbar {
+.nav .{{category[0]}} {
   background: rgb(255,255,255);
   background: linear-gradient(
                 0deg, 
