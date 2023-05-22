@@ -4,49 +4,45 @@ title: Notes
 subtitle: Notes on various topics that I find interesting
 ---
 <div class="card-group container-fluid">
-  {% assign categories = site.notes | where_exp: "item", "item.category != nil" | group_by: "category" %}
-  {% assign sortedCategories = categories | sort: "name" %}
-  {% for current_category in sortedCategories %}
-    {% for post in site.notes | where: 'category' , current_category %}
-      <div class="card {{ post.category }}">
-        <div class="card-body">
-          <a href="{{ post.url | relative_url }}">
-            <h3 class="post-category-name card-title">
-              <i class="fa fas fa-2x fa-inverse card-icon {{ site.data.theme.icons[post.category] }}" aria-hidden="true"></i> 
-              {{ post.title }} 
-            </h3>
-          </a>
-          <!-- Card information -->
-          <div class="card-information-box">
-            {% if post.duration %}
-            <div class="badge duration">{{ post.scenario.duration }}</div>
-            {% endif %}
-            {% if post.audience %}
-              <div class="badge audience">{{ post.scenario.audience }}</div>
-            {% endif %}
-            {%- assign keypoints = post.key-points -%}
-            {% if keypoints %}
-              <p class="description">Key points: </p>
-              {% for keypoint in keypoints | slice: 0, site.max_keypoints %}
-                <p class="card-text card-text-list" >{{ keypoint }}</p>
-              {% endfor %}
-            {% else %}
-              <p class="card-text" >{{ post.content | strip_html | xml_escape | truncatewords: site.excerpt_length }}...</p>
-            {% endif %}
-          </div>
-          <!-- Tags -->
-          {% if post.tags.size > 0 %}
-            <div class="card-tags">
-              <p class="description" >Tags: </p>
-              <div class="container-fluid">
-                {% for tag in post.tags %}
-                  <a class="bg-primary badge label-primary" href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
-                {% endfor %}
-              </div>
-            </div>
+  {% for post in site.notes %}
+    <div class="card {{ post.category }}">
+      <div class="card-body">
+        <a href="{{ post.url | relative_url }}">
+          <h3 class="post-category-name card-title">
+            <i class="fa fas fa-2x fa-inverse card-icon {{ site.data.theme.icons[post.category] }}" aria-hidden="true"></i> 
+            {{ post.title }} 
+          </h3>
+        </a>
+        <!-- Card information -->
+        <div class="card-information-box">
+          {% if post.duration %}
+          <div class="badge duration">{{ post.scenario.duration }}</div>
+          {% endif %}
+          {% if post.audience %}
+            <div class="badge audience">{{ post.scenario.audience }}</div>
+          {% endif %}
+          {%- assign keypoints = post.key-points -%}
+          {% if keypoints %}
+            <p class="description">Key points: </p>
+            {% for keypoint in keypoints | slice: 0, site.max_keypoints %}
+              <p class="card-text card-text-list" >{{ keypoint }}</p>
+            {% endfor %}
+          {% else %}
+            <p class="card-text" >{{ post.content | strip_html | xml_escape | truncatewords: site.excerpt_length }}...</p>
           {% endif %}
         </div>
+        <!-- Tags -->
+        {% if post.tags.size > 0 %}
+          <div class="card-tags">
+            <p class="description" >Tags: </p>
+            <div class="container-fluid">
+              {% for tag in post.tags %}
+                <a class="bg-primary badge label-primary" href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+      </div>
     </div>
-    {% endfor %}
   {% endfor %}
 </div>
