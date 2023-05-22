@@ -8,7 +8,7 @@ layout: page
   jQuery(document).ready(function($) {
     var $grid = $('.card-group').isotope({
     itemSelector: '.card',
-    layoutMode: 'vertical'
+    layoutMode: 'fitRows'
     });
     $(window).on('onhashchange', function() {
       let tag= "."+location.hash.substring(1);
