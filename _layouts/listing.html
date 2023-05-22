@@ -4,4 +4,29 @@ layout: page
 
 {{ content }}
 
+<script>
+  $('.navbar-collapse a').click(function(){
+    if($(this).attr('href') != 'javascript:void(0)'){
+      $(".navbar-collapse").collapse('hide');
+    }
+  });
+  let tag= "."+location.hash.substring(1);
+  if(tag =="."){
+    tag="*";
+  }else{
+    $('.page-heading h1').text(tag);
+    $('.page-subheading').text("");
+  }
+  var $grid = $('.card-group').isotope({
+    itemSelector: '.card',
+    layoutMode: 'masonry',
+    filter: tag,
+    masonry: {
+      gutter: 15 }});
 
+  document.addEventListener('readystatechange', function(event) {
+    if (document.readyState === "complete") {
+      $grid.isotope('layout');  
+    }
+  });
+</script>
