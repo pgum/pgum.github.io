@@ -889,6 +889,11 @@ pre {
   font-weight: 400;
   margin-bottom: 5px;
 }
+
+.post-category-name {
+  padding-top: 10px;
+  padding-left: 10px;
+}
 {% for category in site.data.theme.colours %}
 .{{category[0]}} .post-category-name {
   background: rgb(255,255,255);
