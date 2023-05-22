@@ -830,7 +830,8 @@ pre {
 /* Listing page */
 
 .card {
-  width: 100%; 
+  width: 49%; 
+  margin-top:5px;
   margin-bottom:5px;
   background-color: #fff;
   border: 1px solid #ddd;
