@@ -6,6 +6,7 @@ layout: page
 
 <script>
   jQuery(window).on('load', function($) {
+    $.getScript('/js/jquery.isotope.pkgd.min.js', function() { });
     let tag= "."+location.hash.substring(1);
     if(tag==".") tag="*";
     var $grid = $('.card-group').isotope({
