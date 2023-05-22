@@ -856,6 +856,12 @@ pre {
   margin: 2px 10px;
   font-weight: 700;
 }
+.grid-sizer {
+  width: 100%;
+}
+.gutter-sizer {
+  height: 15px;
+}
 .card-text {
   position: relative;
   display: block;
