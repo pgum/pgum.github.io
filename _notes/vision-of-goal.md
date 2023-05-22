@@ -2,7 +2,7 @@
 category: scenarios
 title: Teams vision of goal
 subtitle: Defining common goal, and steps to achieve it
-tags: []
+tags: [retro, inspect, common goal]
 readmore: 
 audience: Team
 duration: 60
