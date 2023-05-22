@@ -28,7 +28,7 @@ subtitle: Notes on various topics that I find interesting
               <p class="card-text card-text-list" >{{ keypoint }}</p>
             {% endfor %}
           {% else %}
-            <p class="card-text" >{{ post.content | strip_html | xml_escape | truncatewords: site.excerpt_length }}...</p>
+            <p class="card-text" >{{ post.content | strip_html | xml_escape | truncatewords: site.excerpt_length }}</p>
           {% endif %}
         </div>
         <!-- Tags -->

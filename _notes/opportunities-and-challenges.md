@@ -1,8 +1,8 @@
 ---
 category: scenarios
-title: Dixit cards - opportunities and challenges
+title: opportunities and challenges
 date: 2020-03-01
-tags: []
+tags: [dixit, team, retro]
 readmore: 
 scenario:
   audience: Team
