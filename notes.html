@@ -24,8 +24,8 @@ subtitle: Resources I've collected
         {%- assign keypoints = post.key-points -%}
         {% if keypoints %}
           <p class="description">Key points: </p>
-          {% for keypoint in keypoints %}
-            <p class="card-text card-text-list" >{{ keypoint | slice: 0, site.max_keypoints }}</p>
+          {% for keypoint in keypoints | slice: 0, site.max_keypoints %}
+            <p class="card-text card-text-list" >{{ keypoint }}</p>
           {% endfor %}
         {% else %}
           <p class="card-text" >{{ post.content | strip_html | xml_escape | truncatewords: site.excerpt_length }}...</p>
