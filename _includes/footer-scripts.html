@@ -55,7 +55,7 @@
   });
   */
   let tag= "."+location.hash.substring(1);
-  if(tag=="."){
+  if(tag !="."){
     tag="*";
     $('.page-heading h1').text(tag);
     $('.page-subheading').text("");
