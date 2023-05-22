@@ -5,7 +5,7 @@ layout: page
 {{ content }}
 
 <script>
-  jQuery(window).load(function($) {
+  jQuery(window).on('load', function($) {
     let tag= "."+location.hash.substring(1);
     if(tag==".") tag="*";
     var $grid = $('.card-group').isotope({
