@@ -58,16 +58,6 @@ experiences:
             - Planning and refining tasks in the backlog using JIRA
             - Providing support to CI/DevOps teams from other departments
             - Creating tutorials, video-trainings, “draft” branches as training materials
-          Tech stack used:
-            - Openstack
-            - Docker 
-            - Ansible
-            - Jenkins
-            - Jenkins Configuration as Code
-            - Jenkins Job DSL
-            - Linux - CentOS, Debian
-            - Bash, Python, Groovy
-            - Git, Gerrit, Gitlab
       - role: Scrum Master, Scrum Master Group Coordinator
         time: October 2018 - 2020
         company: Nokia, Kraków
