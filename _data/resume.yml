@@ -4,37 +4,37 @@ languages:
     - idiom: Polish
       level: Native
     - idiom: English
-      level: Advanced
+      level: Advanced - C1
 
 interests:
   title: Interests
   info:
     - item: Game of Go
       link: https://www.europeangodatabase.eu/EGD/Player_Card.php?&key=15849295
-    - item: Philosophy (BPhil)
+    - item: Philosophy (Bachelor of Philosophy)
     - item: Music Production
       link: https://www.youtube.com/@TurtleCalledCalmie
     - item: Frank Herbert's Dune
 
 description: |
   My name is Piotr Jacek Gumulka. I help projects, teams and individuals find the way to achieve their business objectives.  
-  I am servant leader, DevOps engineer, university lecturer and public speaker open to new challenges.
+  I am DevOps engineer, servant leader, university lecturer and public speaker open to new challenges.
 
 career-profile:
     title: Career Profile
     summary: |
-      I help projects, teams and individuals find the way to achieve their business objectives.  
-
-      I have 5 years of experience as servant leader, removing obstacles and leading teams, coaching and training individuals.  
-      I am a capable DevOps engineer, working, transforming and fine tuning systems and processes. 
-      I was university lecturer and public speaker. I am eager to learn new technologies and tools, and I am not afraid of challenges.  
+      I specialize in automating processes and providing educational support to both teams and individuals, removing impediments and enabling us to achieve business objectives more efficiently while focusing on what truly matters. 
+      As a skilled DevOps engineer, I am proficient in maintaining, transforming, and optimizing critical systems and processes within the production pipeline. 
+      With 5 years of experience as a servant leader, I do my best at removing obstacles, leading teams, and coaching individuals. 
+      Additionally, my background as a university lecturer and public speaker demonstrates my eagerness to learn new technologies and embrace challenges. 
       
-      I am looking for a position where I can utilize my skill sets and abilities, share my own knowledge and experience, and learn new things.
+      I am currently seeking a position where I can leverage my expertise to automate and enhance the user experience, making their lives easier. 
+      I am confident in my ability to identify areas for improvement and share my knowledge and experience to ensure a smoother project execution.
 
 education:
     title: Education
     info:
-      - degree: M.Eng. in Automation and Robotics
+      - degree: Master of Engineering in Automation and Robotics
         university: AGH University of Science and Technology, Kraków
         time: 2008 - 2013
 
@@ -42,54 +42,53 @@ experiences:
     title: Work experience
     info:
       - role: CI DevOps Engineer
-        time: 2019 - Present
+        time: 2019 - 2024
         company: Nokia, Kraków
         details: |
-          I transitioned to a new role to gain new experience and challenge 
-          myself while finishing tasks assigned to previously upheld roles
-           of Scrum Master and Scrum Master Group Coordinator.
+          I transitioned to a new, technical role to gain new experience and further my automation practices in a new project our site was assigned to.
           Our team was tasked with maintenance and development 
-          of mature internal project, its infrastructure and redesign.
-          My responsibilities include:
-            - Securing stability of legacy system
-            - Introducing automation in legacy procedures
-            - Analysis of undocumented, unmaintained CI codebase and infrastructure
-            - Providing node templates and developing ansible ansible development for node configuration
+          of a mature internal project, its infrastructure and redesign.
+          During my time in the team, I was responsible for various tasks, including:
+            - Securing stability and high availability of legacy system
+            - Introducing infrastructure automation tools to replace legacy procedures
+            - Analyzing an undocumented and unmaintained CI codebase and infrastructure
+            - Creating node templates and developing Ansible configurations for node setup
             - Developing DSL libraries for JCasC and CI jobs definitions
             - Introducing reusable code solutions for other CI projects
-            - Planning and refining backlog tasks within JIRA
-            - Providing support for CI/DevOps teams from other departments
+            - Planning and refining tasks in the backlog using JIRA
+            - Providing support to CI/DevOps teams from other departments
             - Creating tutorials, video-trainings, “draft” branches as training materials
+          Tech stack used:
+            - Openstack
+            - Docker 
+            - Ansible
+            - Jenkins
+            - Jenkins Configuration as Code
+            - Jenkins Job DSL
+            - Linux - CentOS, Debian
+            - Bash, Python, Groovy
+            - Git, Gerrit, Gitlab
       - role: Scrum Master, Scrum Master Group Coordinator
         time: October 2018 - 2020
         company: Nokia, Kraków
         details: |
-          I was elected Scrum Master Group Coordinator for our department and 
-          performed as a servant leader for a group of 11 Scrum Masters. 
-          Along with my responsibilities as Scrum Master for development teams,
-           I was also responsible for an open forum between the SM group and 
-          various interested parties.
-
-          Our company ties with universities enabled me to provide lectures 
-          and workshops on Scrum and Agile for students of several different 
-          faculties. 
-          
-          In 2020 I was asked by head of Nokia Bydgoszcz site to provide a
-          week-long workshop with lectures and activities for their whole site.
+          I was elected Scrum Master Group Coordinator for our department, where I served as a servant leader for a team of 11 Scrum Masters. 
+          In addition to my role as a Scrum Master for development teams, I also facilitated an open forum between the Scrum Master group and 
+          various stakeholders.
+          Thanks to our company's partnerships with universities, I had the opportunity to deliver lectures and workshops on Scrum and Agile to students from different faculties.
+          Furthermore, in 2020, I was invited by the head of the Nokia Bydgoszcz site to conduct a comprehensive week-long workshop, consisting of lectures and activities, for the entire site.
       - role: Scrum Master
         time: 2015 - 2018
         company: Nokia, Kraków
         details: |
-          I took the role of Scrum Master for two development teams. 
-          I was responsible for providing tools to automate teams work,
-          information radiators, facilitating meetings, removing impediments.
-          I was working in cooperation with management, Product Owners team, 
-          and other Scrum Masters.
-          My responsibilities included:
-            - Everyday support for two development teams
-            - Providing lectures on tools and processes used in the project for new employees
-            - Coaching and training new Scrum Masters
-            - Worked on defining full-time SM role, its responsibilities, expectations and evaluation
+          I fulfilled the role of a Scrum Master for two development teams. 
+          My primary responsibilities encompassed providing tools to streamline team workflows, implementing information radiators, facilitating meetings, and resolving any obstacles that hindered progress. 
+          I collaborated closely with management, the Product Owners team, and fellow Scrum Masters to ensure effective coordination. 
+          Key aspects of my role included:
+            - Offering daily support to the development teams
+            - Delivering informative lectures on project tools and processes to new employees
+            - Coaching and training newly appointed Scrum Masters
+
       - role: Software Developer
         time: 2014 - 2015
         company: Nokia, Kraków
