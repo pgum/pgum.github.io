@@ -1,0 +1,16 @@
+  header:
+    style: "#####"
+    use_icons: true
+    link_source: false
+  defaults:
+    lang: "plaintext"
+    show_lang: false
+    use_filename: true
+  labels:
+    code: "Code:"
+    cmd: "Command line:"
+    output: "Outputs:"
+  icons: 
+    code: fa-file-lines
+    cmd: fa-terminal
+    output: fa-display

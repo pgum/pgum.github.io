@@ -1,0 +1,29 @@
+---
+layout: base
+---
+
+{% include header.html type="post" %}
+
+<div class="container">
+  <div class="row">
+    <div class="{{ site.data.theme.sizing.row_style}}">
+
+      <article role="main" class="blog-post">
+        {{ content }}
+      </article>
+
+      {% if page.tags.size > 0 %}
+        <div class="blog-tags">
+          Tags:
+          {% for tag in page.tags %}
+            <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if page.social-share %}
+        {% include social-share.html %}
+      {% endif %}
+    </div>
+  </div>
+</div>

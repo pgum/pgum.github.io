@@ -30,6 +30,12 @@
 I have modified the original beautiful-jekyll to include two features I wanted for my own portfolio webpage - a resume page and ready to use presentations decks of slides.  
 I also tried to sanitize configuration a bit, as it's now expanded to accomodate more stuff.
 
+### How to run
+
+For development you can use `docker-compose up` from main directory. It starts up jekyll serve with some defaults.  
+Inside `.github/workflows/jekyll.yml` you can find procedure used by github to build and deploy the webpage on push to `main` branch.  
+
+
 ---
 
 ### Sharing blog posts on social media

@@ -3,6 +3,8 @@ _site
 .sass-cache
 .vagrant
 reveal.js/
+vendor/
+.jekyll-cache
 # general
 .DS_Store
 Thumbs.db
