@@ -66,7 +66,11 @@ module Jekyll
     def block_name(context,type)
       config = context.registers[:site].config['code']
       @options = context["include"] || {}
-      (@options["title"] ? @options["title"] : config['labels'][type]) % @file
+      if type == @tag_name
+        (@options["title"] ? @options["title"] : config['labels'][type]) % @file
+      else
+        config['labels'][type] % @file
+      end
     end
 
     def print_icon(context, type="code")
@@ -82,8 +86,9 @@ module Jekyll
     def make_full_pathname(context,type)
       config = context.registers[:site].config['code']
       dir_path = config['dirs'][type] || config['dirs']['code']
+      subtype = type == "code" ? "" : "code/"
       extension = "."+config['exts'][type] if config['exts'][type] and type != "code"
-      "#{dir_path}/#{@file}#{extension}"
+      "#{subtype}#{dir_path}/#{@file}#{extension}"
     end
 
     def make_name_header(context,type)
@@ -159,10 +164,10 @@ module Jekyll
       @options = context["include"] || {}
       return "" if @tag_name != "code"
       r = render_single_block(context, "code")
-      if @options["shell"] or config['defaults']['shell_oncode']
+      if !@options["noshell"]
         r += render_single_block(context, "shell")
       end
-      if @options["output"] or config['defaults']['output_oncode']
+      if !@options["noout"]
         r += render_single_block(context, "output")
       end
       r
@@ -173,7 +178,7 @@ module Jekyll
       @options = context["include"] || {}
       return "" if @tag_name != "shell"
       r = render_single_block(context, "shell")
-      if @options["output"] or config['defaults']['output_onshell']
+      if !@options["noout"]
         r += render_single_block(context, "output")
       end
       r

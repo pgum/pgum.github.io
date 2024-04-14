@@ -2,7 +2,7 @@
 layout: slides
 category: slides
 tags: [lean,]
-title-image: /img/waste_intro.png
+title-image: /assets/img/waste_intro.png
 key-points:
  - Unmaintaned waste
  - Identify waste

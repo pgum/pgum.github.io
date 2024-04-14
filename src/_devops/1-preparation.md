@@ -28,7 +28,7 @@ Right-click on Windows PowerShell in the search results, and select Run as admin
 In the administrative PowerShell session we will write our commands, so that we wont need to click thru the interface of Hyper-V Manager.
 
 ## Code
-{% code devops/create_vmswitch.ps1 lang='powershell' cfrom=2 cto=5%}
+{% code devops/create_vmswitch.ps1 lang='powershell' cfrom=2 cto=5 ofrom=1 oto=2 %}
 ## Shell
 {% shell devops/create_vmswitch.ps1 lang='powershell' %}
 ## Output
@@ -38,24 +38,24 @@ In the administrative PowerShell session we will write our commands, so that we 
 In the administrative PowerShell session, run your command:
 
 
-{% code devops/create_vmswitch.ps1 lang='powershell' cfrom=13 cto=13 shell=true %}  
+{% code devops/create_vmswitch.ps1 lang='powershell' cfrom=13 cto=13 noout=true %}  
 
 dupa
 
 {% shell devops/create_vmswitch.ps1 nolink=true title="dupa szatana" %}  
 
 Here are the important bits
-{% code devops/create_vms.ps1 lang="powershell" cfrom=93 cto=96 shell=false log=false %}
+{% code devops/create_vms.ps1 lang="powershell" cfrom=93 cto=96 noshell=true noout=true %}
 
 This one generates unique MAC addessess for our VMs. We use them later.  
 Then we generate the VM in this part.
-{% code devops/create_vms.ps1 lang="powershell" cfrom=108 cto=114 shell=false log=false noheader=true %}
+{% code devops/create_vms.ps1 lang="powershell" cfrom=108 cto=114 noheader=true %}
 
 So that we can execute the script
-{% shell devops/create_vms.ps1 lang="powershell" nosource=true shell=true log=true %}
+{% code devops/create_vms.ps1 lang="powershell" noshell=true noout=true %}
 
 A to tylko żeby se zobaczyć lol
-{% code devops/create_vms.ps1 lang="powershell" clines="3,5,7" shell=false log=false %}
+{% output devops/create_vms.ps1 %}
 
 ## Create a bunch of VMs, configuring them
 ## Spraying k8s cluster on top

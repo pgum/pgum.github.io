@@ -6,7 +6,7 @@ key-points:
  - Rational decision making process
  - Elements of successful setup
  - Getting most out of results
-title-image: /img/thisisengineering-raeng-kiVBdtYILQc-unsplash.jpg
+title-image: /assets/img/thisisengineering-raeng-kiVBdtYILQc-unsplash.jpg
 readmore:
  - title: What is empirism
    href: https://study.com/academy/lesson/empiricism-definition-meaning-philosophy.html

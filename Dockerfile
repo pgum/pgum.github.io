@@ -5,4 +5,4 @@ COPY --chown=jekyll:jekyll Gemfile.lock .
 
 RUN bundle install --quiet
 
-CMD ["jekyll", "serve", "--force_polling"]
+CMD ["jekyll", "serve", "--force_polling", "--trace"]
