@@ -1,0 +1,7 @@
+PLAY [Copy admin.conf file from remote node to host] ***************************************************
+
+TASK [Fetch admin.conf] ********************************************************************************
+changed: [cplane-0.k8s.local]
+
+PLAY RECAP *********************************************************************************************
+cplane-0.k8s.local         : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0

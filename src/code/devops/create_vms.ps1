@@ -60,23 +60,18 @@ param (
     [int]$workerCount=2,
     
     [Parameter(Mandatory=$false, HelpMessage="Path to VHD file. Defaults to E:\VMs\hyperv\")]
-    [ValidateNotNullOrEmpty()]
     [string]$vhdBasePath = "E:\VMs\hyperv\",
     
     [Parameter(Mandatory=$false, HelpMessage="Virtual switch name. Defaults to bridged.")]
-    [ValidateNotNullOrEmpty()]
     [string]$switchName = "bridged",
 
     [Parameter(Mandatory=$false, HelpMessage="First 10 characters of MAC address. Defaults to 00155D0A0A.")] #00:15:5D:0A:0A:
-    [ValidateNotNullOrEmpty()]
     [string]$macPrefix = "00155D0A0A",
 
     [Parameter(Mandatory=$false, HelpMessage="Image location for haproxy.")]
-    [ValidateNotNullOrEmpty()]
     [string]$haproxyImage = "E:\VMs\images\CentOS-7-x86_64-Minimal-2009.iso",
     
     [Parameter(Mandatory=$false, HelpMessage="Image location cplane and workers.")]
-    [ValidateNotNullOrEmpty()]
     [string]$cplaneWorkersImage = "E:\VMs\images\ubuntu-22.04.4-live-server-amd64.iso",
 
     [Parameter(Mandatory=$false, HelpMessage="Prefix for VM names. Defaults to 'k8s'.")]
@@ -94,7 +89,6 @@ $macAddressGenerator = {
     $script:macAddressCounter++
     $script:macAddressCounter
 }
-
 function CreateSingleVM($name, $image, $cpu=2, $ram=4, $hdd=40) {
     $vhdFilePath = $vhdBasePath + $name + '.vhdx'
     $macNumber = &$macAddressGenerator
@@ -117,18 +111,15 @@ function getName($name){
     if($prefix -eq $null -or $prefix -eq ""){ return $name } else {
         return "{0}-{1}" -f ($prefix, $name)}
 }
-
 function setNameWithCounter($name,$counter){
     $vmCoreName = getName($name)
     return ("{0}-{1}" -f ($vmCoreName, $counter.ToString()))
 }
-
 function CreateLoadBalancer($name) {
     Write-Host "Creating loadbalancer VM:"
     $loadBalancerName = getName($name)
     CreateSingleVM $loadBalancerName $haproxyImage 2 2 20
 }
-
 function CreateControlPlane($name, $count) {
     Write-Host "Creating control plane VMs [$count]:"
     for ($i = 0; $i -lt $count; $i++) {
@@ -136,7 +127,6 @@ function CreateControlPlane($name, $count) {
         CreateSingleVM $vmName $cplaneWorkersImage 2 4 40
     }
 }
-
 function CreateWorkers($name, $count) {
     Write-Host "Creating worker nodes VMs [$count]:"
     for ($i = 0; $i -lt $count; $i++) {

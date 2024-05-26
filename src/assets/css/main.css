@@ -894,6 +894,23 @@ pre {
   padding-top: 10px;
   padding-left: 10px;
 }
+
+#toc{
+  /* float: left; */
+  /* width: 50%; */
+  /* margin: -10%; */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 7px solid #444;
+  border-radius: 5px;
+  margin-left: auto;
+  /* margin: 5px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* border-color: black; */
+  background: #eee;
+  /* border-inline: 2px solid yellow; */
+}
+
 {% for category in site.data.theme.colours %}
 .btn.{{category[0]}} {
   background: {{category[1]}};

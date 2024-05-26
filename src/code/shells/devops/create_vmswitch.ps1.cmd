@@ -1,1 +1,1 @@
-New-VMSwitch -Name "bridged" -NetAdapterName Ethernet -AllowManagementOS $true
+./create_vmswitch.ps1 -dryRun $false -Name "bridged"

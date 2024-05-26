@@ -107,6 +107,9 @@ collections:
   slides:
     output: true
     
+toc:
+  min_level: 1
+  max_level: 3
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
@@ -166,13 +169,9 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-tagories
-  
-  - jekyll-spaceship
+  - jekyll-toc
+  - jemoji
 
-jekyll-spaceship:
-  # default enabled processors
-  processors:
-    - mermaid-processor
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
