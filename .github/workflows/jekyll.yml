@@ -43,7 +43,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - name: Build with custom Jekyll instead of Github one
-        uses: helaili/jekyll-build@v2
+        uses: gdcorp-action-public-forks/jekyll-build@v2
         with:
           target_branch: gh-pages
           target_path: ./_site
