@@ -42,11 +42,13 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-      - name: Build with Jekyll
-        # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --source src --baseurl "${{ steps.pages.outputs.base_path }}"
-        env:
-          JEKYLL_ENV: production
+      - name: Build with custom Jekyll instead of Github one
+        uses: helaili/jekyll-build@v2
+        with:
+          target_branch: gh-pages
+          target_path: ./_site
+          keep_history: true
+          build_only: true
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
