@@ -166,3 +166,4 @@ MSG
 end
 
 Liquid::Template.register_tag("include_absolute", Jekyll::Tags::IncludeAbsoluteTag)
+
