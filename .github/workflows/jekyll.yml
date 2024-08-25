@@ -44,7 +44,7 @@ jobs:
         with:
           enable_cache: true
           jekyll_src: src
-          format_output: true
+          format_output: false
       - name: 🚀 deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
