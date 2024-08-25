@@ -4,3 +4,7 @@
 [submodule "src/_plugins/jekyll-include-absolute-plugin"]
 	path = src/_plugins/jekyll-include-absolute-plugin
 	url = https://github.com/tnhu/jekyll-include-absolute-plugin.git
+
+[submodule "src/_plugins/jekyll-spaceship"]
+	path = src/_plugins/jekyll-spaceship
+	url = https://github.com/jeffreytse/jekyll-spaceship.git
