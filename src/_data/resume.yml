@@ -1,0 +1,140 @@
+languages:
+  title: Languages
+  info:
+    - idiom: Polish
+      level: Native
+    - idiom: English
+      level: Advanced - C1
+
+interests:
+  title: Interests
+  info:
+    - item: Game of Go
+      link: https://www.europeangodatabase.eu/EGD/Player_Card.php?&key=15849295
+    - item: Philosophy (Bachelor of Philosophy)
+    - item: Music Production
+      link: https://www.youtube.com/@TurtleCalledCalmie
+    - item: Frank Herbert's Dune
+
+description: |
+  My name is Piotr Jacek Gumulka. I help projects, teams and individuals find the way to achieve their business objectives.  
+  I am DevOps engineer, servant leader, university lecturer and public speaker open to new challenges.
+
+career-profile:
+    title: Career Profile
+    summary: |
+      I specialize in automating processes and providing educational support to both teams and individuals, removing impediments and enabling us to achieve business objectives more efficiently while focusing on what truly matters. 
+      As a skilled DevOps engineer, I am proficient in maintaining, transforming, and optimizing critical systems and processes within the production pipeline. 
+      With 5 years of experience as a servant leader, I do my best at removing obstacles, leading teams, and coaching individuals. 
+      Additionally, my background as a university lecturer and public speaker demonstrates my eagerness to learn new technologies and embrace challenges. 
+      
+      I am currently seeking a position where I can leverage my expertise to automate and enhance the user experience, making their lives easier. 
+      I am confident in my ability to identify areas for improvement and share my knowledge and experience to ensure a smoother project execution.
+
+education:
+    title: Education
+    info:
+      - degree: Master of Engineering in Automation and Robotics
+        university: AGH University of Science and Technology, Kraków
+        time: 2008 - 2013
+
+experiences:
+    title: Work experience
+    info:
+      - role: CI DevOps Engineer
+        time: 2019 - 2024
+        company: Nokia, Kraków
+        details: |
+          I transitioned to a new, technical role to gain new experience and further my automation practices in a new project our site was assigned to.
+          Our team was tasked with maintenance and development 
+          of a mature internal project, its infrastructure and redesign.
+          During my time in the team, I was responsible for various tasks, including:
+            - Securing stability and high availability of legacy system
+            - Introducing infrastructure automation tools to replace legacy procedures
+            - Analyzing an undocumented and unmaintained CI codebase and infrastructure
+            - Creating node templates and developing Ansible configurations for node setup
+            - Developing DSL libraries for JCasC and CI jobs definitions
+            - Introducing reusable code solutions for other CI projects
+            - Planning and refining tasks in the backlog using JIRA
+            - Providing support to CI/DevOps teams from other departments
+            - Creating tutorials, video-trainings, “draft” branches as training materials
+      - role: Scrum Master, Scrum Master Group Coordinator
+        time: October 2018 - 2020
+        company: Nokia, Kraków
+        details: |
+          I was elected Scrum Master Group Coordinator for our department, where I served as a servant leader for a team of 11 Scrum Masters. 
+          In addition to my role as a Scrum Master for development teams, I also facilitated an open forum between the Scrum Master group and 
+          various stakeholders.
+          Thanks to our company's partnerships with universities, I had the opportunity to deliver lectures and workshops on Scrum and Agile to students from different faculties.
+          Furthermore, in 2020, I was invited by the head of the Nokia Bydgoszcz site to conduct a comprehensive week-long workshop, consisting of lectures and activities, for the entire site.
+      - role: Scrum Master
+        time: 2015 - 2018
+        company: Nokia, Kraków
+        details: |
+          I fulfilled the role of a Scrum Master for two development teams. 
+          My primary responsibilities encompassed providing tools to streamline team workflows, implementing information radiators, facilitating meetings, and resolving any obstacles that hindered progress. 
+          I collaborated closely with management, the Product Owners team, and fellow Scrum Masters to ensure effective coordination. 
+          Key aspects of my role included:
+            - Offering daily support to the development teams
+            - Delivering informative lectures on project tools and processes to new employees
+            - Coaching and training newly appointed Scrum Masters
+
+      - role: Software Developer
+        time: 2014 - 2015
+        company: Nokia, Kraków
+        details: |
+          I was part of a development team in telecommunication software project for LTE. 
+          I was responsible for developing new features, bug fixing, writing unit and component tests for eNodeB software.
+projects:
+    title: Projects
+    intro: 
+    assignments:
+      - title: '“Evaluation of Scrum Master work performance in corporation”'
+        link: https://www.alekrakow.com/2017/06/scrum-master-jak-nim-zostac-i-miec.html
+        description: ALE Kraków meetup, Talk with Q&A session - 2017. Talk focused on the history of early transformation that took place in our company, the following problems and their solutions. 
+      - title: '“Scrum with Nokia”'
+        link: 
+        description: Kraków University of Economics - Lectures and workshops - 2018. Cycle of lectures and workshops covering introduction to scrum, modern approach to scaling scrum in corporate environment setting and possible pitfalls.
+      - title: '“Agile - how to cooperate”'
+        link: 
+        description: Kraków University of Technology - Lectures and workshops - 2019, lectures - 2020 - 2023. Part of Nokia university subject. Lecture focused on multiple agile tricks that students can use in their upcoming project work. Workshop sessions with elements of retrospectives, planning and problem solving.
+      - title: '“Baduk Dojang” - WordPress plugin - club management system - bibabaduk.online'
+        link: https://www.bibabaduk.online/
+        description: PHP, JavaScript, HTML, CSS - new webpage and WordPress plugin for club management system. Plugin is used by BIBA Korean School of Baduk. Features based on clients use cases to host online teaching program for students.
+      - title: '“GuMIDIcontroller”'
+        description: Arduino based footswitch MIDI controller, used for music production. Made software and hardware.
+        link: https://github.com/pgum/guMIDIcontroller
+
+certificates:
+    title: Certificates
+    intro: 
+    certs:
+      - name: Certified Scrum Professional - Scrum Master
+        issuer: Scrum Alliance, Inc.
+        link: https://www.scrumalliance.org/community/profile/gpiotr2
+        date: 2016
+      - name: Certified Scrum Professional - Product Owner
+        issuer: Scrum Alliance, Inc.
+        link: https://www.scrumalliance.org/community/profile/gpiotr2
+        date: 2016
+      - name: SAFe 4.5 Scrum Master
+        issuer: Scaled Agile, Inc.
+        date: 2018
+
+skills:
+    title: Skills &amp; Proficiency
+    toolset:
+      - name: Linux, Bash, git
+        level: 75%
+      - name: gitlab, github, gerrit
+        level: 61%
+      - name: Python, PHP, JavaScript, C++
+        level: 51%
+      - name: Jenkins, JCasC, DSL
+        level: 88%
+      - name: Openstack, Ansible, Docker
+        level: 71%
+      - name: Scrum, Agile, coaching
+        level: 84%
+      - name: Managing teams&projects, Jira, MS Teams, Office365
+        level: 64%

@@ -1,0 +1,6 @@
+10.0.10.200 haproxy.k8s.local haproxy 
+10.0.10.201 cplane-0.k8s.local cplane-0
+10.0.10.202 cplane-1.k8s.local cplane-1
+10.0.10.203 cplane-2.k8s.local cplane-2
+10.0.10.204 worker-0.k8s.local worker-0
+10.0.10.205 worker-1.k8s.local worker-1

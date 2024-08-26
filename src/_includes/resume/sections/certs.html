@@ -1,0 +1,33 @@
+{% assign certificates = site.data.resume.certificates %}
+{% if certificates %}
+<section class="section certificates-section">
+
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-file-alt fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ certificates.title }}
+  </h2>
+
+  {% if certificates.intro %}
+  <div class="intro">
+    {{ certificates.intro | markdownify }}
+  </div><!--//intro-->
+  {% endif %}
+
+  {% for cert in certificates.certs %}
+  <div class="item">
+    <span class="certificate-title">
+    {% if cert.link %}
+      <a href="{{ cert.link }}">{{ cert.name }}</a>
+    {% else %}
+      {{ cert.name }}
+    {% endif %}
+    </span>
+    <span class="certificate-details">{{ cert.issuer }}({{ cert.date }})</span>
+  </div><!--//item-->
+  {% endfor %}
+
+</section><!--//section-->
+{% endif %}

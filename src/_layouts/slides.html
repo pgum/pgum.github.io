@@ -1,0 +1,21 @@
+---
+layout: reveal
+---
+<!-- slide deck -->
+<div class="reveal">
+  <div class="slides">
+    {% include reveal/sections/title.html %}
+    {% include reveal/sections/objectives.html %}
+    {% include reveal/sections/toc.html %}
+    <section data-markdown data-separator="^\n<hr />$" data-vertical="^\n--\n$" data-notes="^<p>Note:</p>">
+      <script type="text/template">
+        {{ content }}
+      </script>
+    </section>
+    {% if page.readmore %}
+      {% include reveal/sections/readmore.html %}
+    {% endif %}
+    {% include reveal/sections/back.html %}
+  </div>
+</div>
+<!-- // slide deck -->

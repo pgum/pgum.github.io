@@ -1,0 +1,13 @@
+<section 
+  {% if page.toc-image %}
+  	class="with-image" 
+	data-background-image="{{ page.toc-image }}" 
+    data-background-size="30%" 
+    data-background-position="left" 
+  {% endif %}
+data-markdown>
+  <script type="text/markdown">
+	## Agenda 
+	{% include toc.html html=content h_min=1 h_max=1 %}
+  </script>
+</section>

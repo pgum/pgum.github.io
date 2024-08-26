@@ -1,0 +1,1 @@
+ansible-playbook -i inventory/mycluster/hosts.yaml -u borg -b -v --private-key=~/.ssh/id_rsa reset.yml

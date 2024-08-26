@@ -1,0 +1,177 @@
+# --- General options --- #
+encoding: utf-8
+title: gumulka.net
+url-pretty: gumulka.net
+url-source: https://github.com/pgum/pgum.github.io/tree/master
+port: 4000
+
+description: the notepad of ideas
+# Image to show in the navigation bar - image must be a square (width = height)
+# Remove this parameter if you don't want an image in the navbar
+# avatar: "/assets/img/avatar-icon.png"
+# If you want to have an image logo in the top-left corner instead of the title text,
+# then specify the following parameter
+# title-img: /path/to/image
+
+# Change all these values or delete the ones you don't want.
+# Important: you must keep the "name" parameter, everything else you can remove
+author:
+  name: Piotr Jacek Gumulka
+  tagline: Automation enthusiast
+  avatar: me/photo_sqar_small.jpg
+  citizenship: Polish
+ 
+# If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
+  contact:
+    email: "pjgumulka@gmail.com"
+    phone: 517 463 789
+    github: pgum
+    linkedin: piotr-gumulka
+    youtube: turtleCalledCalmie
+
+resume:
+  print: false
+  sidebar:
+    education: true
+    certs: false
+    skills: true
+
+code:
+  dirs:
+    code: "code" # directory name for code snippets, this is mandatory
+    shell: "shells" # this is optional, if not specified, it will default to code
+    output: "logs" # same here
+  exts:
+    code: "it wouldn't make any sense to use this key"
+    shell: "cmd" # shell output file extension
+    output: "log" # same for logs
+  header:
+    style: "#####"
+    use_icons: true
+    link_source: true
+    show_lines: true
+  defaults:
+    lang: "plaintext"
+    show_lang: false
+    use_filename: true
+  labels:
+    code: "%s"
+    shell: "Shell:"
+    output: "Output:"
+  icons: 
+    code: fa-file-lines
+    shell: fa-terminal
+    output: fa-display
+
+# --- Navigation bar options --- #
+# List of links in the navigation bar
+navbar-links:
+  "DevOps": "devops"
+  "Slides": "slides"
+#  "All Notes": "notes"
+
+# Select which share links to show with social-share
+share-links-active:
+  facebook: true
+  twitter: true
+  linkedin: true
+
+# Enable rss feed for site
+rss: true  
+
+# Excerpt Word Length
+excerpt_length: 50
+max_keypoints: 5
+
+# Character used to separate site title and description in HTML document title
+# and RSS feed title
+title-separator: "-"
+
+# Ruby Date Format
+date_format: "%B %-d, %Y"
+
+# Output options (more information on Jekyll's site)
+timezone: "Europe/Warsaw"
+markdown: kramdown
+highlighter: rouge
+permalink: /:year-:month-:day-:title/
+
+kramdown:
+  input: GFM
+
+collections:
+  notes:
+    output: true
+  devops:
+    output: true
+  slides:
+    output: true
+    
+toc:
+  min_level: 1
+  max_level: 3
+
+# Default YAML values (more information on Jekyll's site)
+defaults:
+  -
+    scope:
+      path: "_devops"
+      type: ""
+    values:
+      layout: "post"
+      category: "devops"
+      permalink: /devops/:title/
+  -
+    scope:
+      path: "_notes"
+      type: ""
+    values:
+      layout: "post"
+      permalink: /notes/:title/
+  -
+    scope:
+      path: ""
+      type: "slides"
+    values:
+      layout: "slides"
+      permalink: /slides/:title/
+  -
+    scope:
+      path: ""
+      type: "notes"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: "" # all files
+    values:
+      layout: "page"
+      social-share: false
+      show-avatar: false  
+
+# Exclude these files from production site
+exclude:
+  - CHANGELOG.md
+  - CNAME
+  - Dockerfile
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - Vagrantfile
+  - Rakefile
+  - vendor
+  - .gitignore
+  - docker-compose.yml
+  - code
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-tagories
+  - jekyll-toc
+  - jemoji
+
+
+# Beautiful Jekyll / Dean Attali
+# 2fc73a3a967e97599c9763d05e564189

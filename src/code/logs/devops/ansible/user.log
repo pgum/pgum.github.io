@@ -1,0 +1,56 @@
+PLAY [Setup ansible maintenance user on CentOS-based servers] ******************************************
+TASK [Gathering Facts] *********************************************************************************
+ok: [haproxy.k8s.local]
+
+TASK [Create user] *************************************************************************************
+changed: [haproxy.k8s.local]
+
+TASK [Ensure wheel group has sudo access without password] *********************************************
+ok: [haproxy.k8s.local]
+
+PLAY [Setup ansible maintenance user on Ubuntu-based servers] ******************************************
+TASK [Gathering Facts] *********************************************************************************
+ok: [worker-0.k8s.local]
+ok: [cplane-2.k8s.local]
+ok: [cplane-0.k8s.local]
+ok: [worker-1.k8s.local]
+ok: [cplane-1.k8s.local]
+
+TASK [Create user] *************************************************************************************
+changed: [cplane-0.k8s.local]
+changed: [cplane-1.k8s.local]
+changed: [worker-0.k8s.local]
+changed: [cplane-2.k8s.local]
+changed: [worker-1.k8s.local]
+
+TASK [Ensure sudo group has sudo access without password] **********************************************
+ok: [cplane-0.k8s.local]
+ok: [cplane-1.k8s.local]
+ok: [cplane-2.k8s.local]
+ok: [worker-0.k8s.local]
+ok: [worker-1.k8s.local]
+
+PLAY [Copy SSH key to remote host] *********************************************************************
+TASK [Gathering Facts] *********************************************************************************
+ok: [haproxy.k8s.local]
+ok: [cplane-0.k8s.local]
+ok: [worker-0.k8s.local]
+ok: [cplane-1.k8s.local]
+ok: [cplane-2.k8s.local]
+ok: [worker-1.k8s.local]
+
+TASK [Copy SSH key] ************************************************************************************
+changed: [haproxy.k8s.local]
+changed: [worker-0.k8s.local]
+changed: [cplane-1.k8s.local]
+changed: [cplane-0.k8s.local]
+changed: [cplane-2.k8s.local]
+changed: [worker-1.k8s.local]
+
+PLAY RECAP *********************************************************************************************
+cplane-0.k8s.local         : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+cplane-1.k8s.local         : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+cplane-2.k8s.local         : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+haproxy.k8s.local          : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+worker-0.k8s.local         : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+worker-1.k8s.local         : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
