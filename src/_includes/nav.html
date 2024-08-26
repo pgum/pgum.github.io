@@ -16,9 +16,9 @@
         <span class="icon-bar"></span>
       </button>
       {%- if site.title-img -%}
-        <a class="navbar-brand navbar-brand-logo" href="{{ page.url-pretty }}"><img src="{{ site.title-img }}"/></a>
+        <a class="navbar-brand navbar-brand-logo" href="{{ site.url-pretty | absolute_url }}"><img src="{{ site.title-img }}"/></a>
       {%- else -%}
-        <a class="navbar-brand" href="{{ site.url-pretty }}">{{ site.title }}</a>
+        <a class="navbar-brand" href="{{ site.url-pretty | absolute_url }}">{{ site.title }}</a>
       {%- endif -%}
        </div>
     <div class="collapse navbar-collapse" id="main-navbar">
