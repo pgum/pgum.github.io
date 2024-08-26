@@ -1,1 +1,0 @@
-ansible-playbook ping.yaml --user=killme

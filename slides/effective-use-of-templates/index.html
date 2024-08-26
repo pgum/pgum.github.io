@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+
+  <title>Effective Use Of Templates</title>
+
+  <meta name="author" content="Piotr Jacek Gumulka" />
+
+  
+  <meta name="description" content="My name is Piotr Jacek Gumulka. I help projects, teams and individuals find the way to achieve their business objectives.  
+I am DevOps engineer, servant leader, university lecturer and public speaker open to new challenges.
+">
+  
+
+  <link rel="alternate" type="application/rss+xml" title="gumulka.net - the notepad of ideas" href="/feed.xml" />
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160061743-1"></script>
+    <script>
+          window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-160061743-1');
+</script>
+
+
+  
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T6FH4Z6');</script>
+    <!-- End Google Tag Manager -->
+
+
+  
+
+
+  
+    
+      
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/css/reveal.css" />
+    
+      <link rel="stylesheet" href="/css/lib/zenburn.css" />
+    
+  
+
+  
+    <link rel="stylesheet" href="/css/theme/pjg.css" id="theme" />
+  
+
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+  
+
+  
+  
+  
+
+  
+
+    <!-- Facebook OpenGraph tags -->
+  
+
+  
+  <meta property="og:title" content="Effective Use Of Templates" />
+  
+
+   
+  <meta property="og:description" content="What is template? Note: What do we use them for? Real life examples? What is common goal of making a template? Does templates hold creativity off? Objective: Templates aren’t evil Optimize most boring stuff Don’t misuse Agenda: Inspect and then record your most common cases Adapt tools at your disposal...">
+  
+
+
+  <meta property="og:type" content="website" />
+
+  
+  <meta property="og:url" content="/slides/effective-use-of-templates/" />
+  <link rel="canonical" href="/slides/effective-use-of-templates/" />
+  
+
+  
+  <meta property="og:image" content="/me/photo_sqar_small.jpg" />
+  
+
+
+  <!-- Twitter summary cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@" />
+  <meta name="twitter:creator" content="@" />
+
+  
+  <meta name="twitter:title" content="Effective Use Of Templates" />
+  
+
+  
+  <meta name="twitter:description" content="What is template? Note: What do we use them for? Real life examples? What is common goal of making a template? Does templates hold creativity off? Objective: Templates aren’t evil Optimize most boring stuff Don’t misuse Agenda: Inspect and then record your most common cases Adapt tools at your disposal...">
+  
+
+  
+  <meta name="twitter:image" content="/me/photo_sqar_small.jpg" />
+  
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/site.webmanifest">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<script>
+	document.write( '<link rel="stylesheet" href="/assets/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+</script>
+<script src="/assets/js/jquery-3.7.0.min.js"></script>
+<script src="/assets/js/jQWCloudv3.4.1.js"></script>
+<script src="/assets/js/isotope.pkgd.min.js"></script>
+
+
+</head>
+
+  <body>
+    
+    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6FH4Z6"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+
+    <!-- slide deck -->
+<div class="reveal">
+  <div class="slides">
+    <section 
+  
+ data-markdown>  
+  <script type="text/template">
+    <h1> Effective Use Of Templates </h1>
+  </script>
+</section>
+    <section data-markdown>
+  <script type="text/markdown">
+  ## Objectives
+  
+  * Purpose of using templates
+  
+  * Inspect your work
+  
+  * Automatize
+  
+  </script>
+</section>
+    <section 
+  
+data-markdown>
+  <script type="text/markdown">
+	## Agenda 
+	<ul>
+  <li><a href="#what-is-template">What is template?</a></li>
+  <li><a href="#template-as-a-shortcut">Template as a shortcut</a></li>
+  <li><a href="#constructing-a-template">Constructing a template</a></li>
+  <li><a href="#template-pitfall-1">Template pitfall #1</a></li>
+  <li><a href="#template-pitfall-2">Template pitfall #2</a></li>
+  <li><a href="#template-pitfall-3">Template pitfall #3</a></li>
+</ul>
+  </script>
+</section>
+    <section data-markdown data-separator="^\n<hr />$" data-vertical="^\n--\n$" data-notes="^<p>Note:</p>">
+      <script type="text/template">
+        <h1 id="what-is-template">What is template?</h1>
+
+<p>Note:</p>
+
+<p>What do we use them for? Real life examples?
+What is common goal of making a template?
+Does templates hold creativity off?</p>
+
+<p>Objective:</p>
+<ul>
+  <li>Templates aren’t evil</li>
+  <li>Optimize most boring stuff</li>
+  <li>Don’t misuse
+Agenda:</li>
+  <li>Inspect and then record your most common cases</li>
+  <li>Adapt tools at your disposal to the situation</li>
+  <li>Establish a template on how to make productive template</li>
+</ul>
+
+<hr />
+
+<h1 id="template-as-a-shortcut">Template as a shortcut</h1>
+
+<h2 id="common-practices">Common practices</h2>
+
+<h2 id="work-standards">Work standards</h2>
+
+<p>Note:</p>
+
+<p>We already use templates all the time
+Identifing activities -&gt; checklist
+Could be standarized?
+Can be automated? Can be incorporated into culture of organization?</p>
+
+<p>Examples:</p>
+<ul>
+  <li>All methodology frameworks</li>
+  <li>Developers Repository</li>
+  <li>Meeting scenarios</li>
+  <li>Coding Guidelines</li>
+  <li>Annual Employee Evaluation</li>
+  <li>CI system</li>
+  <li>EULA</li>
+</ul>
+
+<hr />
+
+<h2 id="templates-expand-creativity">Templates expand creativity</h2>
+
+<p>Note:</p>
+
+<p>Focus on essence first while having prepared enviroment ready to go.
+Common ground to create high standard.
+Time saver.</p>
+
+<hr />
+
+<h2 id="templates">Templates</h2>
+
+<ul>
+  <li>Shortcut in common tasts</li>
+  <li>Inspect &amp; Adapt method</li>
+  <li>Knowlwdge sharing</li>
+</ul>
+
+<hr />
+
+<h1 id="constructing-a-template">Constructing a template</h1>
+
+<ul>
+  <li>Gather data</li>
+  <li>Generalize</li>
+  <li>Be specific</li>
+  <li>Let it live</li>
+</ul>
+
+<p>Note:</p>
+
+<ul>
+  <li>Gathering data as a part of empirical process is a must to be able to reason about the process.</li>
+  <li>Observations should be analized to find common themes from gathered data. Choose those which would benefit the most from having more standarized process.</li>
+  <li>Be specific about the purpose and goals of the template.
+    <ul>
+      <li>Who will benefit from using it?</li>
+      <li>What changes would need to happen for it to succede?</li>
+    </ul>
+  </li>
+  <li>Share template, ask for feedback, change it.
+    <ul>
+      <li>Encourage people to use it.</li>
+      <li>When to enforce template on people?</li>
+      <li>Observe changes made</li>
+      <li>Adapt in new version in new iteration</li>
+      <li>Record and share template and observations</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h1 id="template-pitfall-1">Template pitfall #1</h1>
+
+<h2 id="set-in-stone">Set in stone</h2>
+
+<p>Note:</p>
+
+<p>Templating is a process not an one-time thing
+Establish feedback loop and decide on evaluation period
+Always remember what you measure and for what ends
+Don’t be scared to experiment</p>
+
+<hr />
+
+<h1 id="template-pitfall-2">Template pitfall #2</h1>
+
+<h2 id="nah-i-dont-use-it">“Nah, I don’t use it”</h2>
+
+<p>Note:</p>
+
+<p>Encouragement to keep up discipline in applying developed template should come from following sources:</p>
+
+<ul>
+  <li>agreeing with identified goal (shared goal)</li>
+  <li>understanding the need of template in given field (shared idea)</li>
+  <li>was part of working group that created it (shared work, relevancy)</li>
+</ul>
+
+<p>Enforcement means external pressure, while encouragement is more like enabling inner motivation to action.</p>
+
+<p>What problems do we encunter?</p>
+
+<hr />
+
+<h1 id="template-pitfall-3">Template pitfall #3</h1>
+
+<h2 id="its-a-bother-and-not-an-aid">It’s a bother and not an aid</h2>
+
+<p>Note:</p>
+
+<p>Is it relevant in our current workflow?
+Do all groups of interest agree that template is useful?
+What is valuable, what was the goal of it? What are main bothers?
+How can we keep valuable ideas while optmizing the template?</p>
+
+      </script>
+    </section>
+    
+    <section data-markdown>
+  <script type="text/markdown">
+    ## [Go back to Slides](/notes/#slides)
+  </script>
+</section>
+
+  </div>
+</div>
+<!-- // slide deck -->
+
+    <script src="/assets/js/lib/head.min.js"></script>
+<script src="/assets/js/reveal.js"></script>
+<script>
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: false,
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: 'none', // default/cube/page/concave/zoom/linear/fade/none
+		slideNumber: 'c/t',
+		menu: {
+			custom: [ 
+        
+				{title: 'Github', style: 'fab', icon: 'fa-github', href: 'https://github.com/pgum/pgum.github.io/tree/master/_slides/effective-use-of-templates.md' },
+         
+				
+        {title: 'LinkedIn', style: 'fab', icon: 'fa-linkedin', href: 'https://linkedin.com/in/piotr-gumulka' }, 
+        
+				{title: 'Go back', style: 'fas', icon: 'fa-home', href: "/notes/#slides" } 
+			],	
+			customFields: [{ title: 'Back to slides', href: "/notes/#slides" }],
+			width: 'half',
+			numbers: false,
+			titleSelector: 'h1',
+			hideMissingTitles: true,
+			openSlideNumber: false
+		},
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: '/assets/js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: '/assets/js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: '/assets/js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: '/assets/js/plugin/menu/menu.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+</script>
+    
+
+
+  
+    
+      <script src="/assets/js/bootstrap.min.js"></script>
+    
+  
+
+
+
+
+
+
+      
+  </body>
+</html>
