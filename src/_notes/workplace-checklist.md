@@ -1,7 +1,7 @@
 ---
 category: checklists
 title: Workplace checklist
-tags: ["workplace", "office"]
+tags: ["workplace", "office", "checklist"]
 ---
 
 Making workplace better is a never ending process. Having a checklist of different  practices and behaviors to take notice of eases the task by providing a starting point in `inspect` phase of `inspect&adapt` cycle.
